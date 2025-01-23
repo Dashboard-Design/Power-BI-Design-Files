@@ -1,0 +1,87 @@
+SVG Car Brands Scatter Plot with Logos = 
+
+VAR _Max_Avg_Price = MAXX( ALLSELECTED( 'dim - Car Brand Logo'[Company] ), [Avg Price] ) * 1.03
+VAR _Min_Avg_Price = MINX( ALLSELECTED( 'dim - Car Brand Logo'[Company] ), [Avg Price] ) * 0.97
+VAR _Range_Price = _Max_Avg_Price - _Min_Avg_Price
+VAR _Step_Price = _Range_Price / 5
+
+VAR _Max_Quantity = MAXX( ALLSELECTED( 'dim - Car Brand Logo'[Company] ), [Car Sales Volume] ) * 1.1
+VAR _Min_Quantity = MINX( ALLSELECTED( 'dim - Car Brand Logo'[Company] ), [Car Sales Volume] ) * 0.9 
+VAR _Range_Quantity = _Max_Quantity - _Min_Quantity
+VAR _Step_Quantity = _Range_Quantity / 5
+
+VAR _width = 1100
+VAR _height = 630
+VAR _w_range = (_width - 100 ) / 5
+VAR _h_range = (_height - 100 ) / 5
+
+
+VAR _table =
+SELECTCOLUMNS( 
+    'dim - Car Brand Logo',
+    "Price", ((( [Avg Price] - _Min_Avg_Price ) / _Range_Price) * (_width - 100) ) + 50 , 
+    "Quantity Sold", ((( [Car Sales Volume] - _Min_Quantity ) / _Range_Quantity) * (_height - 100) ) + 50, 
+    "ImageURL", 'dim - Car Brand Logo'[Image - Base64],
+    "name", 'dim - Car Brand Logo'[Company] 
+)
+
+VAR _format = IF( ISFILTERED( 'Date' ), "0", "#,##0,.0K")
+VAR _x = IF( ISFILTERED( 'Date' ), 30, 25)
+
+
+VAR _ScatterPlotSVG =
+"data:image/svg+xml;utf8, <svg width='"&_width&"' height='"&_height&"' xmlns='http://www.w3.org/2000/svg'>" &
+    "<text x='0' y='35' font-size='22' fill='black'>Car Brands</text>" & // Title
+    "<line x1='50' y1='"&_height - 50&"' x2='"&_width - 50&"' y2='"&_height - 50&"' stroke='black' stroke-width='1'/>" & // x-axis line
+    "<text x='"&(_width / 2) - 50&"' y='"&_height - 15&"' font-size='16' fill='black'>Avg Price</text>" & // x-axis label
+    
+    "<line x1='"&50 + _w_range &"' y1='50' x2='"&50 + _w_range &"' y2='"&_height - 50&"' stroke='#E6E6E6' stroke-width='1' stroke-dasharray='5,5' />" &
+    "<line x1='"&50 + (_w_range *2) &"' y1='50' x2='"&50 + (_w_range *2) &"' y2='"&_height - 50&"' stroke='#E6E6E6' stroke-width='1' stroke-dasharray='5,5' />" &
+    "<line x1='"&50 + (_w_range *3) &"' y1='50' x2='"&50 + (_w_range *3) &"' y2='"&_height - 50&"' stroke='#E6E6E6' stroke-width='1' stroke-dasharray='5,5'/>" &
+    "<line x1='"&50 + (_w_range *4) &"' y1='50' x2='"&50 + (_w_range *4) &"' y2='"&_height - 50&"' stroke='#E6E6E6' stroke-width='1' stroke-dasharray='5,5' />" &
+
+
+
+
+    "<text x='"&40 + (_w_range *0) &"' y='"&_height - 30&"' font-size='12' fill='black'>" &FORMAT( _Min_Avg_Price, "$#,##0,K" )& "</text>" &
+    "<text x='"&40 + (_w_range *1) &"' y='"&_height - 30&"' font-size='12' fill='black'>" &FORMAT( _Min_Avg_Price + _Step_Price, "$#,##0,K" )& "</text>" &
+    "<text x='"&30 + (_w_range *2) &"' y='"&_height - 30&"' font-size='12' fill='black'>" &FORMAT( _Min_Avg_Price + (_Step_Price * 2 ), "$#,##0,K" )& "</text>" &
+    "<text x='"&40 + (_w_range *3) &"' y='"&_height - 30&"' font-size='12' fill='black'>" &FORMAT( _Min_Avg_Price + (_Step_Price * 3 ), "$#,##0,K" )& "</text>" &
+    "<text x='"&40 + (_w_range *4) &"' y='"&_height - 30&"' font-size='12' fill='black'>" & FORMAT( _Min_Avg_Price + (_Step_Price * 4 ), "$#,##0,K" )& "</text>" &
+    "<text x='"&40 + (_w_range *5) &"' y='"&_height - 30&"' font-size='12' fill='black'>" & FORMAT( _Max_Avg_Price, "$#,##0,K" )& "</text>" &
+
+
+
+    "<line x1='50' y1='"& 50 + (_h_range)&"' x2='"&_width - 50&"' y2='"& 50 + (_h_range)&"' stroke='#E6E6E6' stroke-width='1' stroke-dasharray='5,5' />" &
+    "<line x1='50' y1='"& 50 + (_h_range * 2)&"' x2='"&_width - 50&"' y2='"& 50 + (_h_range * 2)&"' stroke='#E6E6E6' stroke-width='1' stroke-dasharray='5,5' />" &
+    "<line x1='50' y1='"& 50 + (_h_range * 3)&"' x2='"&_width - 50&"' y2='"& 50 + (_h_range * 3)&"' stroke='#E6E6E6' stroke-width='1' stroke-dasharray='5,5' />" &
+    "<line x1='50' y1='"& 50 + (_h_range * 4)&"' x2='"&_width - 50&"' y2='"& 50 + (_h_range * 4)&"' stroke='#E6E6E6' stroke-width='1' stroke-dasharray='5,5' />" &
+
+
+
+
+    "<text x='"&_x&"' y='"& 53 + (_h_range * 5)&"' font-size='12' fill='black'>" &FORMAT( _Min_Quantity, "#,##0" )& "</text>" &
+    "<text x='"&_x&"' y='"& 53 + (_h_range * 4)&"' font-size='12' fill='black'>" &FORMAT( _Min_Quantity + (_Step_Quantity ), _format )& "</text>" &
+    "<text x='"&_x&"' y='"& 53 + (_h_range * 3)&"' font-size='12' fill='black'>" &FORMAT( _Min_Quantity + (_Step_Quantity * 2 ), _format )& "</text>" &
+    "<text x='"&_x&"' y='"& 53 + (_h_range * 2)&"' font-size='12' fill='black'>" &FORMAT( _Min_Quantity + (_Step_Quantity * 3 ), _format )& "</text>" &
+    "<text x='"&_x&"' y='"& 53 + (_h_range * 1)&"' font-size='12' fill='black'>" &FORMAT( _Min_Quantity + (_Step_Quantity * 4 ), _format )& "</text>" &
+    "<text x='"&_x&"' y='"& 53 + (_h_range * 0)&"' font-size='12' fill='black'>" &FORMAT( _Max_Quantity, _format )& "</text>" &
+    
+
+    "<line x1='50' y1='50' x2='50' y2='"&_height - 50&"' stroke='black' stroke-width='1'/>" & // y-axis line
+    "<text x='20' y='"&(_height / 2) + 50 &"' font-size='16' transform='rotate(-90 20,"&(_height / 2) + 50 &")' fill='black'>Quantity Sold</text>" & // y-axis label
+
+    CONCATENATEX(
+        _table,
+        "<image  
+        href='"&[ImageURL]&"'
+        width='85' 
+        height='85'
+        x='"& [Price] &"' 
+        y='"& ( (_height - 50) - [Quantity Sold] ) &"'
+        />"
+    ) &
+"</svg>"    
+
+RETURN 
+    _ScatterPlotSVG
