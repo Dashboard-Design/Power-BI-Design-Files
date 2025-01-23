@@ -29,7 +29,7 @@ This repository is organized into three main folders to help you navigate the co
 
 ---
 
-###🤝 Contributions and Feedback  
+### 🤝 Contributions and Feedback  
 
 If you have suggestions or improvements, feel free to open an issue or contribute directly through a pull request.  
 
