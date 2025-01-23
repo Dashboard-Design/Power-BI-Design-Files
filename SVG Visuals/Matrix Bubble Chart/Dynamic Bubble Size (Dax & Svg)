@@ -1,0 +1,34 @@
+Bubble Size (#svg) = 
+
+VAR _Day = SELECTEDVALUE( 'Date'[dayMonth-Num] )
+VAR _Sales_min = MINX( ALLSELECTED( 'Date' ), [Sales] )
+VAR _Sales_max = MAXX( ALLSELECTED( 'Date' ), [Sales] )
+
+VAR _min_Bubble_size = 2
+VAR _max_Bubble_size = 20     
+
+VAR _size = 
+_min_Bubble_size + 
+(  
+    ( ( [Sales] - _Sales_min ) / ( _Sales_max - _Sales_min ) ) * ( _max_Bubble_size - _min_Bubble_size )  
+)
+
+// defs used to add a subtle gradient, but the main code is the circle tag
+
+RETURN 
+"
+data:image/svg+xml;utf8,<svg width='50' height='50' xmlns='http://www.w3.org/2000/svg'>
+
+  <defs>
+    <linearGradient id='gradient' x1='0%' y1='0%' x2='100%' y2='100%'>
+      <stop offset='0%' stop-color='#A9D6FF' /> <!-- Start color -->
+      <stop offset='100%' stop-color='#3BA1FF' /> <!-- End color -->
+    </linearGradient>
+  </defs>
+
+  <circle cx='25' cy='25' r='"&_size&"' fill='url(#gradient)' stroke='#118DFF' stroke-width='0' />
+  
+  <text x='-0.5' y='10' font-family='Segoe UI' font-size='12' fill='#252423'>"&_Day&"</text>
+
+</svg>
+"
