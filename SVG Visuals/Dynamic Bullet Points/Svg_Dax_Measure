@@ -1,0 +1,61 @@
+topnProductsHtmlSVG = 
+
+VAR topnProducts = 
+    TOPN(
+        topProductsSelection[topProductsSelection Value], 
+        ALLSELECTED('dim-Product'[Product Name]), 
+        [sales], 
+        DESC
+    )
+
+RETURN
+"data:image/svg+xml;utf8,
+<svg width='505' height='162' xmlns='http://www.w3.org/2000/svg'>
+
+<foreignObject x='8' y='0' width='505' height='162'>
+    <div xmlns='http://www.w3.org/1999/xhtml' style='font-family: Segoe UI, Arial, sans-serif;'>
+        <style>
+            ol {
+                list-style-type: none;
+                counter-reset: li;
+                margin: 0;
+                padding-left: 0;
+            }
+            li {
+                font-size: 12px;
+                font-family: 'Segoe UI', Arial, sans-serif;
+                color: #131312;
+                margin-bottom: 0.4rem;
+            }
+            li:before {
+                counter-increment: li;
+                content: counter(li);
+                font-size: 12px;
+                margin-right: 0.5rem;
+                background: #224185;
+                color: white;
+                width: 1.2em;
+                height: 1.2em;
+                border-radius: 50%;
+                display: inline-grid;
+                place-items: center;
+                line-height: 1.2em;
+            }
+            .sales {
+                color: #224185; /* Sales value color */
+                font-weight:  bold; /* Bold sales value */
+            }
+        </style>
+        <ol> " & 
+        CONCATENATEX(
+            topnProducts, 
+            "<li>" & SUBSTITUTE('dim-Product'[Product Name], "&", "&amp;") & " <span class='sales'>( " & FORMAT([sales], "$#,##0,.0K") & " )</span></li>", 
+            "", 
+            [sales], 
+            DESC
+        ) & 
+        "</ol>
+    </div>
+</foreignObject>
+
+</svg>"
