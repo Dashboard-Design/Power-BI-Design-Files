@@ -2,6 +2,8 @@
 
 **Recreating Chartisan's dashboard style with a focus on IBCS design principles**  
 
+![Image](https://github.com/user-attachments/assets/92b53526-4d80-4140-88dc-50b50a352cde)
+
 ---
 
 ## 🎨 Design Insights  
