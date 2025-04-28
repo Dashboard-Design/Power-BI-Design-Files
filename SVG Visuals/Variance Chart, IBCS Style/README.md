@@ -15,6 +15,5 @@ This project taught me how subtle design choices dramatically impact data storyt
 ## 🛠️ Technical Implementation  
 **Built with**:  
 ```markdown
-- Power BI (Desktop/Service)  
 - SVG + HTML Content Visual (for IBCS variance chart)  
 - Power BI Matrix Visuals (native)  
