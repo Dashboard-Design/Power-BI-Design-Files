@@ -1,0 +1,56 @@
+Toast CSS = 
+"
+#toastBox {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;              /* stick to the very top */
+  left: 0;             /* align left edge */
+  bottom: 0;             /* align left edge */
+  width: 100vw;        /* full viewport width */
+  padding: 16px 16px;
+  background-color: #484848;
+  border: 1px solid grey;
+  border-radius: 8px 0px 0px 8px;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2),
+  font-family: sans-serif;
+  font-size: 16px;
+  z-index: 9999;       /* sits on top of nearly everything */
+  opacity: 0;
+  animation: slideInOut 3.5s ease forwards;
+}
+
+.Category p {
+  margin: 0;
+  line-height: 1.4;
+  color: #fff;
+  font-weight: bold;
+}
+
+.textInfo {
+   font-size: 13px;
+   color: rgba(255, 255, 255, 0.75);
+   font-style: normal;
+}
+
+/* Slide from right → stay → slide to left */
+@keyframes slideInOut {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  10% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  90% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+}
+
+"

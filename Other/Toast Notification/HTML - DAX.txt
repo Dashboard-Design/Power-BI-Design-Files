@@ -1,0 +1,30 @@
+Toast Notification = 
+
+VAR _Filter =
+SWITCH(
+    TRUE(),
+    ISFILTERED(Products_Data) && COUNTX( VALUES(Products_Data[Product Name]),1)>1, "Products:" ,
+    ISFILTERED(Products_Data) && COUNTX( VALUES(Products_Data[Product Name]),1)=1, "Product:" , //product
+    ISFILTERED(storelocations) && COUNTX( VALUES( storelocations[name]),1)=1, "Store:",
+    ISFILTERED(storelocations) && COUNTX( VALUES( storelocations[name]),1)>1, "Stores:", // store
+    ISFILTERED(Salesteams)  && COUNTX( VALUES(Salesteams[Sales Team]),1)>1, "Sales Teams:",
+    ISFILTERED(Salesteams)  && COUNTX( VALUES(Salesteams[Sales Team]),1)=1, "Sales Team:" // sales team
+)
+
+VAR _Value =
+SWITCH(
+    TRUE(),
+    ISFILTERED(Products_Data), CONCATENATEX(Products_Data, Products_Data[Product Name], " - ", Products_Data[Product Name],ASC ),
+    ISFILTERED(storelocations), CONCATENATEX( storelocations, storelocations[name], " - ", storelocations[name],ASC ),
+    ISFILTERED(Salesteams), CONCATENATEX( Salesteams, Salesteams[Sales Team], " - ", Salesteams[Sales Team],ASC )
+)
+
+RETURN
+IF( 
+    NOT ISBLANK( _Filter) ,
+    "<div id='toastBox'>
+        <div class='Category'> 
+            <p> <span class='textInfo'>Dashboard is filtered! &ensp; "&_Filter&"</span> "&_Value&" </p>
+        </div>
+    </div>"
+)
