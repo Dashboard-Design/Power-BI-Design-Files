@@ -1,0 +1,94 @@
+-- ===================================================================
+-- CALCULATED COLUMNS
+-- ===================================================================
+-- Description: Calculated columns for behavior classification
+-- ===================================================================
+
+-- =================================================================
+-- TABLE: FactArrivals
+-- =================================================================
+
+-- Arrival Volume Category (Behavior Classification)
+-- Categorizes arrivals into Low/Medium/High based on volume
+FactArrivals[Arrival Volume Category] =
+SWITCH (
+    TRUE (),
+    FactArrivals[TotalArrivals] = 0, "No Arrivals",
+    FactArrivals[TotalArrivals] <= 10, "Very Low (1-10)",
+    FactArrivals[TotalArrivals] <= 100, "Low (11-100)",
+    FactArrivals[TotalArrivals] <= 1000, "Medium (101-1K)",
+    FactArrivals[TotalArrivals] <= 10000, "High (1K-10K)",
+    FactArrivals[TotalArrivals] <= 50000, "Very High (10K-50K)",
+    "Extreme (50K+)"
+)
+
+-- Description: Behavioral classification based on arrival volume
+-- Data Type: Text
+-- Sort By: N/A (natural order)
+
+
+-- Gender Dominance (Behavior Pattern)
+-- Identifies whether arrivals are male-dominated, female-dominated, or balanced
+FactArrivals[Gender Dominance] =
+VAR MalePct = DIVIDE ( FactArrivals[MaleArrivals], FactArrivals[TotalArrivals], 0 )
+RETURN
+SWITCH (
+    TRUE (),
+    FactArrivals[TotalArrivals] = 0, "No Data",
+    MalePct >= 0.6, "Male Dominated (60%+)",
+    MalePct >= 0.55, "Male Majority (55-60%)",
+    MalePct >= 0.45, "Balanced (45-55%)",
+    MalePct >= 0.4, "Female Majority (55-60%)",
+    "Female Dominated (60%+)"
+)
+
+-- Description: Gender distribution pattern
+-- Data Type: Text
+
+
+-- Quarter Label
+-- Human-readable quarter label
+FactArrivals[Quarter Label] =
+"Q" & FORMAT ( FactArrivals[Month] / 3, "0" ) & " " & FORMAT ( FactArrivals[Year], "0" )
+
+-- Description: Quarter in Q1 2020 format
+-- Data Type: Text
+
+
+-- =================================================================
+-- TABLE: DimDate
+-- =================================================================
+
+-- Is Weekend
+-- Flag for weekends (Saturday/Sunday)
+DimDate[Is Weekend] =
+DimDate[DayOfWeek] IN { 6, 7 }
+
+-- Description: TRUE if Saturday or Sunday
+-- Data Type: Boolean
+
+
+-- Season (Malaysia Climate)
+-- Malaysia has two monsoon seasons
+DimDate[Season] =
+SWITCH (
+    TRUE (),
+    DimDate[Month] IN { 11, 12, 1, 2, 3 }, "Northeast Monsoon",
+    DimDate[Month] IN { 5, 6, 7, 8, 9 }, "Southwest Monsoon",
+    "Inter-Monsoon"
+)
+
+-- Description: Monsoon season classification
+-- Data Type: Text
+
+
+-- =================================================================
+-- TABLE: DimCountry
+-- =================================================================
+-- (Regions and Market Segments already created in Power Query)
+
+
+-- =================================================================
+-- TABLE: DimState
+-- =================================================================
+-- (Regions and Entry Types already created in Power Query)

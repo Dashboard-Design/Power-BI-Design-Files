@@ -1,0 +1,122 @@
+-- ===================================================================
+-- TIME INTELLIGENCE MEASURES
+-- ===================================================================
+-- Description: Year-over-year and period comparison measures
+-- Table: _Measures
+-- ===================================================================
+
+-- Previous Year Arrivals
+PY Arrivals :=
+CALCULATE (
+    [Total Arrivals],
+    SAMEPERIODLASTYEAR ( DimDate[Date] )
+)
+
+-- Description: Arrivals in the same period last year
+-- Format: #,##0
+-- Display Folder: Time Intelligence
+
+
+-- Year-over-Year Growth
+YoY Arrivals :=
+[Total Arrivals] - [PY Arrivals]
+
+-- Description: Absolute change in arrivals vs. last year
+-- Format: #,##0;-#,##0
+-- Display Folder: Time Intelligence
+
+
+-- Year-over-Year Growth %
+YoY % :=
+DIVIDE (
+    [YoY Arrivals],
+    [PY Arrivals],
+    BLANK ()
+)
+
+-- Description: Percentage change in arrivals vs. last year
+-- Format: 0.0%;-0.0%;"-"
+-- Display Folder: Time Intelligence
+
+
+-- Month-to-Date Arrivals
+MTD Arrivals :=
+TOTALMTD (
+    [Total Arrivals],
+    DimDate[Date]
+)
+
+-- Description: Month-to-date arrivals
+-- Format: #,##0
+-- Display Folder: Time Intelligence
+
+
+-- Year-to-Date Arrivals
+YTD Arrivals :=
+TOTALYTD (
+    [Total Arrivals],
+    DimDate[Date]
+)
+
+-- Description: Year-to-date arrivals
+-- Format: #,##0
+-- Display Folder: Time Intelligence
+
+
+-- Previous Month Arrivals
+PM Arrivals :=
+CALCULATE (
+    [Total Arrivals],
+    DATEADD ( DimDate[Date], -1, MONTH )
+)
+
+-- Description: Arrivals in the previous month
+-- Format: #,##0
+-- Display Folder: Time Intelligence
+
+
+-- Month-over-Month Growth %
+MoM % :=
+DIVIDE (
+    [Total Arrivals] - [PM Arrivals],
+    [PM Arrivals],
+    BLANK ()
+)
+
+-- Description: Percentage change vs. previous month
+-- Format: 0.0%;-0.0%;"-"
+-- Display Folder: Time Intelligence
+
+
+-- Rolling 3-Month Average
+Rolling 3M Avg :=
+CALCULATE (
+    DIVIDE ( [Total Arrivals], 3, 0 ),
+    DATESINPERIOD (
+        DimDate[Date],
+        LASTDATE ( DimDate[Date] ),
+        -3,
+        MONTH
+    )
+)
+
+-- Description: 3-month moving average of arrivals
+-- Format: #,##0
+-- Display Folder: Time Intelligence
+
+
+-- Rolling 12-Month Total
+Rolling 12M Total :=
+CALCULATE (
+    [Total Arrivals],
+    DATESINPERIOD (
+        DimDate[Date],
+        LASTDATE ( DimDate[Date] ),
+        -12,
+        MONTH
+    )
+)
+
+-- Description: 12-month rolling total of arrivals
+-- Format: #,##0
+-- Display Folder: Time Intelligence

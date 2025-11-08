@@ -1,0 +1,125 @@
+{
+  "name": "Malaysia Tourism - Professional Blue",
+  "dataColors": [
+    "#004C97",
+    "#00A3E0",
+    "#FFB81C",
+    "#E94B3C",
+    "#6CC24A",
+    "#9B59B6",
+    "#F39C12",
+    "#1ABC9C",
+    "#34495E",
+    "#E67E22"
+  ],
+  "background": "#FFFFFF",
+  "foreground": "#000000",
+  "tableAccent": "#004C97",
+  "good": "#6CC24A",
+  "neutral": "#FFB81C",
+  "bad": "#E94B3C",
+  "maximum": "#118DFF",
+  "center": "#FFB81C",
+  "minimum": "#E94B3C",
+  "null": "#C8C8C8",
+  "textClasses": {
+    "callout": {
+      "fontSize": 32,
+      "fontFace": "Segoe UI",
+      "color": "#004C97"
+    },
+    "title": {
+      "fontSize": 16,
+      "fontFace": "Segoe UI Semibold",
+      "color": "#252423"
+    },
+    "header": {
+      "fontSize": 14,
+      "fontFace": "Segoe UI Semibold",
+      "color": "#252423"
+    },
+    "label": {
+      "fontSize": 11,
+      "fontFace": "Segoe UI",
+      "color": "#605E5C"
+    }
+  },
+  "visualStyles": {
+    "*": {
+      "*": {
+        "general": [{
+          "responsive": true
+        }],
+        "title": [{
+          "show": true,
+          "fontColor": {"solid": {"color": "#252423"}},
+          "fontSize": 12,
+          "fontFamily": "Segoe UI Semibold"
+        }],
+        "background": [{
+          "show": false,
+          "transparency": 0
+        }],
+        "border": [{
+          "show": false
+        }]
+      }
+    },
+    "card": {
+      "*": {
+        "categoryLabels": [{
+          "fontSize": 14,
+          "fontFamily": "Segoe UI",
+          "color": {"solid": {"color": "#605E5C"}}
+        }],
+        "dataLabels": [{
+          "fontSize": 32,
+          "fontFamily": "Segoe UI Light",
+          "color": {"solid": {"color": "#004C97"}}
+        }]
+      }
+    },
+    "slicer": {
+      "*": {
+        "header": [{
+          "show": true,
+          "fontColor": {"solid": {"color": "#252423"}},
+          "fontSize": 12,
+          "fontFamily": "Segoe UI Semibold"
+        }],
+        "items": [{
+          "fontColor": {"solid": {"color": "#605E5C"}},
+          "fontSize": 10,
+          "fontFamily": "Segoe UI"
+        }]
+      }
+    },
+    "tableEx": {
+      "*": {
+        "grid": [{
+          "gridVertical": true,
+          "gridVerticalColor": {"solid": {"color": "#E1E1E1"}},
+          "gridVerticalWeight": 1,
+          "gridHorizontal": true,
+          "gridHorizontalColor": {"solid": {"color": "#E1E1E1"}},
+          "gridHorizontalWeight": 1,
+          "rowPadding": 3
+        }],
+        "columnHeaders": [{
+          "fontColor": {"solid": {"color": "#FFFFFF"}},
+          "backColor": {"solid": {"color": "#004C97"}},
+          "fontSize": 11,
+          "fontFamily": "Segoe UI Semibold"
+        }],
+        "values": [{
+          "fontColorPrimary": {"solid": {"color": "#252423"}},
+          "backColorPrimary": {"solid": {"color": "#FFFFFF"}},
+          "fontColorSecondary": {"solid": {"color": "#252423"}},
+          "backColorSecondary": {"solid": {"color": "#F3F2F1"}},
+          "fontSize": 10,
+          "fontFamily": "Segoe UI"
+        }]
+      }
+    }
+  }
+}

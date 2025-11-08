@@ -1,0 +1,89 @@
+-- ===================================================================
+-- KEY METRICS MEASURES
+-- ===================================================================
+-- Description: Core KPI measures for tourism arrivals analysis
+-- Table: _Measures (dedicated measure table)
+-- ===================================================================
+
+-- Total Arrivals (People Count)
+Total Arrivals :=
+SUM ( FactArrivals[TotalArrivals] )
+
+-- Description: Total number of tourist arrivals
+-- Format: #,##0
+-- Display Folder: Key Metrics
+
+
+-- Male Arrivals
+Male Arrivals :=
+SUM ( FactArrivals[MaleArrivals] )
+
+-- Description: Total male arrivals
+-- Format: #,##0
+-- Display Folder: Key Metrics
+
+
+-- Female Arrivals
+Female Arrivals :=
+SUM ( FactArrivals[FemaleArrivals] )
+
+-- Description: Total female arrivals
+-- Format: #,##0
+-- Display Folder: Key Metrics
+
+
+-- Distinct Countries (Product/Services Count)
+Distinct Countries :=
+DISTINCTCOUNT ( FactArrivals[CountryCode] )
+
+-- Description: Number of unique countries/nationalities represented
+-- Format: #,##0
+-- Display Folder: Key Metrics
+
+
+-- Distinct States
+Distinct States :=
+DISTINCTCOUNT ( FactArrivals[StateOfEntry] )
+
+-- Description: Number of unique entry states
+-- Format: #,##0
+-- Display Folder: Key Metrics
+
+
+-- Average Arrivals per State
+Avg Arrivals per State :=
+DIVIDE (
+    [Total Arrivals],
+    [Distinct States],
+    0
+)
+
+-- Description: Average arrivals per state
+-- Format: #,##0
+-- Display Folder: Key Metrics
+
+
+-- Female Percentage
+Female Percentage :=
+DIVIDE (
+    [Female Arrivals],
+    [Total Arrivals],
+    0
+)
+
+-- Description: Percentage of arrivals that are female
+-- Format: 0.0%
+-- Display Folder: Demographics
+
+
+-- Male Percentage
+Male Percentage :=
+DIVIDE (
+    [Male Arrivals],
+    [Total Arrivals],
+    0
+)
+
+-- Description: Percentage of arrivals that are male
+-- Format: 0.0%
+-- Display Folder: Demographics

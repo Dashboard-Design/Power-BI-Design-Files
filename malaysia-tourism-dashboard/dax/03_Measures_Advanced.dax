@@ -1,0 +1,140 @@
+-- ===================================================================
+-- ADVANCED ANALYTICS MEASURES
+-- ===================================================================
+-- Description: Advanced measures for deeper insights
+-- Table: _Measures
+-- ===================================================================
+
+-- Share of Total Arrivals %
+Share of Total % :=
+DIVIDE (
+    [Total Arrivals],
+    CALCULATE (
+        [Total Arrivals],
+        ALL ( DimCountry ),
+        ALL ( DimState )
+    ),
+    0
+)
+
+-- Description: Percentage of grand total arrivals
+-- Format: 0.0%
+-- Display Folder: Advanced Analytics
+
+
+-- Arrivals per Country (Average)
+Avg Arrivals per Country :=
+AVERAGEX (
+    VALUES ( DimCountry[CountryCode] ),
+    [Total Arrivals]
+)
+
+-- Description: Average arrivals per country
+-- Format: #,##0
+-- Display Folder: Advanced Analytics
+
+
+-- Top 10 Countries Arrivals
+Top 10 Countries Arrivals :=
+CALCULATE (
+    [Total Arrivals],
+    TOPN (
+        10,
+        ALL ( DimCountry[CountryCode] ),
+        [Total Arrivals],
+        DESC
+    )
+)
+
+-- Description: Total arrivals from top 10 countries
+-- Format: #,##0
+-- Display Folder: Advanced Analytics
+
+
+-- Top 10 Countries Share %
+Top 10 Countries Share :=
+DIVIDE (
+    [Top 10 Countries Arrivals],
+    CALCULATE ( [Total Arrivals], ALL ( DimCountry ) ),
+    0
+)
+
+-- Description: Share of arrivals from top 10 countries
+-- Format: 0.0%
+-- Display Folder: Advanced Analytics
+
+
+-- Arrival Intensity Index
+-- (Compares current selection to overall average)
+Arrival Intensity Index :=
+VAR CurrentAvg =
+    DIVIDE (
+        [Total Arrivals],
+        COUNTROWS ( VALUES ( DimDate[Date] ) ),
+        0
+    )
+VAR OverallAvg =
+    DIVIDE (
+        CALCULATE ( [Total Arrivals], ALL () ),
+        CALCULATE ( COUNTROWS ( DimDate ), ALL () ),
+        0
+    )
+RETURN
+    DIVIDE ( CurrentAvg, OverallAvg, 0 )
+
+-- Description: Intensity vs. overall average (1.0 = average, >1 = above average)
+-- Format: 0.00
+-- Display Folder: Advanced Analytics
+
+
+-- Seasonality Factor
+Seasonality Factor :=
+VAR CurrentMonth = SELECTEDVALUE ( DimDate[Month] )
+VAR MonthAvg =
+    CALCULATE (
+        [Total Arrivals],
+        ALL ( DimDate[Year] ),
+        DimDate[Month] = CurrentMonth
+    )
+VAR OverallAvg =
+    CALCULATE ( [Total Arrivals], ALL ( DimDate ) )
+RETURN
+    DIVIDE (
+        MonthAvg,
+        DIVIDE ( OverallAvg, 12, 0 ),
+        0
+    )
+
+-- Description: Seasonal index for selected month (1.0 = average, >1 = peak)
+-- Format: 0.00
+-- Display Folder: Advanced Analytics
+
+
+-- Ranking by Country (in Current Context)
+Country Rank :=
+RANKX (
+    ALL ( DimCountry[CountryName] ),
+    [Total Arrivals],
+    ,
+    DESC,
+    DENSE
+)
+
+-- Description: Rank of country by arrivals in current filter context
+-- Format: #,##0
+-- Display Folder: Rankings
+
+
+-- Ranking by State (in Current Context)
+State Rank :=
+RANKX (
+    ALL ( DimState[StateName] ),
+    [Total Arrivals],
+    ,
+    DESC,
+    DENSE
+)
+
+-- Description: Rank of state by arrivals in current filter context
+-- Format: #,##0
+-- Display Folder: Rankings

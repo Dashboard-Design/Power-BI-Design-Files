@@ -1,0 +1,115 @@
+{
+  "name": "Malaysia Tourism Dashboard",
+  "description": "Star schema model for tourism arrivals analysis",
+  "tables": [
+    {
+      "name": "FactArrivals",
+      "description": "Tourism arrivals fact table",
+      "columns": [
+        {"name": "DateKey", "dataType": "int64", "isHidden": false},
+        {"name": "ArrivalDate", "dataType": "dateTime", "isHidden": false},
+        {"name": "Year", "dataType": "int64", "isHidden": true},
+        {"name": "Month", "dataType": "int64", "isHidden": true},
+        {"name": "CountryCode", "dataType": "string", "isHidden": true},
+        {"name": "StateOfEntry", "dataType": "string", "isHidden": true},
+        {"name": "TotalArrivals", "dataType": "int64", "isHidden": false, "formatString": "#,##0"},
+        {"name": "MaleArrivals", "dataType": "int64", "isHidden": false, "formatString": "#,##0"},
+        {"name": "FemaleArrivals", "dataType": "int64", "isHidden": false, "formatString": "#,##0"},
+        {"name": "DataSource", "dataType": "string", "isHidden": true}
+      ]
+    },
+    {
+      "name": "DimDate",
+      "description": "Date dimension table",
+      "dataCategory": "Time",
+      "columns": [
+        {"name": "DateKey", "dataType": "int64", "isHidden": true},
+        {"name": "Date", "dataType": "dateTime", "isHidden": false, "isKey": true},
+        {"name": "Year", "dataType": "int64", "isHidden": false},
+        {"name": "Quarter", "dataType": "int64", "isHidden": true},
+        {"name": "QuarterName", "dataType": "string", "isHidden": false},
+        {"name": "Month", "dataType": "int64", "isHidden": true},
+        {"name": "MonthName", "dataType": "string", "isHidden": false, "sortByColumn": "Month"},
+        {"name": "MonthShort", "dataType": "string", "isHidden": false},
+        {"name": "YearMonth", "dataType": "int64", "isHidden": true},
+        {"name": "YearMonthName", "dataType": "string", "isHidden": false, "sortByColumn": "YearMonth"}
+      ]
+    },
+    {
+      "name": "DimCountry",
+      "description": "Country/Nationality dimension",
+      "columns": [
+        {"name": "CountryCode", "dataType": "string", "isHidden": false, "isKey": true},
+        {"name": "CountryName", "dataType": "string", "isHidden": false},
+        {"name": "Region", "dataType": "string", "isHidden": false},
+        {"name": "MarketSegment", "dataType": "string", "isHidden": false}
+      ]
+    },
+    {
+      "name": "DimState",
+      "description": "Malaysian states dimension",
+      "columns": [
+        {"name": "StateOfEntry", "dataType": "string", "isHidden": true, "isKey": true},
+        {"name": "StateCode", "dataType": "string", "isHidden": false},
+        {"name": "StateName", "dataType": "string", "isHidden": false},
+        {"name": "Region", "dataType": "string", "isHidden": false},
+        {"name": "EntryPointType", "dataType": "string", "isHidden": false},
+        {"name": "PopulationTier", "dataType": "string", "isHidden": false}
+      ]
+    },
+    {
+      "name": "_Measures",
+      "description": "Dedicated measure table",
+      "isHidden": false
+    }
+  ],
+  "relationships": [
+    {
+      "name": "FactArrivals_to_DimDate",
+      "fromTable": "FactArrivals",
+      "fromColumn": "DateKey",
+      "toTable": "DimDate",
+      "toColumn": "DateKey",
+      "crossFilteringBehavior": "oneDirection",
+      "securityFilteringBehavior": "oneDirection",
+      "isActive": true,
+      "cardinality": "manyToOne"
+    },
+    {
+      "name": "FactArrivals_to_DimCountry",
+      "fromTable": "FactArrivals",
+      "fromColumn": "CountryCode",
+      "toTable": "DimCountry",
+      "toColumn": "CountryCode",
+      "crossFilteringBehavior": "oneDirection",
+      "securityFilteringBehavior": "oneDirection",
+      "isActive": true,
+      "cardinality": "manyToOne"
+    },
+    {
+      "name": "FactArrivals_to_DimState",
+      "fromTable": "FactArrivals",
+      "fromColumn": "StateOfEntry",
+      "toTable": "DimState",
+      "toColumn": "StateOfEntry",
+      "crossFilteringBehavior": "oneDirection",
+      "securityFilteringBehavior": "oneDirection",
+      "isActive": true,
+      "cardinality": "manyToOne"
+    }
+  ],
+  "modelConfiguration": {
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "autoDateTimeEnabled": false,
+    "discourageImplicitMeasures": false
+  },
+  "displayFolders": {
+    "_Measures": [
+      "Key Metrics",
+      "Time Intelligence",
+      "Advanced Analytics",
+      "Rankings",
+      "Demographics"
+    ]
+  }
+}
