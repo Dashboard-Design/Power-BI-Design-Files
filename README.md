@@ -30,9 +30,9 @@ This repository is organized into three main folders to help you navigate the co
 - Access supporting documents, datasets, SVG codes, background images, and other resources used to create the dashboards.  
 
 
-### 🏆 What Makes These Dashboards Different
+### What Makes These Dashboards Different
 
-- **Challenge‑winning designs** – Many files in the `Full Dashboards` folder have won or placed highly in public data visualization competitions (e.g., #WorkoutWednesday, #MakeoverMonday, or enterprise internal contests).
+- **Challenge‑winning designs** – Many files in the `Full Dashboards` folder have won or placed highly in public data visualization competitions.
 - **Pixel‑perfect attention** – Every dashboard is built with a focus on typography, spacing, color harmony, and user interaction.
 - **Real‑world datasets** – Where possible, original or realistic datasets are included so you can see the full context.
 
