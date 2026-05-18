@@ -3,6 +3,8 @@
 Welcome to my gallery of high‑impact Power BI dashboards.  
 This repository showcases the work that has won multiple data visualization challenges and competitions, as well as carefully crafted portfolio pieces where every visual detail is intentional.
 
+<img width="4320" height="5400" alt="Image" src="https://github.com/user-attachments/assets/89cd2726-395b-4656-81fb-1711f10e567a" />
+
 > **Note:** All `.pbix` files and supporting assets are shared for inspiration and learning.
 ### Repository Structure  
 
