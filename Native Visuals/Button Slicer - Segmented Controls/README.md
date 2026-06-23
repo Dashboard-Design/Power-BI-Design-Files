@@ -2,7 +2,8 @@
 
 This example demonstrates how to transform the native **Power BI Button Slicer** into a modern segmented control without using custom visuals or SVGs.
 
-![Image](<YOUR_IMAGE_URL_HERE>)
+<img width="5048" height="5048" alt="Image" src="https://github.com/user-attachments/assets/86a78612-0c2e-473c-ab5f-0e8409b7573c" />
+
 
 ## ✨ Features
 
