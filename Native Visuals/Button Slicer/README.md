@@ -1,18 +1,15 @@
-# Native Segmented Controls with Button Slicers
+# Discover six practical UI patterns you can build with the Power BI Button Slicer
 
-This example demonstrates how to transform the native **Power BI Button Slicer** into a modern segmented control without using custom visuals or SVGs.
+### The Power BI Button Slicer Is More Flexible Than It Looks
 
-<img width="5048" height="5048" alt="Image" src="https://github.com/user-attachments/assets/86a78612-0c2e-473c-ab5f-0e8409b7573c" />
+<img width="4320" height="5400" alt="Image" src="https://github.com/user-attachments/assets/75fa7e73-d3c0-4aa8-8224-4f9eef539ebd" />
 
+The Button Slicer is one of my favourite native visuals in Power BI.
 
-## ✨ Features
+At first, I only used it as a regular slicer. But after experimenting with its formatting options, I realised it could become much more than just a filtering control.
 
-- **100% Native** – Built entirely with the standard Button Slicer visual.
-- **Modern UI** – Creates an application-like segmented control with rounded corners and clean styling.
-- **Interactive** – Works like any other slicer while providing a much more polished user experience.
-- **Reusable Pattern** – Easily adapt the design for navigation, category selection, KPIs, time periods, or report views.
+With a little creativity, it can look less like a traditional slicer and more like a user interface component you would expect to see in a web or mobile application.
 
-## Notes
+Some patterns can be created using only the built-in formatting options, while others combine the Button Slicer with SVG images to create more customized interactions.
 
-- No custom visuals required.
-- No SVGs or external images required.
+Here, I share six patterns that I've been using in my own dashboards.
