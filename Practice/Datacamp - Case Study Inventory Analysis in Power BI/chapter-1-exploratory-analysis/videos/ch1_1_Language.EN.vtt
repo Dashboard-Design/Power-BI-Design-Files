@@ -1,0 +1,310 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.120
+I’m Danny, and I’ll be your instructor for this case study.
+
+2
+00:00:04.120 --> 00:00:04.120
+
+
+3
+00:00:04.120 --> 00:00:04.120
+
+
+4
+00:00:04.120 --> 00:00:08.920
+A case study is an examination of a particular real-world problem.
+
+5
+00:00:08.920 --> 00:00:14.880
+Doing a case study helps you strengthen your skills by practicing what you have learned in other courses.
+
+6
+00:00:14.880 --> 00:00:20.880
+So, the focus is on combining your skills to bring solutions to a real-world problem.
+
+7
+00:00:20.880 --> 00:00:20.880
+
+
+8
+00:00:20.880 --> 00:00:20.880
+
+
+9
+00:00:20.880 --> 00:00:25.760
+For this case study, you might need concepts from these courses.
+
+10
+00:00:25.760 --> 00:00:25.760
+
+
+11
+00:00:25.760 --> 00:00:25.800
+
+
+12
+00:00:25.800 --> 00:00:30.880
+Before analyzing our business problem, it is important to clearly understand the steps involved.
+
+13
+00:00:30.880 --> 00:00:30.880
+
+
+14
+00:00:30.880 --> 00:00:31.440
+
+
+15
+00:00:31.440 --> 00:00:36.040
+First, start by making sure the data needed is present and clean.
+
+16
+00:00:36.040 --> 00:00:43.760
+For example, structuring the data, correcting typing mistakes, removing duplicate values, and other possible errors.
+
+17
+00:00:43.760 --> 00:00:43.760
+
+
+18
+00:00:43.760 --> 00:00:43.800
+
+
+19
+00:00:43.800 --> 00:00:46.040
+Then, explore your data.
+
+20
+00:00:46.040 --> 00:00:49.360
+It can help you get familiar with the information, think of possible
+
+21
+00:00:49.360 --> 00:00:53.480
+calculations, and identify potential side problems and ways to solve them.
+
+22
+00:00:53.480 --> 00:00:54.600
+
+
+23
+00:00:54.600 --> 00:00:54.600
+
+
+24
+00:00:54.600 --> 00:00:58.360
+The following step is to analyze and visualize the data.
+
+25
+00:00:58.360 --> 00:01:04.080
+Here you focus on the problem and try multiple ways to solve it, to obtain the best possible result.
+
+26
+00:01:04.080 --> 00:01:04.080
+
+
+27
+00:01:04.080 --> 00:01:04.840
+
+
+28
+00:01:04.840 --> 00:01:09.160
+The last step is to prepare a report where you can show the most important results
+
+29
+00:01:09.160 --> 00:01:13.960
+from your analysis in a clear way with one or more dashboards and communicate insights.
+
+30
+00:01:13.960 --> 00:01:14.920
+
+
+31
+00:01:14.920 --> 00:01:14.920
+
+
+32
+00:01:14.920 --> 00:01:21.800
+In this case study, you will use a fictitious dataset from a company called WarmeHands Incorporated.
+
+33
+00:01:21.800 --> 00:01:26.480
+You are hired as a consultant to analyze the inventory data and give some
+
+34
+00:01:26.480 --> 00:01:32.400
+insights into which would be the best items for renewing or increasing inventory.
+
+35
+00:01:32.400 --> 00:01:32.400
+
+
+36
+00:01:32.400 --> 00:01:32.400
+
+
+37
+00:01:32.400 --> 00:01:34.920
+What is an inventory analysis?
+
+38
+00:01:34.920 --> 00:01:40.680
+Inventory analysis is a management technique that can help you optimize inventory control.
+
+39
+00:01:40.680 --> 00:01:48.160
+For instance, it can help you reduce storage expenses, item costs, and unused goods and to increase profit.
+
+40
+00:01:48.160 --> 00:01:53.640
+There are many ways to do inventory analysis, but for this case study a basic approach will be used.
+
+41
+00:01:53.640 --> 00:01:53.640
+
+
+42
+00:01:53.640 --> 00:01:53.640
+
+
+43
+00:01:53.640 --> 00:01:58.560
+Starting with a basic approach, you will use some important calculations and
+
+44
+00:01:58.560 --> 00:02:04.320
+methods for inventory analysis that will be shown gradually throughout the course.
+
+45
+00:02:04.320 --> 00:02:12.240
+In this first part, you will use revenue, cost of goods sold, and profit calculations.
+
+46
+00:02:12.240 --> 00:02:12.240
+
+
+47
+00:02:12.240 --> 00:02:12.240
+
+
+48
+00:02:12.240 --> 00:02:17.440
+Revenue is the amount of money a company receives in exchange for its goods and services.
+
+49
+00:02:17.440 --> 00:02:17.440
+
+
+50
+00:02:17.440 --> 00:02:23.440
+The simplest way companies calculate revenue is by multiplying the total number of units sold by their selling price.
+
+51
+00:02:23.440 --> 00:02:23.440
+
+
+52
+00:02:23.440 --> 00:02:23.440
+
+
+53
+00:02:23.440 --> 00:02:28.200
+Cost of goods sold, or COGS, refers to the cost of producing
+
+54
+00:02:28.200 --> 00:02:32.200
+or acquiring products that a company sells in a determined period.
+
+55
+00:02:32.200 --> 00:02:36.880
+It only accounts for production costs such as raw materials, labor, and
+
+56
+00:02:36.880 --> 00:02:41.680
+manufacturing overhead, excluding the cost of selling the product and transportation.
+
+57
+00:02:41.680 --> 00:02:41.680
+
+
+58
+00:02:41.680 --> 00:02:42.600
+
+
+59
+00:02:42.600 --> 00:02:47.720
+For example, the COGS of a wooden chair for a traditional wooden chair-making company
+
+60
+00:02:47.720 --> 00:02:54.240
+would be the price of wood, glue, finishers, and labor, but not the distribution of the product.
+
+61
+00:02:54.240 --> 00:02:58.440
+So, our COGS for a wooden chair would be the price of wood plus the
+
+62
+00:02:58.440 --> 00:03:03.520
+price of glue plus the price of wood finishers plus the price of labor.
+
+63
+00:03:03.520 --> 00:03:03.520
+
+
+64
+00:03:03.520 --> 00:03:03.520
+
+
+65
+00:03:03.520 --> 00:03:11.280
+The gross profit is the amount resulting after subtracting costs associated with making or acquiring products.
+
+66
+00:03:11.280 --> 00:03:14.640
+It is calculated by subtracting COGS from total revenue.
+
+67
+00:03:14.640 --> 00:03:14.640
+
+
+68
+00:03:14.640 --> 00:03:14.640
+
+
+69
+00:03:14.640 --> 00:03:20.880
+The WarmeHands dataset contains six tables where you will find information on the ID code of
+
+70
+00:03:20.880 --> 00:03:28.600
+the items (written also as "SKU" or "SKU-ID"), their description, initial stock quantities,
+
+71
+00:03:28.600 --> 00:03:34.920
+individual orders with their respective quantities and dates, order country of precedence, and price.
+
+72
+00:03:34.920 --> 00:03:34.920
+
+
+73
+00:03:34.920 --> 00:03:37.800
+It is your job to make the best use of this information.
+
+74
+00:03:37.800 --> 00:03:37.800
+
+
+75
+00:03:37.800 --> 00:03:37.800
+
+
+76
+00:03:37.800 --> 00:03:43.560
+It's time to check your understanding of the steps needed in the analysis development process.
+
+77
+00:03:43.560 --> 00:03:46.680
+Let's practice!
+

@@ -1,0 +1,250 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.120
+Great job in preparing and exploring the data!
+
+2
+00:00:04.120 --> 00:00:08.000
+In this chapter, you will create some important metrics for your inventory
+
+3
+00:00:08.000 --> 00:00:14.800
+analysis, and you will be introduced to a classification technique known as ABC analysis.
+
+4
+00:00:14.800 --> 00:00:14.800
+
+
+5
+00:00:14.800 --> 00:00:14.800
+
+
+6
+00:00:14.800 --> 00:00:19.520
+At this stage, you will be focusing on the analysis and visualization part.
+
+7
+00:00:19.520 --> 00:00:24.520
+You have already made a good start by obtaining basic calculations such as COGS,
+
+8
+00:00:24.520 --> 00:00:30.080
+revenue, and profit, but you want to go a bit deeper to get more insights for your final output.
+
+9
+00:00:30.080 --> 00:00:31.000
+
+
+10
+00:00:31.000 --> 00:00:31.000
+
+
+11
+00:00:31.000 --> 00:00:33.840
+And you have also found some interesting insights.
+
+12
+00:00:33.840 --> 00:00:33.840
+
+
+13
+00:00:33.840 --> 00:00:33.840
+
+
+14
+00:00:33.840 --> 00:00:38.640
+There are 104 items within five categories, for which decoration and jewelry
+
+15
+00:00:38.640 --> 00:00:44.480
+categories have the highest average costs of goods sold per item of around five dollars.
+
+16
+00:00:44.480 --> 00:00:44.480
+
+
+17
+00:00:44.480 --> 00:00:45.120
+
+
+18
+00:00:45.120 --> 00:00:52.120
+Home and accessories had the largest profit in 2020, reaching an amount of up to $110,000.
+
+19
+00:00:52.120 --> 00:00:52.120
+
+
+20
+00:00:52.120 --> 00:00:52.120
+
+
+21
+00:00:52.120 --> 00:00:58.840
+Finally, the item "Grow a flytrap or sunflower" is a top seller with more than 16,000 items sold.
+
+22
+00:00:58.840 --> 00:00:58.840
+
+
+23
+00:00:58.840 --> 00:01:00.040
+
+
+24
+00:01:00.040 --> 00:01:07.360
+To further investigate the data, you will use more elaborate calculations and methods for inventory analysis.
+
+25
+00:01:07.360 --> 00:01:16.000
+In this second part, you will deal with the average value of inventory, Inventory turnover, and ABC analysis.
+
+26
+00:01:16.000 --> 00:01:16.000
+
+
+27
+00:01:16.000 --> 00:01:16.000
+
+
+28
+00:01:16.000 --> 00:01:18.640
+The average value of inventory is often used
+
+29
+00:01:18.640 --> 00:01:24.120
+to know the value of an item during a specific period that accounts for seasonal fluctuations.
+
+30
+00:01:24.120 --> 00:01:29.800
+It is calculated as the average of the total cost at the start and end of a particular period.
+
+31
+00:01:29.800 --> 00:01:29.800
+
+
+32
+00:01:29.800 --> 00:01:31.200
+
+
+33
+00:01:31.200 --> 00:01:34.920
+Inventory turnover is an efficiency ratio that shows how
+
+34
+00:01:34.920 --> 00:01:39.680
+often a company uses its supply of goods during a given period.
+
+35
+00:01:39.680 --> 00:01:39.680
+
+
+36
+00:01:39.680 --> 00:01:43.880
+It can be calculated by dividing COGS over the average value of inventory.
+
+37
+00:01:43.880 --> 00:01:43.880
+
+
+38
+00:01:43.880 --> 00:01:45.160
+
+
+39
+00:01:45.160 --> 00:01:49.320
+ABC analysis is a technique that helps you prioritize inventory
+
+40
+00:01:49.320 --> 00:01:55.280
+management by classifying your items into three categories: A, B, and C.
+
+41
+00:01:55.280 --> 00:01:55.280
+
+
+42
+00:01:55.280 --> 00:01:55.280
+
+
+43
+00:01:55.280 --> 00:01:58.120
+You can do ABC analysis in four steps.
+
+44
+00:01:58.120 --> 00:02:04.240
+First, you need information on the revenue of your items; then,
+
+45
+00:02:04.240 --> 00:02:08.440
+you calculate the percentage they represent from the total revenue.
+
+46
+00:02:08.440 --> 00:02:11.880
+Once you have the percentages, you must sort the column in
+
+47
+00:02:11.880 --> 00:02:15.360
+descending order to allow the computation of a cumulative increase.
+
+48
+00:02:15.360 --> 00:02:23.080
+Finally, you classify the items according to a rule of how much they cover of total revenue.
+
+49
+00:02:23.080 --> 00:02:28.000
+A items will cover up to seventy percent of total revenue, B items will cover
+
+50
+00:02:28.000 --> 00:02:33.280
+the following twenty percent, and C items will represent the remaining percentage.
+
+51
+00:02:33.280 --> 00:02:33.280
+
+
+52
+00:02:33.280 --> 00:02:34.440
+
+
+53
+00:02:34.440 --> 00:02:36.520
+You have done great work so far.
+
+54
+00:02:36.520 --> 00:02:41.640
+In the following exercises, you will focus on more elaborate analyses, such as contrasting
+
+55
+00:02:41.640 --> 00:02:48.840
+revenue among years, calculating an efficiency ratio, and classifying the importance of your items.
+
+56
+00:02:48.840 --> 00:02:48.840
+
+
+57
+00:02:48.840 --> 00:02:48.840
+
+
+58
+00:02:48.840 --> 00:02:54.960
+These new measures will help you see the data in a better way to find new approaches to solving the problem.
+
+59
+00:02:54.960 --> 00:02:56.200
+
+
+60
+00:02:56.200 --> 00:02:56.200
+
+
+61
+00:02:56.200 --> 00:02:59.080
+It is time to dig for more information with these new metrics.
+
+62
+00:02:59.080 --> 00:03:01.680
+Let's do it!
+

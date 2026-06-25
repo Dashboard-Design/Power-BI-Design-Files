@@ -1,0 +1,218 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:02.280
+Hello again!
+
+2
+00:00:02.280 --> 00:00:03.600
+Excellent job so far!
+
+3
+00:00:03.600 --> 00:00:04.280
+
+
+4
+00:00:04.280 --> 00:00:04.320
+
+
+5
+00:00:04.320 --> 00:00:10.160
+It's time to start dashboarding to find the best representation for communicating insights.
+
+6
+00:00:10.160 --> 00:00:15.200
+You have managed to analyze your data, and you have obtained interesting results, but
+
+7
+00:00:15.200 --> 00:00:21.560
+these many interesting interactions are not so easy to combine while telling a coherent story.
+
+8
+00:00:21.560 --> 00:00:25.240
+In this chapter, you will build report pages resembling
+
+9
+00:00:25.240 --> 00:00:29.600
+Dashboards since this feature is unavailable in Power BI Desktop.
+
+10
+00:00:29.600 --> 00:00:29.600
+
+
+11
+00:00:29.600 --> 00:00:30.720
+
+
+12
+00:00:30.720 --> 00:00:37.040
+Before creating any dashboard-like page, you must focus on what WarmeHands needs to make decisions.
+
+13
+00:00:37.040 --> 00:00:42.120
+The Management team said they wanted to know what items would be best for renewing or
+
+14
+00:00:42.120 --> 00:00:48.080
+increasing inventory while also having an idea of the influence of the categories and countries.
+
+15
+00:00:48.080 --> 00:00:51.720
+So you will have to make sure these business requests are considered.
+
+16
+00:00:51.720 --> 00:00:52.760
+
+
+17
+00:00:52.760 --> 00:00:52.760
+
+
+18
+00:00:52.760 --> 00:00:56.880
+First, let's recall what you have found so far with your analysis.
+
+19
+00:00:56.880 --> 00:00:56.880
+
+
+20
+00:00:56.880 --> 00:01:01.960
+You have found that the item "Grow a flytrap" has more sales, but
+
+21
+00:01:01.960 --> 00:01:06.760
+the inventory turnover shows that "Doughnut lip gloss" sells faster.
+
+22
+00:01:06.760 --> 00:01:06.760
+
+
+23
+00:01:06.760 --> 00:01:06.800
+
+
+24
+00:01:06.800 --> 00:01:14.240
+When comparing 2020 and 2021, we saw that the "Set of 6 soldier skittles" increased more in sales.
+
+25
+00:01:14.240 --> 00:01:14.240
+
+
+26
+00:01:14.240 --> 00:01:14.240
+
+
+27
+00:01:14.240 --> 00:01:19.360
+And finally, the ABC analysis shows that besides their differences, all three
+
+28
+00:01:19.360 --> 00:01:24.760
+items belong to class A, a small group that covers up to seventy percent of total revenue.
+
+29
+00:01:24.760 --> 00:01:24.760
+
+
+30
+00:01:24.760 --> 00:01:24.760
+
+
+31
+00:01:24.760 --> 00:01:30.080
+By considering your findings, you must choose ways to show your results
+
+32
+00:01:30.080 --> 00:01:33.320
+so they can have an impact on applicable methods for the management team.
+
+33
+00:01:33.320 --> 00:01:33.320
+
+
+34
+00:01:33.320 --> 00:01:34.200
+
+
+35
+00:01:34.200 --> 00:01:40.200
+This could include allowing purchase options that smartly define most gains, control policies that involve
+
+36
+00:01:40.200 --> 00:01:48.320
+the structure of a company framework to achieve its goals, and facts that can efficiently improve stock management.
+
+37
+00:01:48.320 --> 00:01:48.320
+
+
+38
+00:01:48.320 --> 00:01:48.320
+
+
+39
+00:01:48.320 --> 00:01:52.960
+When creating your dashboard, it is essential to remember some good practices.
+
+40
+00:01:52.960 --> 00:01:57.480
+Your dashboard should generally contain your main discoveries, be concise,
+
+41
+00:01:57.480 --> 00:02:03.080
+use well-defined labels, provide reference values, and make things interactive.
+
+42
+00:02:03.080 --> 00:02:06.360
+You can always create multiple pages, but it is important
+
+43
+00:02:06.360 --> 00:02:11.640
+not to be repetitive, making sure each tells a different story.
+
+44
+00:02:11.640 --> 00:02:11.640
+
+
+45
+00:02:11.640 --> 00:02:11.640
+
+
+46
+00:02:11.640 --> 00:02:18.880
+You will practice with multiple tasks on the different points of WarmeHands objectives to present a good report.
+
+47
+00:02:18.880 --> 00:02:23.800
+You will start with recommendations on purchases, present information by category,
+
+48
+00:02:23.800 --> 00:02:30.440
+and finally, show some important suggestions for control decisions and stock management.
+
+49
+00:02:30.440 --> 00:02:30.440
+
+
+50
+00:02:30.440 --> 00:02:35.640
+You might still be creating some calculations, but only for display purposes.
+
+51
+00:02:35.640 --> 00:02:36.560
+
+
+52
+00:02:36.560 --> 00:02:36.560
+
+
+53
+00:02:36.560 --> 00:02:39.800
+Now it's time to dive into your final tasks!
+
+54
+00:02:39.800 --> 00:02:42.160
+Good luck!
+
