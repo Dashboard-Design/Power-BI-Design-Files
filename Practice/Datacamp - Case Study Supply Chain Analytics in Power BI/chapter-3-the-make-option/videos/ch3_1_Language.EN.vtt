@@ -1,0 +1,418 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.000
+Welcome to the final chapter of this case study.
+
+2
+00:00:04.000 --> 00:00:07.960
+We are finally ready to incorporate the make side of the decision.
+
+3
+00:00:07.960 --> 00:00:07.960
+
+
+4
+00:00:07.960 --> 00:00:07.960
+
+
+5
+00:00:07.960 --> 00:00:10.560
+Just like with the buy option, it is important to
+
+6
+00:00:10.560 --> 00:00:13.880
+calculate the full cost of production when considering the make option.
+
+7
+00:00:13.880 --> 00:00:14.800
+
+
+8
+00:00:14.800 --> 00:00:14.800
+
+
+9
+00:00:14.800 --> 00:00:18.400
+In the Buy option, our data were quotes from suppliers.
+
+10
+00:00:18.400 --> 00:00:18.400
+
+
+11
+00:00:18.400 --> 00:00:18.400
+
+
+12
+00:00:18.400 --> 00:00:21.880
+In the Make option, we will use internal estimates.
+
+13
+00:00:21.880 --> 00:00:21.920
+
+
+14
+00:00:21.920 --> 00:00:21.920
+
+
+15
+00:00:21.920 --> 00:00:25.120
+Internal estimates are similar to quotes because they have the
+
+16
+00:00:25.120 --> 00:00:29.920
+expected unit cost and enough information to calculate upfront investments.
+
+17
+00:00:29.920 --> 00:00:30.880
+
+
+18
+00:00:30.880 --> 00:00:30.920
+
+
+19
+00:00:30.920 --> 00:00:36.840
+Unlike quotes from external suppliers, internal estimates are not binding offers.
+
+20
+00:00:36.840 --> 00:00:41.760
+If the cost of production changes, your company still has to absorb those costs.
+
+21
+00:00:41.760 --> 00:00:41.760
+
+
+22
+00:00:41.760 --> 00:00:41.760
+
+
+23
+00:00:41.760 --> 00:00:49.320
+Internal Estimates include unit costs - which are comprised of raw materials, energy costs, and labor costs.
+
+24
+00:00:49.320 --> 00:00:53.800
+These are costs that increase for every additional unit we produce.
+
+25
+00:00:53.800 --> 00:00:53.800
+
+
+26
+00:00:53.800 --> 00:00:53.840
+
+
+27
+00:00:53.840 --> 00:00:59.040
+Internal Estimates also include data about the equipment used to manufacture the parts.
+
+28
+00:00:59.040 --> 00:01:02.160
+Depending on our existing machine capacity and production
+
+29
+00:01:02.160 --> 00:01:07.520
+demand, we may or may not need to invest in new manufacturing equipment.
+
+30
+00:01:07.520 --> 00:01:07.520
+
+
+31
+00:01:07.520 --> 00:01:07.520
+
+
+32
+00:01:07.520 --> 00:01:12.160
+The internal estimates include the equipment model number, the manufacturing capacity of
+
+33
+00:01:12.160 --> 00:01:18.800
+each machine, the existing available capacity, and the cost of an additional piece of equipment.
+
+34
+00:01:18.800 --> 00:01:18.800
+
+
+35
+00:01:18.800 --> 00:01:18.800
+
+
+36
+00:01:18.800 --> 00:01:22.760
+Note that the capacity for each machine is different for each part.
+
+37
+00:01:22.760 --> 00:01:22.760
+
+
+38
+00:01:22.760 --> 00:01:22.760
+
+
+39
+00:01:22.760 --> 00:01:26.400
+If production demand exceeds existing capacity, we need to
+
+40
+00:01:26.400 --> 00:01:30.160
+include the cost of new equipment in the full cost for the Make option.
+
+41
+00:01:30.160 --> 00:01:30.160
+
+
+42
+00:01:30.160 --> 00:01:30.920
+
+
+43
+00:01:30.920 --> 00:01:36.360
+For the Make versus Buy decision, we should only consider the incremental costs of our decision.
+
+44
+00:01:36.360 --> 00:01:44.960
+Incremental costs are new costs introduced by our make-or-buy decision, not sunk costs that exist before the decision.
+
+45
+00:01:44.960 --> 00:01:44.960
+
+
+46
+00:01:44.960 --> 00:01:44.960
+
+
+47
+00:01:44.960 --> 00:01:49.000
+If we already have a piece of manufacturing equipment, its cost
+
+48
+00:01:49.000 --> 00:01:52.400
+should not be considered incremental to the Make versus Buy decision.
+
+49
+00:01:52.400 --> 00:01:52.400
+
+
+50
+00:01:52.400 --> 00:01:52.400
+
+
+51
+00:01:52.400 --> 00:01:57.960
+Like with most things in life, incremental costs are easier to understand with pizza.
+
+52
+00:01:57.960 --> 00:01:57.960
+
+
+53
+00:01:57.960 --> 00:01:57.960
+
+
+54
+00:01:57.960 --> 00:02:03.200
+Let’s return to the question of whether to buy pizza or make it on your own.
+
+55
+00:02:03.200 --> 00:02:03.200
+
+
+56
+00:02:03.200 --> 00:02:03.200
+
+
+57
+00:02:03.200 --> 00:02:05.280
+Let’s assume you already own one oven.
+
+58
+00:02:05.280 --> 00:02:05.280
+
+
+59
+00:02:05.280 --> 00:02:05.280
+
+
+60
+00:02:05.280 --> 00:02:09.760
+To make one pizza, you need to buy dough, cheese, and sauce.
+
+61
+00:02:09.760 --> 00:02:13.160
+These costs should be included in your full cost.
+
+62
+00:02:13.160 --> 00:02:17.800
+You already have an oven, so that is a sunk cost and should not be included.
+
+63
+00:02:17.800 --> 00:02:17.800
+
+
+64
+00:02:17.800 --> 00:02:17.800
+
+
+65
+00:02:17.800 --> 00:02:23.080
+Now let’s imagine you want to have a party serving ten pizzas for friends.
+
+66
+00:02:23.080 --> 00:02:26.760
+Your full cost now includes ten pizzas worth of dough, cheese, and
+
+67
+00:02:26.760 --> 00:02:31.440
+sauce, but your single oven might not be able to make ten pizzas quickly enough.
+
+68
+00:02:31.440 --> 00:02:31.440
+
+
+69
+00:02:31.440 --> 00:02:32.240
+
+
+70
+00:02:32.240 --> 00:02:35.840
+You may also need to buy or rent another oven to meet the demand.
+
+71
+00:02:35.840 --> 00:02:42.360
+The cost of this second oven is an incremental cost and should be included in the full cost of the Make option.
+
+72
+00:02:42.360 --> 00:02:42.360
+
+
+73
+00:02:42.360 --> 00:02:42.360
+
+
+74
+00:02:42.360 --> 00:02:47.560
+You may need to hire someone to help make ten pizzas, or your friends can help out.
+
+75
+00:02:47.560 --> 00:02:47.560
+
+
+76
+00:02:47.560 --> 00:02:47.560
+
+
+77
+00:02:47.560 --> 00:02:52.240
+While our incremental costs in this course focus on equipment investments,
+
+78
+00:02:52.240 --> 00:02:58.160
+incremental costs can also include other costs such as facilities and hiring new salaried employees.
+
+79
+00:02:58.160 --> 00:02:58.160
+
+
+80
+00:02:58.160 --> 00:02:58.800
+
+
+81
+00:02:58.800 --> 00:03:02.200
+If the current staff and facilities can handle the new production requirements,
+
+82
+00:03:02.200 --> 00:03:07.840
+there is no need to include their cost in the full incremental cost for the make decision.
+
+83
+00:03:07.840 --> 00:03:07.840
+
+
+84
+00:03:07.840 --> 00:03:07.840
+
+
+85
+00:03:07.840 --> 00:03:11.880
+The full cost for the make option is similar to the buy option.
+
+86
+00:03:11.880 --> 00:03:11.880
+
+
+87
+00:03:11.880 --> 00:03:16.800
+The full cost is the extended cost plus any incremental investment cost.
+
+88
+00:03:16.800 --> 00:03:22.160
+In this course, we can calculate our required investment cost by
+
+89
+00:03:22.160 --> 00:03:25.840
+looking at our existing capacity versus the expected production volume.
+
+90
+00:03:25.840 --> 00:03:25.840
+
+
+91
+00:03:25.840 --> 00:03:25.840
+
+
+92
+00:03:25.840 --> 00:03:30.640
+If the expected production volume exceeds the current capacity, we
+
+93
+00:03:30.640 --> 00:03:34.560
+must include the incremental investment cost in our full cost calculation.
+
+94
+00:03:34.560 --> 00:03:34.560
+
+
+95
+00:03:34.560 --> 00:03:34.560
+
+
+96
+00:03:34.560 --> 00:03:38.360
+To calculate the number of machines required to purchase, we
+
+97
+00:03:38.360 --> 00:03:46.240
+subtract our existing capacity from our production volume, then divide the remaining volume by the equipment capacity of a new machine.
+
+98
+00:03:46.240 --> 00:03:46.240
+
+
+99
+00:03:46.240 --> 00:03:46.240
+
+
+100
+00:03:46.240 --> 00:03:53.040
+Note that we have to round up to the nearest whole machine because we cannot purchase half of a piece of equipment.
+
+101
+00:03:53.040 --> 00:03:58.320
+We can use the DAX ROUNDUP() function to round to the next whole number.
+
+102
+00:03:58.320 --> 00:03:58.320
+
+
+103
+00:03:58.320 --> 00:03:58.320
+
+
+104
+00:03:58.320 --> 00:04:06.400
+Let's use this to calculate our make full cost and finish up our make versus buy tool!
+

@@ -1,0 +1,330 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:02.680
+Fantastic work!
+
+2
+00:00:02.680 --> 00:00:06.960
+You created a powerful tool to guide make versus buy analysis.
+
+3
+00:00:06.960 --> 00:00:06.960
+
+
+4
+00:00:06.960 --> 00:00:06.960
+
+
+5
+00:00:06.960 --> 00:00:11.400
+In Chapter 1, we started by developing a quote analysis tool and learning
+
+6
+00:00:11.400 --> 00:00:16.640
+how to calculate extended and full cost for the volumes provided in the quotes.
+
+7
+00:00:16.640 --> 00:00:16.640
+
+
+8
+00:00:16.640 --> 00:00:16.640
+
+
+9
+00:00:16.640 --> 00:00:21.000
+In Chapter 2, we developed a dynamic scenario analysis tool to
+
+10
+00:00:21.000 --> 00:00:25.000
+calculate full costs over a wider range of potential production volumes.
+
+11
+00:00:25.000 --> 00:00:25.000
+
+
+12
+00:00:25.000 --> 00:00:25.840
+
+
+13
+00:00:25.840 --> 00:00:33.520
+In Chapter 3, we added analysis of the make option by calculating full cost based on our internal estimates data.
+
+14
+00:00:33.520 --> 00:00:36.640
+In the end, we had a really useful model.
+
+15
+00:00:36.640 --> 00:00:36.640
+
+
+16
+00:00:36.640 --> 00:00:36.640
+
+
+17
+00:00:36.640 --> 00:00:40.400
+The model is a great baseline for more complex analysis.
+
+18
+00:00:40.400 --> 00:00:44.480
+You can extend the model to include more cost considerations not covered in this case
+
+19
+00:00:44.480 --> 00:00:52.080
+study, such as salaried employees, more facilities, variable overheads, and freight costs.
+
+20
+00:00:52.080 --> 00:00:52.080
+
+
+21
+00:00:52.080 --> 00:00:52.080
+
+
+22
+00:00:52.080 --> 00:00:56.360
+You can also build in other vital supply chain aspects, such as time and quality.
+
+23
+00:00:56.360 --> 00:00:56.360
+
+
+24
+00:00:56.360 --> 00:00:57.080
+
+
+25
+00:00:57.080 --> 00:01:00.440
+But it's time to address the elephant in the room.
+
+26
+00:01:00.440 --> 00:01:00.440
+
+
+27
+00:01:00.440 --> 00:01:00.440
+
+
+28
+00:01:00.440 --> 00:01:05.040
+Historically this type of supply chain and financial analysis would occur in spreadsheets.
+
+29
+00:01:05.040 --> 00:01:06.680
+Why are we using Power BI instead?
+
+30
+00:01:06.680 --> 00:01:06.680
+
+
+31
+00:01:06.680 --> 00:01:06.680
+
+
+32
+00:01:06.680 --> 00:01:13.400
+Power BI offers some huge advantages for analyzing quotes as well as internal manufacturing cost data.
+
+33
+00:01:13.400 --> 00:01:13.400
+
+
+34
+00:01:13.400 --> 00:01:14.120
+
+
+35
+00:01:14.120 --> 00:01:18.160
+Even if you understand why Power BI might be a superior tool for this type of analysis,
+
+36
+00:01:18.160 --> 00:01:22.600
+this video contains some points that might convince your manager and the rest of your team as well.
+
+37
+00:01:22.600 --> 00:01:22.600
+
+
+38
+00:01:22.600 --> 00:01:23.560
+
+
+39
+00:01:23.560 --> 00:01:28.320
+After you create a functional data model, you can add more quotes data, and the same logic will be applied.
+
+40
+00:01:28.320 --> 00:01:33.120
+This means your analysis logic will be consistent across projects.
+
+41
+00:01:33.120 --> 00:01:36.400
+In many cases, supply chain teams may instead create a new
+
+42
+00:01:36.400 --> 00:01:40.080
+spreadsheet for every project or even every part of a project!
+
+43
+00:01:40.080 --> 00:01:40.080
+
+
+44
+00:01:40.080 --> 00:01:40.080
+
+
+45
+00:01:40.080 --> 00:01:44.360
+Power BI also helps control source data.
+
+46
+00:01:44.360 --> 00:01:47.080
+When quote data is entered and manipulated in spreadsheets,
+
+47
+00:01:47.080 --> 00:01:51.000
+it can easily be changed by someone in the analysis process.
+
+48
+00:01:51.000 --> 00:01:54.440
+You don't want your analysis to be based on flawed data.
+
+49
+00:01:54.440 --> 00:01:59.400
+In Power BI, an analyst rarely touches the raw data after it is loaded.
+
+50
+00:01:59.400 --> 00:01:59.400
+
+
+51
+00:01:59.400 --> 00:01:59.400
+
+
+52
+00:01:59.400 --> 00:02:03.760
+Imagine the following scenario - you are presenting to several key decision-makers.
+
+53
+00:02:03.760 --> 00:02:03.760
+
+
+54
+00:02:03.760 --> 00:02:03.760
+
+
+55
+00:02:03.760 --> 00:02:08.440
+You say, "The best option for Part XYZ is Supplier A".
+
+56
+00:02:08.440 --> 00:02:08.440
+
+
+57
+00:02:08.440 --> 00:02:08.440
+
+
+58
+00:02:08.440 --> 00:02:10.480
+"For what volume?"
+
+59
+00:02:10.480 --> 00:02:12.160
+one of the leaders interjects.
+
+60
+00:02:12.160 --> 00:02:12.160
+
+
+61
+00:02:12.160 --> 00:02:12.160
+
+
+62
+00:02:12.160 --> 00:02:14.240
+"10,000 units", you reply.
+
+63
+00:02:14.240 --> 00:02:14.240
+
+
+64
+00:02:14.240 --> 00:02:14.240
+
+
+65
+00:02:14.240 --> 00:02:15.560
+"Didn't you hear?
+
+66
+00:02:15.560 --> 00:02:18.080
+The estimate is 30,000 units now!"
+
+67
+00:02:18.080 --> 00:02:19.280
+the leader replies.
+
+68
+00:02:19.280 --> 00:02:19.280
+
+
+69
+00:02:19.280 --> 00:02:19.280
+
+
+70
+00:02:19.280 --> 00:02:24.560
+If you have your analysis in spreadsheets, you would either have to close out your slide deck and
+
+71
+00:02:24.560 --> 00:02:29.600
+open up the spreadsheet, or more likely, you say "We'll have to crunch the numbers and get back to you."
+
+72
+00:02:29.600 --> 00:02:29.600
+
+
+73
+00:02:29.600 --> 00:02:29.600
+
+
+74
+00:02:29.600 --> 00:02:33.880
+Because you use Power BI, you simply say, "Thanks for the update.
+
+75
+00:02:33.880 --> 00:02:37.480
+Let's see what happens to the analysis when you move the volume parameter."
+
+76
+00:02:37.480 --> 00:02:38.440
+
+
+77
+00:02:38.440 --> 00:02:38.440
+
+
+78
+00:02:38.440 --> 00:02:43.880
+In moments like this, the investment in building a great data model with clear visuals really pays off.
+
+79
+00:02:43.880 --> 00:02:43.880
+
+
+80
+00:02:43.880 --> 00:02:43.880
+
+
+81
+00:02:43.880 --> 00:02:47.240
+Congratulations on completing this case study!
+
+82
+00:02:47.240 --> 00:02:54.840
+You have made a useful tool for your organization and improved your abilities as a supply chain analyst.
+

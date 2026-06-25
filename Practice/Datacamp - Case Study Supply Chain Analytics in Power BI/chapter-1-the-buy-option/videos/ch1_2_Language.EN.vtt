@@ -1,0 +1,298 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.440
+In this video, I will introduce the concepts of extended cost
+
+2
+00:00:04.440 --> 00:00:08.400
+and full cost and how they affect supply chain decision-making.
+
+3
+00:00:08.400 --> 00:00:11.360
+We will also learn how to calculate these metrics.
+
+4
+00:00:11.360 --> 00:00:11.360
+
+
+5
+00:00:11.360 --> 00:00:11.360
+
+
+6
+00:00:11.360 --> 00:00:18.040
+Understanding different cost drivers in supply chain work is critical for making and communicating decisions.
+
+7
+00:00:18.040 --> 00:00:18.040
+
+
+8
+00:00:18.040 --> 00:00:18.040
+
+
+9
+00:00:18.040 --> 00:00:21.600
+Unit cost refers to the cost of purchasing an additional unit and
+
+10
+00:00:21.600 --> 00:00:27.120
+includes the manufacturer's raw material cost, production costs, and profit.
+
+11
+00:00:27.120 --> 00:00:32.560
+For instance, in custom t-shirt manufacturing, the unit cost would cover raw material costs like blank
+
+12
+00:00:32.560 --> 00:00:40.440
+t-shirts and ink, along with production costs such as energy and labor that increase as more t-shirts are produced.
+
+13
+00:00:40.440 --> 00:00:40.440
+
+
+14
+00:00:40.440 --> 00:00:40.440
+
+
+15
+00:00:40.440 --> 00:00:46.080
+Extended cost represents the cost paid for the products only and does not include one-time expenses.
+
+16
+00:00:46.080 --> 00:00:46.080
+
+
+17
+00:00:46.080 --> 00:00:47.000
+
+
+18
+00:00:47.000 --> 00:00:50.840
+Extended cost is the number of units purchased multiplied by the unit cost.
+
+19
+00:00:50.840 --> 00:00:50.840
+
+
+20
+00:00:50.840 --> 00:00:51.840
+
+
+21
+00:00:51.840 --> 00:00:56.560
+Imagine you purchase ten custom shirts that cost $15 each.
+
+22
+00:00:56.560 --> 00:01:00.280
+The extended cost is $150.
+
+23
+00:01:00.280 --> 00:01:00.280
+
+
+24
+00:01:00.280 --> 00:01:00.280
+
+
+25
+00:01:00.280 --> 00:01:05.600
+Even when buying products from a supplier, there are often one-time costs that must be paid to enable production.
+
+26
+00:01:05.600 --> 00:01:05.600
+
+
+27
+00:01:05.600 --> 00:01:06.720
+
+
+28
+00:01:06.720 --> 00:01:10.000
+Suppliers often pass these costs on to the purchasing company.
+
+29
+00:01:10.000 --> 00:01:10.000
+
+
+30
+00:01:10.000 --> 00:01:10.000
+
+
+31
+00:01:10.000 --> 00:01:16.320
+Common examples of non-recurring expenses include tooling or fixtures specific to the product being
+
+32
+00:01:16.320 --> 00:01:24.480
+manufactured, engineering expenses to set up production, or even a minimum charge to occupy manufacturing equipment.
+
+33
+00:01:24.480 --> 00:01:24.480
+
+
+34
+00:01:24.480 --> 00:01:24.480
+
+
+35
+00:01:24.480 --> 00:01:28.640
+As production volumes increase, it is common for non-recurring expenses to increase.
+
+36
+00:01:28.640 --> 00:01:35.360
+This happens because higher volumes require either more manufacturing equipment or more labor for setup and management.
+
+37
+00:01:35.360 --> 00:01:35.360
+
+
+38
+00:01:35.360 --> 00:01:36.400
+
+
+39
+00:01:36.400 --> 00:01:41.760
+Full cost represents the total amount a company must pay to buy a certain quantity of products.
+
+40
+00:01:41.760 --> 00:01:41.760
+
+
+41
+00:01:41.760 --> 00:01:41.760
+
+
+42
+00:01:41.760 --> 00:01:46.800
+Full cost is the sum of the extended cost and the non-recurring expenses.
+
+43
+00:01:46.800 --> 00:01:46.800
+
+
+44
+00:01:46.800 --> 00:01:47.760
+
+
+45
+00:01:47.760 --> 00:01:51.000
+When making a supply chain decision, focusing on the full cost is
+
+46
+00:01:51.000 --> 00:01:55.160
+imperative because it is the total amount the company will pay to acquire the products.
+
+47
+00:01:55.160 --> 00:01:55.160
+
+
+48
+00:01:55.160 --> 00:01:55.160
+
+
+49
+00:01:55.160 --> 00:01:58.720
+While this might seem like common sense, it is easy to be
+
+50
+00:01:58.720 --> 00:02:03.680
+fooled by the allure of low non-recurring expenses or low unit costs.
+
+51
+00:02:03.680 --> 00:02:04.680
+
+
+52
+00:02:04.680 --> 00:02:04.680
+
+
+53
+00:02:04.680 --> 00:02:06.720
+Let's revisit the custom t-shirt example.
+
+54
+00:02:06.720 --> 00:02:13.760
+The shirts cost $15, but the supplier charges a $65 set-up fee regardless of the quantity purchased.
+
+55
+00:02:13.760 --> 00:02:20.480
+This fee is a non-recurring expense to compensate the company for the time to load the artwork onto the printer.
+
+56
+00:02:20.480 --> 00:02:20.480
+
+
+57
+00:02:20.480 --> 00:02:20.480
+
+
+58
+00:02:20.480 --> 00:02:23.680
+We can now calculate our full cost.
+
+59
+00:02:23.680 --> 00:02:32.000
+We add our $150 extended cost from before to the $65 set-up fee, resulting in a full cost of $215.
+
+60
+00:02:32.000 --> 00:02:32.000
+
+
+61
+00:02:32.000 --> 00:02:32.000
+
+
+62
+00:02:32.000 --> 00:02:35.360
+Full cost often includes overhead rates.
+
+63
+00:02:35.360 --> 00:02:40.480
+The overhead rate is a cost allocated to the production of a product or service.
+
+64
+00:02:40.480 --> 00:02:46.200
+Overhead costs are expenses that are not directly tied to production such as the cost of the corporate office.
+
+65
+00:02:46.200 --> 00:02:46.200
+
+
+66
+00:02:46.200 --> 00:02:47.040
+
+
+67
+00:02:47.040 --> 00:02:50.240
+Because overhead calculation methods vary from company to company,
+
+68
+00:02:50.240 --> 00:02:54.000
+overhead rates are not included in the full cost calculations in this course.
+
+69
+00:02:54.000 --> 00:02:54.000
+
+
+70
+00:02:54.000 --> 00:02:54.000
+
+
+71
+00:02:54.000 --> 00:03:00.200
+However, the principles you learn in this course will enable you to incorporate overhead rates into your reports.
+
+72
+00:03:00.200 --> 00:03:00.200
+
+
+73
+00:03:00.200 --> 00:03:01.200
+
+
+74
+00:03:01.200 --> 00:03:07.280
+It is time to apply what you have learned about extended costs and full costs to our dataset.
+

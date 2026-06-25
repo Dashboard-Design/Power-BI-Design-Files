@@ -1,0 +1,382 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:01.840
+Hello!
+
+2
+00:00:01.840 --> 00:00:06.280
+My name is Nick and I'll be your instructor for this case study in supply chain analytics.
+
+3
+00:00:06.280 --> 00:00:11.040
+In this case study, you will perform a make versus buy analysis in Power BI.
+
+4
+00:00:11.040 --> 00:00:11.040
+
+
+5
+00:00:11.040 --> 00:00:11.080
+
+
+6
+00:00:11.080 --> 00:00:13.960
+A case study enables you to apply your skills.
+
+7
+00:00:13.960 --> 00:00:18.600
+You won’t be learning any new Power BI concepts; instead, you’ll focus on using
+
+8
+00:00:18.600 --> 00:00:23.480
+the skills you learned in previous courses and practice them on a real-world problem.
+
+9
+00:00:23.480 --> 00:00:23.480
+
+
+10
+00:00:23.480 --> 00:00:28.320
+This case study uses iterative functions, so it is relatively advanced.
+
+11
+00:00:28.320 --> 00:00:33.280
+It might help to review iterative functions in DAX before taking this case study.
+
+12
+00:00:33.280 --> 00:00:33.320
+
+
+13
+00:00:33.320 --> 00:00:38.120
+Below you can see the prerequisites we suggest you take before completing this case study.
+
+14
+00:00:38.120 --> 00:00:38.120
+
+
+15
+00:00:38.120 --> 00:00:39.360
+
+
+16
+00:00:39.360 --> 00:00:42.000
+So, what is a Supply Chain exactly?
+
+17
+00:00:42.000 --> 00:00:45.360
+A supply chain is a network of individuals and companies who are
+
+18
+00:00:45.360 --> 00:00:49.520
+involved in creating a product and delivering it to the consumer.
+
+19
+00:00:49.520 --> 00:00:56.000
+The Supply Chain begins with the producers of raw material and ends with the product being delivered to the consumer.
+
+20
+00:00:56.000 --> 00:00:56.880
+
+
+21
+00:00:56.880 --> 00:00:56.880
+
+
+22
+00:00:56.880 --> 00:01:00.800
+For example, a fork begins as a piece of ore from the earth.
+
+23
+00:01:00.800 --> 00:01:06.560
+The ore is processed into metal, and the metal is formed into the shape of a fork and then polished.
+
+24
+00:01:06.560 --> 00:01:09.000
+The fork is then packaged and shipped to the consumer.
+
+25
+00:01:09.000 --> 00:01:10.040
+
+
+26
+00:01:10.040 --> 00:01:10.040
+
+
+27
+00:01:10.040 --> 00:01:12.880
+What do we mean by make versus buy decision?
+
+28
+00:01:12.880 --> 00:01:17.920
+A good definition is the one from Investopedia: "A make-or-buy decision is an act of
+
+29
+00:01:17.920 --> 00:01:22.840
+choosing between manufacturing a product in-house or purchasing it from an external supplier."
+
+30
+00:01:22.840 --> 00:01:22.840
+
+
+31
+00:01:22.840 --> 00:01:23.840
+
+
+32
+00:01:23.840 --> 00:01:27.000
+The make option means manufacturing the product in-house and
+
+33
+00:01:27.000 --> 00:01:30.680
+the buy option means buying the product from an external supplier.
+
+34
+00:01:30.680 --> 00:01:31.920
+
+
+35
+00:01:31.920 --> 00:01:31.920
+
+
+36
+00:01:31.920 --> 00:01:35.280
+Another example of a Make versus Buy decision from daily life
+
+37
+00:01:35.280 --> 00:01:38.720
+is the choice to eat at a restaurant or to prepare lunch at home.
+
+38
+00:01:38.720 --> 00:01:38.720
+
+
+39
+00:01:38.720 --> 00:01:39.560
+
+
+40
+00:01:39.560 --> 00:01:43.360
+If you prepare your own pizza, that is the Make option.
+
+41
+00:01:43.360 --> 00:01:43.360
+
+
+42
+00:01:43.360 --> 00:01:47.080
+If you buy a pizza from the local pizza restaurant, that is the Buy option.
+
+43
+00:01:47.080 --> 00:01:47.960
+
+
+44
+00:01:47.960 --> 00:01:47.960
+
+
+45
+00:01:47.960 --> 00:01:54.080
+Sticking with the tasty pizza analogy, it is clear that the Make versus Buy option has a lot of considerations.
+
+46
+00:01:54.080 --> 00:01:54.080
+
+
+47
+00:01:54.080 --> 00:01:54.080
+
+
+48
+00:01:54.080 --> 00:01:56.040
+Quality:
+
+49
+00:01:56.040 --> 00:01:59.320
+Your own pizza might be less tasty than the local Italian restaurant.
+
+50
+00:01:59.320 --> 00:01:59.320
+
+
+51
+00:01:59.320 --> 00:02:05.240
+Time: Making a good pizza might take you an hour, but ordering a pizza takes 3 minutes.
+
+52
+00:02:05.240 --> 00:02:05.240
+
+
+53
+00:02:05.240 --> 00:02:09.360
+Cost: You might save money making pizza at home.
+
+54
+00:02:09.360 --> 00:02:12.960
+But then again, the pizza restaurant might buy pizza ingredients in bulk.
+
+55
+00:02:12.960 --> 00:02:13.840
+
+
+56
+00:02:13.840 --> 00:02:13.840
+
+
+57
+00:02:13.840 --> 00:02:19.680
+It is clear that with such a complex decision, companies need help quantifying all of these aspects.
+
+58
+00:02:19.680 --> 00:02:19.680
+
+
+59
+00:02:19.680 --> 00:02:20.320
+
+
+60
+00:02:20.320 --> 00:02:25.600
+For simplicity, this case study focuses on analyzing the cost of the Make and Buy options.
+
+61
+00:02:25.600 --> 00:02:32.360
+Real companies need to consider quality, time and ethics in their supply chain decision-making.
+
+62
+00:02:32.360 --> 00:02:32.360
+
+
+63
+00:02:32.360 --> 00:02:32.360
+
+
+64
+00:02:32.360 --> 00:02:36.440
+The skills you learn in the course can also be applied to product lead
+
+65
+00:02:36.440 --> 00:02:41.280
+times, sustainability and many other factors in the Make versus Buy decision.
+
+66
+00:02:41.280 --> 00:02:41.280
+
+
+67
+00:02:41.280 --> 00:02:42.080
+
+
+68
+00:02:42.080 --> 00:02:45.760
+The problem you will be working on in this case study is a make versus buy decision.
+
+69
+00:02:45.760 --> 00:02:51.240
+You are hired as a supply chain analyst at a fictitious company called Tenate
+
+70
+00:02:51.240 --> 00:02:56.000
+Industries - a company that sells replacement parts for industrial pizza ovens.
+
+71
+00:02:56.000 --> 00:02:59.880
+Your task is to calculate the full cost of the Make and Buy Options.
+
+72
+00:02:59.880 --> 00:03:05.600
+You'll be using fictitious data tables of quotes and internal manufacturing estimates.
+
+73
+00:03:05.600 --> 00:03:05.600
+
+
+74
+00:03:05.600 --> 00:03:06.440
+
+
+75
+00:03:06.440 --> 00:03:08.840
+A quote or a quotation is a document that a
+
+76
+00:03:08.840 --> 00:03:15.160
+seller provides to a buyer to offer goods or services at a stated price, under specified conditions.
+
+77
+00:03:15.160 --> 00:03:15.160
+
+
+78
+00:03:15.160 --> 00:03:15.160
+
+
+79
+00:03:15.160 --> 00:03:19.640
+We will start by learning how to analyze costs for the buy option.
+
+80
+00:03:19.640 --> 00:03:24.320
+In the buy option, we are considering purchasing the products from an external supplier.
+
+81
+00:03:24.320 --> 00:03:24.320
+
+
+82
+00:03:24.320 --> 00:03:24.320
+
+
+83
+00:03:24.320 --> 00:03:28.440
+In the quotes dataset, you will find that you have quotes from
+
+84
+00:03:28.440 --> 00:03:32.720
+many suppliers for multiple parts at multiple production volumes.
+
+85
+00:03:32.720 --> 00:03:38.400
+It is common to quote the same part to many suppliers to ensure the best option is selected.
+
+86
+00:03:38.400 --> 00:03:38.400
+
+
+87
+00:03:38.400 --> 00:03:38.400
+
+
+88
+00:03:38.400 --> 00:03:44.600
+Each quote line consists of part number quoted, supplier
+
+89
+00:03:44.600 --> 00:03:46.640
+minimum production volume for the price
+
+90
+00:03:46.640 --> 00:03:53.240
+quoted, unit cost (per product), non-recurring expenses associated with the minimum production volume.
+
+91
+00:03:53.240 --> 00:03:53.240
+
+
+92
+00:03:53.240 --> 00:03:53.240
+
+
+93
+00:03:53.240 --> 00:03:58.000
+It is your time to check if you understand the concepts of make versus buy.
+
+94
+00:03:58.000 --> 00:04:00.480
+After that, we will explore the quote data.
+
+95
+00:04:00.480 --> 00:04:03.240
+Good luck!
+

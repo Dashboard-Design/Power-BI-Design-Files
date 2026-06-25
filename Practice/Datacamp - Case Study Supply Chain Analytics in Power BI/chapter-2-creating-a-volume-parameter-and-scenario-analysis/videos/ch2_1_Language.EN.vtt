@@ -1,0 +1,358 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:02.720
+Let's go a step deeper.
+
+2
+00:00:02.720 --> 00:00:08.480
+In the first chapter, we calculated full cost for the buy options at the small number of quoted production volumes.
+
+3
+00:00:08.480 --> 00:00:11.760
+These data points could be used to drive supply chain decisions,
+
+4
+00:00:11.760 --> 00:00:15.680
+but what if our production estimates don’t match the quoted volumes?
+
+5
+00:00:15.680 --> 00:00:15.680
+
+
+6
+00:00:15.680 --> 00:00:15.680
+
+
+7
+00:00:15.680 --> 00:00:20.440
+As Mike Tyson once said "Everyone has a plan until they get punched in the mouth."
+
+8
+00:00:20.440 --> 00:00:20.440
+
+
+9
+00:00:20.440 --> 00:00:20.440
+
+
+10
+00:00:20.440 --> 00:00:24.560
+In reality, it is unlikely to order exactly the number of products that were quoted.
+
+11
+00:00:24.560 --> 00:00:28.680
+Projects start with assumptions that often change as the team learns more.
+
+12
+00:00:28.680 --> 00:00:28.680
+
+
+13
+00:00:28.680 --> 00:00:29.640
+
+
+14
+00:00:29.640 --> 00:00:34.840
+That is why it is important to have a tool that guides decisions over a wider range of volumes.
+
+15
+00:00:34.840 --> 00:00:37.600
+Determining production volumes for a new product is full of
+
+16
+00:00:37.600 --> 00:00:43.440
+uncertainty so our tool needs to help us analyze our volumes more dynamically.
+
+17
+00:00:43.440 --> 00:00:43.440
+
+
+18
+00:00:43.440 --> 00:00:43.440
+
+
+19
+00:00:43.440 --> 00:00:47.800
+The primary source of uncertainty for production volumes is demand.
+
+20
+00:00:47.800 --> 00:00:50.680
+This is especially true for new products.
+
+21
+00:00:50.680 --> 00:00:50.680
+
+
+22
+00:00:50.680 --> 00:00:50.680
+
+
+23
+00:00:50.680 --> 00:00:55.840
+If a product has never been on the market before, how can we know how many customers will want to buy it?
+
+24
+00:00:55.840 --> 00:00:59.720
+Even if your company is launching a next generation of an old product, there is
+
+25
+00:00:59.720 --> 00:01:06.360
+still uncertainty based on product-market fit, outside economic conditions, and price.
+
+26
+00:01:06.360 --> 00:01:06.360
+
+
+27
+00:01:06.360 --> 00:01:06.360
+
+
+28
+00:01:06.360 --> 00:01:11.560
+Demand forecasting is a fascinating and extensive topic that will not be covered in this course.
+
+29
+00:01:11.560 --> 00:01:15.720
+The interdependence between price, demand, production volume and production
+
+30
+00:01:15.720 --> 00:01:20.800
+cost only increases the value of a dynamic supply chain decision-making tool.
+
+31
+00:01:20.800 --> 00:01:20.800
+
+
+32
+00:01:20.800 --> 00:01:21.640
+
+
+33
+00:01:21.640 --> 00:01:24.360
+You might be wondering, if we find out we need to assess another
+
+34
+00:01:24.360 --> 00:01:27.760
+production volume, why don’t we just ask our suppliers for another quote?
+
+35
+00:01:27.760 --> 00:01:27.760
+
+
+36
+00:01:27.760 --> 00:01:27.760
+
+
+37
+00:01:27.760 --> 00:01:32.400
+While it is a great idea to have open lines of communication with your supply
+
+38
+00:01:32.400 --> 00:01:37.920
+chain, asking for quotes and preparing quotes can be time consuming for both sides.
+
+39
+00:01:37.920 --> 00:01:40.920
+The minimum turn-around time for production quotes can often be
+
+40
+00:01:40.920 --> 00:01:46.440
+several valuable days or even longer, which can cause unwanted project delays.
+
+41
+00:01:46.440 --> 00:01:46.440
+
+
+42
+00:01:46.440 --> 00:01:46.440
+
+
+43
+00:01:46.440 --> 00:01:50.920
+Thankfully, quotes are typically set up in a way that allows for us to develop a
+
+44
+00:01:50.920 --> 00:01:56.120
+scenario analysis tool to analyze volumes that were not expressly included in the quotes.
+
+45
+00:01:56.120 --> 00:01:56.120
+
+
+46
+00:01:56.120 --> 00:01:57.000
+
+
+47
+00:01:57.000 --> 00:01:59.760
+Recall that the volume column is the minimum production
+
+48
+00:01:59.760 --> 00:02:03.520
+volume associated with the unit cost and the non-recurring expense.
+
+49
+00:02:03.520 --> 00:02:08.240
+That means the full cost formula holds between quoted production volumes.
+
+50
+00:02:08.240 --> 00:02:09.200
+
+
+51
+00:02:09.200 --> 00:02:09.200
+
+
+52
+00:02:09.200 --> 00:02:15.280
+We can utilize Power BI’s Parameter function to set up a Scenario Volume Analysis.
+
+53
+00:02:15.280 --> 00:02:15.280
+
+
+54
+00:02:15.280 --> 00:02:15.280
+
+
+55
+00:02:15.280 --> 00:02:21.920
+As a reminder, a Power BI parameter is a value that the user can control using a slicer.
+
+56
+00:02:21.920 --> 00:02:27.680
+The parameter can be referenced in DAX measures that will update on the report as the user changes the parameter value.
+
+57
+00:02:27.680 --> 00:02:27.680
+
+
+58
+00:02:27.680 --> 00:02:27.680
+
+
+59
+00:02:27.680 --> 00:02:34.760
+In the first chapter, you created a column that calculated the full cost for each row in the Quotes table.
+
+60
+00:02:34.760 --> 00:02:34.760
+
+
+61
+00:02:34.760 --> 00:02:34.760
+
+
+62
+00:02:34.760 --> 00:02:39.160
+In this chapter, you will create a Full Cost measure based on the Scenario Volume parameter.
+
+63
+00:02:39.160 --> 00:02:43.680
+For each part number- scenario volume combination, there may
+
+64
+00:02:43.680 --> 00:02:47.440
+be many potential rows of unit cost and non-recurring expenses.
+
+65
+00:02:47.440 --> 00:02:47.440
+
+
+66
+00:02:47.440 --> 00:02:48.320
+
+
+67
+00:02:48.320 --> 00:02:51.640
+We want the full cost measure to return the lowest full
+
+68
+00:02:51.640 --> 00:02:55.800
+cost from the eligible supplier, part and volume combinations.
+
+69
+00:02:55.800 --> 00:02:55.800
+
+
+70
+00:02:55.800 --> 00:02:55.800
+
+
+71
+00:02:55.800 --> 00:03:00.120
+This is the perfect use case for an iterative function.
+
+72
+00:03:00.120 --> 00:03:04.400
+As a reminder, an iterative function is a function that iterates through all
+
+73
+00:03:04.400 --> 00:03:09.320
+rows of the given table, applies the expression, and then aggregates the result.
+
+74
+00:03:09.320 --> 00:03:09.320
+
+
+75
+00:03:09.320 --> 00:03:09.320
+
+
+76
+00:03:09.320 --> 00:03:16.200
+MINX returns the minimum value of an expression computed for each row of the table you pass it.
+
+77
+00:03:16.200 --> 00:03:16.200
+
+
+78
+00:03:16.200 --> 00:03:16.200
+
+
+79
+00:03:16.200 --> 00:03:22.880
+In this case, we will want to utilize the MINX function because we are looking for the minimum full cost value.
+
+80
+00:03:22.880 --> 00:03:26.920
+You can pass a filtered table to the iterative function, and
+
+81
+00:03:26.920 --> 00:03:29.760
+it will only iterate over the rows that meet the filter criteria.
+
+82
+00:03:29.760 --> 00:03:29.760
+
+
+83
+00:03:29.760 --> 00:03:29.760
+
+
+84
+00:03:29.760 --> 00:03:35.200
+This will be useful to make sure full cost is only calculated for valid quote rows.
+
+85
+00:03:35.200 --> 00:03:35.200
+
+
+86
+00:03:35.200 --> 00:03:35.200
+
+
+87
+00:03:35.200 --> 00:03:37.000
+What do you know?
+
+88
+00:03:37.000 --> 00:03:42.640
+The project manager says that a recent viral internet trend has affected our projected production volumes.
+
+89
+00:03:42.640 --> 00:03:47.760
+Let's create a tool to help us consider the scenarios!
+
