@@ -1,0 +1,210 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:02.360
+Welcome back!
+
+2
+00:00:02.360 --> 00:00:07.600
+In this video, we will review transactions in the capital markets.
+
+3
+00:00:07.600 --> 00:00:11.520
+Recall from the financial system diagram that lenders sell
+
+4
+00:00:11.520 --> 00:00:15.680
+their loans to financial institutions in the capital markets.
+
+5
+00:00:15.680 --> 00:00:20.960
+Financial institutions purchase these loans to earn the interest borrowers pay.
+
+6
+00:00:20.960 --> 00:00:26.680
+This transaction is known as a trade: they are trading money for loan agreements.
+
+7
+00:00:26.680 --> 00:00:31.960
+Before we dive into trading, let's first talk about the mortgage market in the US.
+
+8
+00:00:31.960 --> 00:00:39.280
+In the first quarter of 2023, Americans owed 12 trillion dollars in mortgage debt.
+
+9
+00:00:39.280 --> 00:00:44.320
+For comparison, the annualized US gross domestic product, a measurement
+
+10
+00:00:44.320 --> 00:00:50.880
+of total economic activity, was an estimated 25 trillion in the same period.
+
+11
+00:00:50.880 --> 00:00:58.080
+In addition, mortgage debt makes up almost 75% of all the household debt Americans owe.
+
+12
+00:00:58.080 --> 00:01:01.520
+So mortgages account for a large portion of the US
+
+13
+00:01:01.520 --> 00:01:08.040
+debt and economy, and much of the 12 trillion dollars in mortgage debt was traded in the capital markets.
+
+14
+00:01:08.040 --> 00:01:13.520
+When mortgages are sold to investors, they are often put into groups called "pools".
+
+15
+00:01:13.520 --> 00:01:17.000
+A pool can be one or more mortgage loans.
+
+16
+00:01:17.000 --> 00:01:21.480
+There are two types of common transactions in mortgage trades.
+
+17
+00:01:21.480 --> 00:01:24.320
+The first is a whole loan trade.
+
+18
+00:01:24.320 --> 00:01:31.800
+A whole loan mortgage transaction is a trade in which an investor individually bids on each mortgage.
+
+19
+00:01:31.800 --> 00:01:37.040
+This is pretty straightforward, as the investor knows exactly which mortgages they purchase.
+
+20
+00:01:37.040 --> 00:01:40.560
+However, this type of transaction is inefficient as the
+
+21
+00:01:40.560 --> 00:01:45.440
+investor needs to analyze each loan, which can be time-consuming.
+
+22
+00:01:45.440 --> 00:01:51.080
+Securiziation is the most common type of transaction seen in the mortgage capital markets.
+
+23
+00:01:51.080 --> 00:01:56.280
+With securitizations, mortgage pools are bundled into a new financial asset, called a
+
+24
+00:01:56.280 --> 00:02:02.600
+mortgage-backed security, and the investor buys the security instead of the individual mortgage.
+
+25
+00:02:02.600 --> 00:02:07.800
+Securitization allows investors to buy many more mortgages than in whole loan trading,
+
+26
+00:02:07.800 --> 00:02:14.320
+as they don't have to analyze each mortgage but rather just the performance of the MBS bond.
+
+27
+00:02:14.320 --> 00:02:17.800
+Securitizations are usually formed from mortgage pools
+
+28
+00:02:17.800 --> 00:02:27.400
+with similar characteristics, for example, rate, term, loan-to-value, location, or even the lender who originated the loan.
+
+29
+00:02:27.400 --> 00:02:32.280
+However, not every loan is eligible for securitization, as they need to
+
+30
+00:02:32.280 --> 00:02:37.840
+meet the requirements set forth by the security creator, known as a securitizer.
+
+31
+00:02:37.840 --> 00:02:44.720
+These requirements become the qualification guidelines lenders must use to sell their loans to securitizers.
+
+32
+00:02:44.720 --> 00:02:49.280
+We covered some of those qualification guidelines in the previous chapter.
+
+33
+00:02:49.280 --> 00:02:55.080
+Fannie Mae and Freddie Mac are two of the largest mortgage securitizers in the US.
+
+34
+00:02:55.080 --> 00:03:00.280
+They purchase about 70% of all mortgages in the US and pool them into
+
+35
+00:03:00.280 --> 00:03:07.080
+their securities, which they call "uniform mortgage-backed securities", or UMBS.
+
+36
+00:03:07.080 --> 00:03:12.040
+This is because all mortgage loans must meet their underwriting guidelines.
+
+37
+00:03:12.040 --> 00:03:19.120
+Once an investor has identified which mortgage or MBS bond they want, they will place a bid on it with a price.
+
+38
+00:03:19.120 --> 00:03:23.840
+The trade price is expressed as a percentage of the loan's principal balance.
+
+39
+00:03:23.840 --> 00:03:27.560
+The trade amount is the total dollar amount paid for the loan.
+
+40
+00:03:27.560 --> 00:03:31.160
+This is the product of the trade price and principal balance.
+
+41
+00:03:31.160 --> 00:03:35.360
+Remember that the principal balance is just the current balance of the loan.
+
+42
+00:03:35.360 --> 00:03:39.080
+The trade premium is the difference between the principal balance and the
+
+43
+00:03:39.080 --> 00:03:44.280
+trade amount and shows the extra amount the investor paid to own the mortgage.
+
+44
+00:03:44.280 --> 00:03:50.320
+For example, if a mortgage is trading at a price of 101, it means that the buyer
+
+45
+00:03:50.320 --> 00:03:59.280
+will pay $101,000 for a $100,000 principal balance, which is a trade premium of $1,000.
+
+46
+00:03:59.280 --> 00:04:04.760
+Once bids have been received, the seller must decide which investor to transact with.
+
+47
+00:04:04.760 --> 00:04:07.200
+In this case study, we will replicate a whole loan
+
+48
+00:04:07.200 --> 00:04:11.960
+transaction, where investors can bid on any individual loan they want.
+
+49
+00:04:11.960 --> 00:04:15.000
+We'll use a technique to find the highest price.
+
+50
+00:04:15.000 --> 00:04:19.840
+As a lender, we can choose to sell through a whole loan trade or a securitization,
+
+51
+00:04:19.840 --> 00:04:26.520
+so we'll compare the whole loan prices to UMBS prices to ensure we're maximizing profit.
+
+52
+00:04:26.520 --> 00:04:33.440
+Now that you have the trading basics down, it's time to review the bids on our pool and get this trade started.
+

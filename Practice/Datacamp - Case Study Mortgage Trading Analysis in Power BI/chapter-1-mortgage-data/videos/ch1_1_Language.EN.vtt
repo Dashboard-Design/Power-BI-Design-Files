@@ -1,0 +1,218 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:06.800
+Hello, and welcome to this case study, Mortgage Trading Analysis in Power BI.
+
+2
+00:00:06.800 --> 00:00:11.360
+My name is Nick Edwards, and I am very excited to be your instructor.
+
+3
+00:00:11.360 --> 00:00:16.160
+In this case study, you will learn about the financial system hands-on as you play
+
+4
+00:00:16.160 --> 00:00:22.760
+the part of a Junior Trader at a fictional non-bank mortgage lender, Sooper Mortgage.
+
+5
+00:00:22.760 --> 00:00:28.000
+Mortgage markets are similar globally, but this case study will be based on the U.S.
+
+6
+00:00:28.000 --> 00:00:29.400
+markets.
+
+7
+00:00:29.400 --> 00:00:34.320
+Your objective is to execute a trade of mortgages in the capital markets by
+
+8
+00:00:34.320 --> 00:00:41.080
+analyzing mortgage data, market prices, and Sooper Mortgage's target profit on the trade.
+
+9
+00:00:41.080 --> 00:00:49.240
+The date is September 21st, 2021, and the trade will settle on October 13th, 2021.
+
+10
+00:00:49.240 --> 00:00:55.680
+The datasets in this course describe a population of over 5,000 mortgages, and it derives from
+
+11
+00:00:55.680 --> 00:01:03.440
+real mortgage and financial market data, although they have been altered and simplified for this course.
+
+12
+00:01:03.440 --> 00:01:07.160
+This is an intermediate-advanced course, so you will have an
+
+13
+00:01:07.160 --> 00:01:12.000
+opportunity to test your skills and apply them to complex problems.
+
+14
+00:01:12.000 --> 00:01:14.800
+By the end of this course, you will be confident with new
+
+15
+00:01:14.800 --> 00:01:19.440
+skills and strategies that you can bring with you into the real world.
+
+16
+00:01:19.440 --> 00:01:25.360
+You should be comfortable writing DAX code, a bit of M, and understand the Power Query Editor.
+
+17
+00:01:25.360 --> 00:01:30.920
+Therefore, we recommend you take these courses before starting this case study.
+
+18
+00:01:30.920 --> 00:01:37.080
+If you're unsure, stick around, try a few exercises, and use the hints available.
+
+19
+00:01:37.080 --> 00:01:41.520
+Finally, it's okay if you don't have any financial background.
+
+20
+00:01:41.520 --> 00:01:46.120
+You will find this course engaging as you learn about the financial system.
+
+21
+00:01:46.120 --> 00:01:49.160
+Okay, let's get into the content.
+
+22
+00:01:49.160 --> 00:01:55.320
+Perhaps you find yourself asking what the financial system is and how trading mortgages fit into it.
+
+23
+00:01:55.320 --> 00:01:56.840
+It's a great question.
+
+24
+00:01:56.840 --> 00:02:01.920
+A financial system is a collective group of people, banks, financial
+
+25
+00:02:01.920 --> 00:02:08.000
+institutions, and lenders working together to move money around in the economy!
+
+26
+00:02:08.000 --> 00:02:14.560
+People with extra money will save or invest their money with banks and financial institutions.
+
+27
+00:02:14.560 --> 00:02:17.200
+We call these people "savers".
+
+28
+00:02:17.200 --> 00:02:20.520
+Savers do this because they expect the bank or financial
+
+29
+00:02:20.520 --> 00:02:24.160
+institution to keep their money safe and earn interest over time.
+
+30
+00:02:24.160 --> 00:02:28.080
+People who need extra money go to lenders.
+
+31
+00:02:28.080 --> 00:02:30.160
+They are called borrowers.
+
+32
+00:02:30.160 --> 00:02:36.640
+In exchange for money, borrowers will sign a loan agreement for the lender and pay some fees.
+
+33
+00:02:36.640 --> 00:02:44.120
+A loan agreement is a promise to repay the borrowed loan amount, usually with interest, in monthly payments.
+
+34
+00:02:44.120 --> 00:02:49.880
+Lenders are happy to write loan agreements because they make money on the fees they charge to the borrowers.
+
+35
+00:02:49.880 --> 00:02:55.560
+But, for example, when they lend $100,000, where do they get this money.
+
+36
+00:02:55.560 --> 00:03:01.960
+Lenders get their money by selling their loans in the capital markets to banks or financial institutions?
+
+37
+00:03:01.960 --> 00:03:08.600
+When they do this, the lender will have the money again to write more loans and continue earning fees.
+
+38
+00:03:08.600 --> 00:03:14.880
+Our case study will focus on this part as we trade mortgage loans to financial institutions.
+
+39
+00:03:14.880 --> 00:03:21.120
+Note that some banks also act as lenders, so this step is not always necessary.
+
+40
+00:03:21.120 --> 00:03:27.120
+Banks and financial institutions are happy to purchase loan agreements because they see the
+
+41
+00:03:27.120 --> 00:03:33.320
+loan as an investment that earns interest over time with each monthly payment the borrower makes.
+
+42
+00:03:33.320 --> 00:03:43.760
+For example, a 30-year $100,000 loan with a 5% annual interest rate will pay $195,000 in total.
+
+43
+00:03:43.760 --> 00:03:47.960
+That's $95,000 in interest earned for the investor.
+
+44
+00:03:47.960 --> 00:03:53.120
+Some interest earned from the investments is also returned to the savers!
+
+45
+00:03:53.120 --> 00:03:54.080
+And there we are.
+
+46
+00:03:54.080 --> 00:03:55.480
+We've come full circle!
+
+47
+00:03:55.480 --> 00:03:59.440
+This is a simplified version of the financial system.
+
+48
+00:03:59.440 --> 00:04:06.240
+In reality, it is much more complex, with thousands of banks, lenders, and billions of people.
+
+49
+00:04:06.240 --> 00:04:10.840
+This system is so intertwined that if you owe any debt, you may
+
+50
+00:04:10.840 --> 00:04:14.920
+indirectly own a small fraction of it in your own investment account!
+
+51
+00:04:14.920 --> 00:04:19.200
+So a healthy financial system is key to a great economy.
+
+52
+00:04:19.200 --> 00:04:22.800
+We'll continue to explore this in more detail throughout the course.
+
+53
+00:04:22.800 --> 00:04:27.120
+For now, let's put these concepts to use.
+
+54
+00:04:27.120 --> 00:04:27.160
+.
+

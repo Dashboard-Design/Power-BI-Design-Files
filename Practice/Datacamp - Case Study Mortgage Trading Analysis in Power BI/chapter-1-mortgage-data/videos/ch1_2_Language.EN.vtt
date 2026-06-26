@@ -1,0 +1,206 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:02.400
+Hello again!
+
+2
+00:00:02.400 --> 00:00:06.120
+In this video, we will review some of the finer details about
+
+3
+00:00:06.120 --> 00:00:10.720
+mortgages to give you a better context on the rest of the case study.
+
+4
+00:00:10.720 --> 00:00:15.800
+A loan agreement is the borrower's promise to repay the money the lender gave them.
+
+5
+00:00:15.800 --> 00:00:23.840
+It's essentially a repayment plan that details the terms and conditions on how the borrower will pay back the loan.
+
+6
+00:00:23.840 --> 00:00:29.000
+In this graph, the loan was made for $100,000, and $20,000
+
+7
+00:00:29.000 --> 00:00:33.880
+is paid down each year for five years until it is paid in full.
+
+8
+00:00:33.880 --> 00:00:37.600
+The original amount borrowed is called the "loan amount".
+
+9
+00:00:37.600 --> 00:00:44.960
+Each period, usually monthly, the borrower will make payments with principal and interest to pay down the loan amount.
+
+10
+00:00:44.960 --> 00:00:54.120
+Principal is the current amount owed on the loan, which is why it is sometimes called the current balance.
+
+11
+00:00:54.120 --> 00:00:59.640
+As the borrower makes payments on their loan, the principal balance goes down.
+
+12
+00:00:59.640 --> 00:01:05.120
+Here, this graph shows the principal balance decreases as payments are made.
+
+13
+00:01:05.120 --> 00:01:09.360
+This phenomenon is known as "amortization".
+
+14
+00:01:09.360 --> 00:01:12.560
+The interest rate is the proportion of interest owed on the
+
+15
+00:01:12.560 --> 00:01:17.960
+principal balance each period, and it is quoted as an annual rate.
+
+16
+00:01:17.960 --> 00:01:25.440
+However, since most payments are made monthly, we must convert the annual rate into a monthly one.
+
+17
+00:01:25.440 --> 00:01:28.800
+This is done easily by dividing by 12.
+
+18
+00:01:28.800 --> 00:01:36.640
+Let's look at an example and calculate the interest for the month on $100,000 with a 5% annual rate.
+
+19
+00:01:36.640 --> 00:01:44.880
+First, we divide 5% by 12, and we get 0 point 417% as our monthly rate.
+
+20
+00:01:44.880 --> 00:01:57.720
+Then, we multiply 0 point 417% by the principal balance of $100,000 and get $417 of interest owed for this month.
+
+21
+00:01:57.720 --> 00:02:04.240
+With amortization, as payments are made and the loan balance decreases, less interest is owed.
+
+22
+00:02:04.240 --> 00:02:09.800
+Payments usually stay the same, so as the interest portion decreases, the
+
+23
+00:02:09.800 --> 00:02:15.520
+principal portion increases and the loan is paid down faster toward the end.
+
+24
+00:02:15.520 --> 00:02:23.120
+Look how the portion of principal and interest changes for this $6,500 payment over 30 years.
+
+25
+00:02:23.120 --> 00:02:26.960
+Since the principal portion of a payment is different for each period,
+
+26
+00:02:26.960 --> 00:02:34.320
+Power BI has a formula to find it: PPMT, which is short for principal payment.
+
+27
+00:02:34.320 --> 00:02:40.560
+The syntax needs a few inputs, like the rate, the period the payment is being amortized,
+
+28
+00:02:40.560 --> 00:02:46.120
+the total number of periods in the loan, and the current balance which is the present value.
+
+29
+00:02:46.120 --> 00:02:51.680
+The future value and type are optional and can be omitted or have zeros.
+
+30
+00:02:51.680 --> 00:02:55.360
+Note that this function produces a negative value.
+
+31
+00:02:55.360 --> 00:03:01.040
+Also, remember to adjust the rate, just like we practiced in the previous slides.
+
+32
+00:03:01.040 --> 00:03:09.360
+For example, to find the principal portion of the first payment on a $100,000 loan with a 5% interest rate and
+
+33
+00:03:09.360 --> 00:03:12.880
+360-month term, we would first plug in
+
+34
+00:03:12.880 --> 00:03:17.880
+the numbers, adjusting the rate to a monthly figure since the periods are in months.
+
+35
+00:03:17.880 --> 00:03:23.400
+Once we run this function, it will return negative $120 and 15 cents.
+
+36
+00:03:23.400 --> 00:03:30.440
+To amortize, we simply subtract the principal amount paid with the payment from the principal balance.
+
+37
+00:03:30.440 --> 00:03:36.640
+Since the PPMT creates a negative output, we should add so we don't create a double negative.
+
+38
+00:03:36.640 --> 00:03:46.640
+Following our previous example, the principal balance is reduced to $99,879 and 85 cents after the first payment.
+
+39
+00:03:46.640 --> 00:03:53.280
+Finally, lenders have qualification criteria to make sure borrowers can afford the loans they take out.
+
+40
+00:03:53.280 --> 00:03:57.720
+This is highly regulated, especially after the 2008 Global
+
+41
+00:03:57.720 --> 00:04:02.600
+Financial Crisis that resulted from bad mortgage lending practices.
+
+42
+00:04:02.600 --> 00:04:06.040
+The first qualification criteria are credit scores.
+
+43
+00:04:06.040 --> 00:04:10.080
+They are based on a borrower's history of making payments to loans they owe.
+
+44
+00:04:10.080 --> 00:04:15.640
+Missing payments badly hurt a borrower's score as it shows they may be a risky investment.
+
+45
+00:04:15.640 --> 00:04:19.960
+In the US, this score ranges from 300 to 850.
+
+46
+00:04:19.960 --> 00:04:21.400
+Higher is better.
+
+47
+00:04:21.400 --> 00:04:27.200
+The debt-to-income ratio divides a borrower's monthly debt over their total monthly income.
+
+48
+00:04:27.200 --> 00:04:30.680
+Generally, lenders like to see this under 50%.
+
+49
+00:04:30.680 --> 00:04:39.360
+Finally, lenders look at loan-to-value, or LTV, which divides the loan amount by the property value.
+
+50
+00:04:39.360 --> 00:04:45.760
+Lenders never want to lend more than the property is worth and lower LTVs are seen as less risky.
+
+51
+00:04:45.760 --> 00:04:49.400
+Alright, let's continue with our case study.
+
