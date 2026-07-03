@@ -1,0 +1,114 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.040
+Welcome to the final chapter of your case study.
+
+2
+00:00:04.040 --> 00:00:06.160
+Great work so far!
+
+3
+00:00:06.160 --> 00:00:11.600
+We uncovered many important insights during our data exploration in the last chapter.
+
+4
+00:00:11.600 --> 00:00:14.880
+We have done a lot of work to get deeper insights into our
+
+5
+00:00:14.880 --> 00:00:20.560
+manufacturer's top competitors and analyze the trends in our data.
+
+6
+00:00:20.560 --> 00:00:28.360
+It is time to streamline and combine these insights and visuals into a story for a great end-user experience.
+
+7
+00:00:28.360 --> 00:00:35.000
+In this chapter, we will work on improving our UI and design and finalize our report.
+
+8
+00:00:35.000 --> 00:00:38.760
+While doing all the DAX calculations and data exploration in the
+
+9
+00:00:38.760 --> 00:00:44.000
+last chapter, we could answer many questions and discover new insights.
+
+10
+00:00:44.000 --> 00:00:47.760
+One insight we found is that our manufacturer has a total market share of
+
+11
+00:00:47.760 --> 00:00:54.000
+38.22 percent in the USA and is a leader compared to the other manufacturers.
+
+12
+00:00:54.000 --> 00:01:03.720
+2021's quarter one has seen the highest percentage growth of 18.8% compared to last year.
+
+13
+00:01:03.720 --> 00:01:10.320
+Also, one crucial finding and discovery is that our primary competitor is Artisans,
+
+14
+00:01:10.320 --> 00:01:17.680
+generating over 50% of the market share compared to the other four manufacturers in Germany.
+
+15
+00:01:17.680 --> 00:01:24.680
+But one good point is that Sintec has 21.15% of the total market share
+
+16
+00:01:24.680 --> 00:01:31.080
+globally and has seen good growth in its revenue compared to the other manufacturers.
+
+17
+00:01:31.080 --> 00:01:34.720
+All these insights would help the executives a lot in the strategic
+
+18
+00:01:34.720 --> 00:01:40.560
+decision-making process and would certainly help take action from this data.
+
+19
+00:01:40.560 --> 00:01:43.360
+In this last chapter, we will be using some of the AI-powered
+
+20
+00:01:43.360 --> 00:01:48.080
+visuals and capabilities which are available for the users off the shelf.
+
+21
+00:01:48.080 --> 00:01:52.760
+Firstly we'll add a Decomposition tree visual which enables the users to
+
+22
+00:01:52.760 --> 00:01:58.880
+drill down into their data to conduct root cause analysis and gain more insights.
+
+23
+00:01:58.880 --> 00:02:07.320
+Then we'll add a Key Influencers Visual, which helps you identify which factors influence certain metrics.
+
+24
+00:02:07.320 --> 00:02:14.360
+Finally, we'll add a Smart narrative visual, which helps you quickly summarize visuals and reports.
+
+25
+00:02:14.360 --> 00:02:23.600
+The end users can use summaries to understand the data, get to key points faster, and explain the data to others.
+
+26
+00:02:23.600 --> 00:02:25.400
+Let's pick up where we left off.
+
+27
+00:02:25.400 --> 00:02:28.680
+Happy storytelling.
+
+28
+00:02:28.680 --> 00:02:28.720
+.
+

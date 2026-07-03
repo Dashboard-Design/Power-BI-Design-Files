@@ -1,0 +1,106 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:02.960
+Fantastic work so far!
+
+2
+00:00:02.960 --> 00:00:06.760
+Let's move on to the next step in the process.
+
+3
+00:00:06.760 --> 00:00:10.320
+Let's reflect on the work you've done so far.
+
+4
+00:00:10.320 --> 00:00:17.720
+Not only have you been able to access and combine data from multiple sources, but you have also completed several
+
+5
+00:00:17.720 --> 00:00:19.960
+transformation and cleaning steps to
+
+6
+00:00:19.960 --> 00:00:26.600
+prepare your data for analysis and set up the required relationships in your data model.
+
+7
+00:00:26.600 --> 00:00:30.160
+In this chapter, we will be working on a few DAX calculations.
+
+8
+00:00:30.160 --> 00:00:32.080
+To summarise.
+
+9
+00:00:32.080 --> 00:00:35.840
+Calculated columns evaluate each row.
+
+10
+00:00:35.840 --> 00:00:43.960
+It adds a new column to an existing table and is calculated at data load or when the data is refreshed.
+
+11
+00:00:43.960 --> 00:00:48.240
+As you can see in the example, a TotalYTD() function is used for
+
+12
+00:00:48.240 --> 00:00:54.240
+aggregating the year-to-date sales value of the expression in the current context.
+
+13
+00:00:54.240 --> 00:00:58.320
+Whereas measures aggregate multiple rows.
+
+14
+00:00:58.320 --> 00:01:02.480
+Results in another field can be added to your visualization
+
+15
+00:01:02.480 --> 00:01:07.960
+and are calculated at query time as you interact and filter.
+
+16
+00:01:07.960 --> 00:01:11.400
+As you can see in the example, Profit is calculated by
+
+17
+00:01:11.400 --> 00:01:15.760
+subtracting the cost from the sales against each row of the column.
+
+18
+00:01:15.760 --> 00:01:21.760
+It would help if you had the scope and goal clear on what you need to achieve by the end of this chapter.
+
+19
+00:01:21.760 --> 00:01:28.760
+Therefore it's important to know what business questions you will try to uncover in this chapter.
+
+20
+00:01:28.760 --> 00:01:32.800
+We would like to know: Who are the top competitors by revenue?
+
+21
+00:01:32.800 --> 00:01:36.040
+What are the best performing segments and products?
+
+22
+00:01:36.040 --> 00:01:38.680
+What does our growth look like over time?
+
+23
+00:01:38.680 --> 00:01:41.960
+How are we performing compared to the previous year's performance?
+
+24
+00:01:41.960 --> 00:01:46.440
+We may also uncover other interesting insights along the way.
+
+25
+00:01:46.440 --> 00:01:50.880
+Great work so far, let's jump into our analysis and data exploration.
+
+26
+00:01:50.880 --> 00:01:53.840
+Have fun!
+

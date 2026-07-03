@@ -1,0 +1,126 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:08.400
+Hi, I'm Deepesh, and I'll be your instructor in this competitor sales analysis case study.
+
+2
+00:00:08.400 --> 00:00:12.960
+A case study allows you to apply your skills and combine the skills you have
+
+3
+00:00:12.960 --> 00:00:18.200
+learned in the previous courses by practicing them in a real-world business scenario.
+
+4
+00:00:18.200 --> 00:00:25.240
+For this case study, no new concepts will be introduced which are already there in the below prerequisite courses.
+
+5
+00:00:25.240 --> 00:00:33.840
+When we work on a BI solution, identifying and solving the end user's needs is the best place to start.
+
+6
+00:00:33.840 --> 00:00:37.160
+Access to the data that lives in different systems and locations.
+
+7
+00:00:37.160 --> 00:00:38.640
+Cleaning the data.
+
+8
+00:00:38.640 --> 00:00:44.360
+Combine the data from all the disparate data sources to produce the needed reports.
+
+9
+00:00:44.360 --> 00:00:46.960
+Exploring and analyzing the data.
+
+10
+00:00:46.960 --> 00:00:56.640
+As we usually say, a picture is worth 1000 words; so visualizing it, and share the results with the other end users.
+
+11
+00:00:56.640 --> 00:01:02.040
+Sharing of the reports and dashboards is outside the scope of this case study.
+
+12
+00:01:02.040 --> 00:01:06.120
+The core goal of this case study is to build a report using a fictional
+
+13
+00:01:06.120 --> 00:01:12.440
+Sales and Market share dataset for a manufacturing company called Sintec.
+
+14
+00:01:12.440 --> 00:01:17.240
+Sintec is looking for a solution to focus not only on the company's performance
+
+15
+00:01:17.240 --> 00:01:22.760
+internally on how well their products sell but also analyze other top
+
+16
+00:01:22.760 --> 00:01:29.240
+competitors' sales and how well they are performing against the other competitors' products.
+
+17
+00:01:29.240 --> 00:01:36.720
+In this case study, we'll create a snowflake-based schema and work with fact and dimension tables.
+
+18
+00:01:36.720 --> 00:01:43.800
+The data is spread across six countries in one folder, and USA's data is in a separate folder.
+
+19
+00:01:43.800 --> 00:01:47.080
+So we are going to work with one fact table that will be
+
+20
+00:01:47.080 --> 00:01:52.680
+created through the transformations step by combining multiple files.
+
+21
+00:01:52.680 --> 00:01:59.920
+The final fact table stores all the transactional data by date, product, and zip code.
+
+22
+00:01:59.920 --> 00:02:04.520
+In addition, we'll be working with multiple dimension tables.
+
+23
+00:02:04.520 --> 00:02:12.360
+Dimension tables are often highly de-normalized because these structures are not built to manage transactions.
+
+24
+00:02:12.360 --> 00:02:19.360
+Instead, they are built to enable users to analyze data as easily as possible.
+
+25
+00:02:19.360 --> 00:02:25.320
+We have four dimension tables: Geography having city, state, and zip details.
+
+26
+00:02:25.320 --> 00:02:30.880
+Product table comprising of products data along with their price.
+
+27
+00:02:30.880 --> 00:02:38.200
+The manufacturer table contains the manufacturer's information, and the Date table.
+
+28
+00:02:38.200 --> 00:02:45.000
+The Date table will be created using DAX calculations during the case study.
+
+29
+00:02:45.000 --> 00:02:48.400
+This is what our final data model will look like.
+
+30
+00:02:48.400 --> 00:02:57.440
+It follows a snowflake schema where we'll have one dimension table that isn't directly connected to the fact table.
+
+31
+00:02:57.440 --> 00:03:02.880
+Let's dive deeper into the case study and start our journey.
+
