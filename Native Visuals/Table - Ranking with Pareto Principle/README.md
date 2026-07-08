@@ -1,7 +1,7 @@
 # Dynamic Ranking + Pareto Analysis
 
 A responsive, SVG-powered ranking visual for Power BI tables that combines Pareto (80/20) analysis with dynamic ranking badges.
-
+<img width="998" height="837" alt="Image" src="https://github.com/user-attachments/assets/6d9a1f2c-80cf-4eac-9dd2-af75c321e2a0" />
 
 ### 📊 Overview
 This visual transforms a standard Power BI table into an intelligent ranking dashboard that:
