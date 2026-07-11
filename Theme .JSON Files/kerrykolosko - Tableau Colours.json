@@ -1,0 +1,129 @@
+{
+    "name": "Tableau Theme Colours",
+    "visualStyles": {
+        "page": {
+            "*": {
+                "background": [
+                    {
+                        "color": {
+                            "solid": {
+                                "color": "#FFFFFF"
+                            }
+                        },
+                        "transparency": 0
+                    }
+                ],
+                "outspace": [
+                    {
+                        "color": {
+                            "solid": {
+                                "color": "#FFFFFF"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "*": {
+            "*": {
+                "outspacePane": [
+                    {
+                        "backgroundColor": {
+                            "solid": {
+                                "color": "#405061"
+                            }
+                        },
+                        "foregroundColor": {
+                            "solid": {
+                                "color": "#FFFFFF"
+                            }
+                        }
+                    }
+                ],
+                "filterCard": [
+                    {
+                        "$id": "Applied",
+                        "backgroundColor": {
+                            "solid": {
+                                "color": "#D37A20"
+                            }
+                        },
+                        "foregroundColor": {
+                            "solid": {
+                                "color": "#FFFFFF"
+                            }
+                        },
+                        "transparency": 0,
+                        "inputBoxColor": {
+                            "solid": {
+                                "color": "#F28E2B"
+                            }
+                        }
+                    },
+                    {
+                        "$id": "Available",
+                        "backgroundColor": {
+                            "solid": {
+                                "color": "#3B5B7D"
+                            }
+                        },
+                        "foregroundColor": {
+                            "solid": {
+                                "color": "#FFFFFF"
+                            }
+                        },
+                        "transparency": 0,
+                        "inputBoxColor": {
+                            "solid": {
+                                "color": {
+                                    "expr": {
+                                        "ThemeDataColor": {
+                                            "ColorId": 2,
+                                            "Percent": 0
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "categoryAxis": [
+                    {
+                        "showAxisTitle": false,
+                        "titleFontFamily": "Segoe UI Semibold"
+                    }
+                ],
+                "valueAxis": [
+                    {
+                        "showAxisTitle": false,
+                        "titleFontFamily": "Segoe UI Semibold"
+                    }
+                ],
+                "background": [
+                    {
+                        "transparency": 100
+                    }
+                ],
+                "visualHeader": [
+                    {
+                        "transparency": 100
+                    }
+                ]
+            }
+        }
+    },
+    "dataColors": [
+        "#4E79A7", "#F28E2B", "#E15759", "#76B7B2", "#59A14F", "#EDC948", "#B07AA1", "#FF9DA7", "#9C755F", "#BAB0AC"
+
+    ],
+    "textClasses": {
+        "callout": {
+            "fontFace": "'Segoe UI', wf_segoe-ui_normal, helvetica, arial, sans-serif",
+            "fontSize": 25
+        },
+        "title": {
+            "fontFace": "'Segoe UI Semibold', wf_segoe-ui_semibold, helvetica, arial, sans-serif",
+            "fontSize": 10
+        }
+    }
+}
