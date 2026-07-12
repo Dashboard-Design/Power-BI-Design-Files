@@ -20,7 +20,12 @@ ignore it).
 - A genuinely fixed pixel size (e.g. Kerry Kolosko's `width='100' height='20'`) is
   a legitimate, deliberate choice when the target column width is known and
   controlled — it's not automatically wrong, just a different design decision.
-  State it explicitly rather than defaulting to it.
+  State it explicitly rather than defaulting to it. Some real-world measures skip
+  `width`/`height`/`viewBox` entirely and rely solely on the Table/Matrix's
+  "Image size" Format-pane property to size the render — if you use that
+  approach, add a comment stating the exact Image size the measure assumes,
+  since nothing else keeps that Format-pane setting and the DAX numbers in sync;
+  they're two separate places a future edit can silently desync.
 - `display="block"` on the root `<svg>` — by default an inline SVG behaves like
   inline text and reserves a small baseline gap below it, which can throw off
   vertical centering by a few pixels. There is no downside to setting this.
@@ -108,7 +113,18 @@ on the first invalid one — not just the one attribute it appeared in.
 - Any color that might reasonably need conditional formatting later (status
   colors, thresholds, above/below-target coloring) should be its own `VAR`, not a
   hardcoded hex value — this is what makes an icon governable later rather than
-  requiring a hand-edit of the SVG markup.
+  requiring a hand-edit of the SVG markup. **Encode the hex value as `%23...` the
+  moment you write the VAR** (e.g. `VAR _FillColor = "%231F3A2E"`), not as a
+  separate cleanup step — this rule lives in Section 2 as well, repeated here
+  because it's easy to lose track of a rule stated only once, far from where the
+  color is actually written.
+- Annotate each color VAR with the color's common name in a trailing comment,
+  e.g. `VAR _ActualColor = "%23686868" -- Charcoal`. Costs nothing to write, and
+  saves the next person from decoding a hex value by eye.
+- If row sort order should follow the underlying value rather than the SVG
+  string itself, add `"<desc>" & FORMAT(Value, "000000000000") & "</desc>"` as
+  the first child right after the opening `<svg>` tag — a convention seen
+  independently in multiple widely-used community measures.
 
 ---
 
@@ -154,3 +170,18 @@ extra caution.
 - For genuinely data-driven, complex visuals (bar/gauge charts with computed
   geometry), modular VARs are appropriate and expected — the guidance above is
   about not introducing unnecessary fragmentation, not banning it outright.
+
+## 7. Publishing a measure as a reusable template
+
+If the measure is meant to be shared or adapted by other developers (not just
+used once), two conventions from real-world community measures are worth
+adopting:
+
+- **A `START CONFIG` / `END CONFIG` banner** wrapping the values someone is
+  expected to change, with an explicit warning below it (e.g. "beyond here there
+  be dragons"). More effective than just organizing into sections, because it
+  actively discourages editing the parts that shouldn't be touched.
+- **A distinct naming convention for placeholders meant to be replaced**, e.g. a
+  double-underscore prefix like `__ACTUAL_MEASURE__`, `__GROUPBY_COLUMN__` —
+  visually distinct from ordinary local `_variable` names, so it's obvious at a
+  glance which identifiers need substitution before the measure will run.
