@@ -12,6 +12,8 @@ A curated collection of free and publicly available datasets covering a variety 
 
 Pre-modeled Power BI files with relationships, date tables, and basic data preparation already completed, allowing you to focus on dashboard design, DAX, storytelling, and user experience.
 
+### Case Studies
+
 Whether you're building your portfolio, participating in a dashboard challenge, or simply exploring new design ideas, these resources provide a solid starting point for your next Power BI project.
 
 Happy building and happy visualizing! 🚀
