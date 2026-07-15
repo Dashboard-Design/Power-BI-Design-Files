@@ -1,0 +1,9 @@
+[0310/130748.617:ERROR:crashpad_client_win.cc(175)] crash server did not respond, self-terminating
+[0310/130748.809:ERROR:crashpad_client_win.cc(175)] crash server did not respond, self-terminating
+[0310/130748.809:ERROR:crashpad_client_win.cc(175)] crash server did not respond, self-terminating
+[0310/130748.816:ERROR:crashpad_client_win.cc(175)] crash server did not respond, self-terminating
+[0310/130749.004:ERROR:crashpad_client_win.cc(175)] crash server did not respond, self-terminating
+[0310/130749.101:ERROR:crashpad_client_win.cc(175)] crash server did not respond, self-terminating
+[0310/130749.143:ERROR:crashpad_client_win.cc(175)] crash server did not respond, self-terminating
+[0310/131911.427:ERROR:registration_protocol_win.cc(102)] CreateFile: The system cannot find the file specified. (0x2)
+[0310/131911.640:ERROR:registration_protocol_win.cc(102)] CreateFile: The system cannot find the file specified. (0x2)

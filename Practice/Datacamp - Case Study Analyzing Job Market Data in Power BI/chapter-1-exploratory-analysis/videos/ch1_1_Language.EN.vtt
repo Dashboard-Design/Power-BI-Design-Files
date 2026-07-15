@@ -1,0 +1,346 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:01.280
+Hi!
+
+2
+00:00:01.280 --> 00:00:04.320
+I’m Luke, your instructor for this case study.
+
+3
+00:00:04.320 --> 00:00:09.000
+I work as a data analyst and use Power BI to share findings and insights with my colleagues.
+
+4
+00:00:09.000 --> 00:00:13.320
+In my spare time, I like to share my journey in learning tools for my job on my YouTube channel.
+
+5
+00:00:13.320 --> 00:00:15.200
+So with that, let's jump in!
+
+6
+00:00:15.200 --> 00:00:15.200
+
+
+7
+00:00:15.200 --> 00:00:15.240
+
+
+8
+00:00:15.240 --> 00:00:20.640
+A case study allows you to apply the skills you've learned from previous courses on a particular topic.
+
+9
+00:00:20.640 --> 00:00:26.800
+It also allows you to work on a problem that those in data science commonly work to solve.
+
+10
+00:00:26.800 --> 00:00:33.080
+For this, no new concepts will introduced beyond what was covered in the prerequisite courses.
+
+11
+00:00:33.080 --> 00:00:33.120
+
+
+12
+00:00:33.120 --> 00:00:33.120
+
+
+13
+00:00:33.120 --> 00:00:38.240
+This case study will follow the data analytics pipeline: doing a data check and exploration of
+
+14
+00:00:38.240 --> 00:00:44.760
+the data, analyzing and visualizing the data, building the final dashboard and communicating insights.
+
+15
+00:00:44.760 --> 00:00:47.560
+Let's explore these steps more in-depth.
+
+16
+00:00:47.560 --> 00:00:47.560
+
+
+17
+00:00:47.560 --> 00:00:47.560
+
+
+18
+00:00:47.560 --> 00:00:50.360
+For this first chapter, you will be performing an integrity
+
+19
+00:00:50.360 --> 00:00:54.760
+check of the data and also start the exploratory data analysis.
+
+20
+00:00:54.760 --> 00:00:58.040
+Towards the later exercises for this chapter, you will get into
+
+21
+00:00:58.040 --> 00:01:01.760
+asking business questions related to the problem we will be working to solve.
+
+22
+00:01:01.760 --> 00:01:02.280
+
+
+23
+00:01:02.280 --> 00:01:02.280
+
+
+24
+00:01:02.280 --> 00:01:08.240
+For the second chapter, you will go deeper into analyzing the dataset using more advanced techniques.
+
+25
+00:01:08.240 --> 00:01:15.400
+Specifically, you will be using many types of visualizations and some basic DAX formulas for even further analysis.
+
+26
+00:01:15.400 --> 00:01:15.400
+
+
+27
+00:01:15.400 --> 00:01:15.400
+
+
+28
+00:01:15.400 --> 00:01:18.760
+For the last chapter, you will be building out the visualizations
+
+29
+00:01:18.760 --> 00:01:22.440
+in a more intuitive and user-friendly method for our key stakeholders.
+
+30
+00:01:22.440 --> 00:01:30.400
+Power BI is designed for this, so we'll be taking advantage of this tool's many features to best display our insights.
+
+31
+00:01:30.400 --> 00:01:35.720
+Note that communicating insights, as in publishing your dashboards, is beyond the scope of this case study.
+
+32
+00:01:35.720 --> 00:01:36.440
+
+
+33
+00:01:36.440 --> 00:01:36.440
+
+
+34
+00:01:36.440 --> 00:01:39.480
+You will be working for an employer recruiting firm, called
+
+35
+00:01:39.480 --> 00:01:43.800
+DataSearch, to find insights into market trends of jobs in data science.
+
+36
+00:01:43.800 --> 00:01:47.200
+Recruiters, also known as headhunters, perform employment
+
+37
+00:01:47.200 --> 00:01:51.520
+recruiting services for both companies and those looking to gain employment.
+
+38
+00:01:51.520 --> 00:01:57.920
+You'll be tasked to use a dataset of job postings to find trends in top data science jobs along with associated skills.
+
+39
+00:01:57.920 --> 00:01:57.920
+
+
+40
+00:01:57.920 --> 00:01:57.920
+
+
+41
+00:01:57.920 --> 00:02:02.800
+Trends in the job market are a classic supply and demand problem.
+
+42
+00:02:02.800 --> 00:02:04.920
+Looking at the axes of the graph, the
+
+43
+00:02:04.920 --> 00:02:12.320
+"Quantity", or number of job postings, is the x-axis, and the "Price", or salary, is the y-axis.
+
+44
+00:02:12.320 --> 00:02:12.320
+
+
+45
+00:02:12.320 --> 00:02:12.320
+
+
+46
+00:02:12.320 --> 00:02:17.840
+The yellow line, titled "Supply", is based upon the amount of those that are looking for employment.
+
+47
+00:02:17.840 --> 00:02:17.840
+
+
+48
+00:02:17.840 --> 00:02:17.840
+
+
+49
+00:02:17.840 --> 00:02:22.560
+The red line, titled "Demand", is based upon the amount of employment opportunities.
+
+50
+00:02:22.560 --> 00:02:22.560
+
+
+51
+00:02:22.560 --> 00:02:22.560
+
+
+52
+00:02:22.560 --> 00:02:29.280
+The point where supply and demand intersect, corresponds directly to salary or price.
+
+53
+00:02:29.280 --> 00:02:35.600
+These lines are theoretical and in a real world scenario, supply and demand are more difficult to plot.
+
+54
+00:02:35.600 --> 00:02:38.240
+However, the basics of this concept are still important to
+
+55
+00:02:38.240 --> 00:02:42.120
+understand and are something we should look out for in this case study.
+
+56
+00:02:42.120 --> 00:02:42.680
+
+
+57
+00:02:42.680 --> 00:02:42.680
+
+
+58
+00:02:42.680 --> 00:02:46.320
+For this case study, you will be using a fictitious dataset that is
+
+59
+00:02:46.320 --> 00:02:51.000
+comprised of job postings over the past 5 years for the data science industry.
+
+60
+00:02:51.000 --> 00:02:54.680
+Each entry in the table of this dataset correlates to a specific job
+
+61
+00:02:54.680 --> 00:03:00.240
+posting in time, which has 19 attributes or columns for each posting.
+
+62
+00:03:00.240 --> 00:03:03.600
+One important disclaimer on this dataset is that because it's fictitious,
+
+63
+00:03:03.600 --> 00:03:07.640
+please don't apply any insights gained during this case study into the real world.
+
+64
+00:03:07.640 --> 00:03:07.640
+
+
+65
+00:03:07.640 --> 00:03:07.640
+
+
+66
+00:03:07.640 --> 00:03:13.520
+The dataset is comprised of both Qualitative and Quantitative characterized columns.
+
+67
+00:03:13.520 --> 00:03:13.520
+
+
+68
+00:03:13.520 --> 00:03:13.520
+
+
+69
+00:03:13.520 --> 00:03:18.480
+For the Qualitative Columns, the primary columns include items relevant to a job
+
+70
+00:03:18.480 --> 00:03:24.680
+posting, such as the ID, title, type, and level, along with the required skills for the job.
+
+71
+00:03:24.680 --> 00:03:24.680
+
+
+72
+00:03:24.680 --> 00:03:24.680
+
+
+73
+00:03:24.680 --> 00:03:29.560
+For the quantitative columns we will be looking at attributes such as dates of job
+
+74
+00:03:29.560 --> 00:03:34.960
+postings, minimum experience level requested in years, minimum and maximum salary offered
+
+75
+00:03:34.960 --> 00:03:40.120
+for the job posting, and the number of applicants that applied to the job in the first 24 hours.
+
+76
+00:03:40.120 --> 00:03:40.120
+
+
+77
+00:03:40.120 --> 00:03:40.840
+
+
+78
+00:03:40.840 --> 00:03:44.320
+Note you can also download the dataset and the metadata sheet from the
+
+79
+00:03:44.320 --> 00:03:48.320
+course overview page if you want to work in your local version of Power BI.
+
+80
+00:03:48.320 --> 00:03:48.320
+
+
+81
+00:03:48.320 --> 00:03:48.320
+
+
+82
+00:03:48.320 --> 00:03:52.240
+As a sneak peek into our final deliverable in the last chapter;
+
+83
+00:03:52.240 --> 00:03:55.680
+here are some snapshots of the dashboards that we will be working to build!
+
+84
+00:03:55.680 --> 00:03:55.680
+
+
+85
+00:03:55.680 --> 00:03:55.680
+
+
+86
+00:03:55.680 --> 00:04:00.240
+Alright, let's dive into this case study!
+

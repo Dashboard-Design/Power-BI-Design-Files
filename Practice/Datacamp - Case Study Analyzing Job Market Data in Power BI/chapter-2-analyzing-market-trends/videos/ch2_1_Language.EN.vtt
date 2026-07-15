@@ -1,0 +1,214 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:02.760
+Welcome to Chapter 2!
+
+2
+00:00:02.760 --> 00:00:02.760
+
+
+3
+00:00:02.760 --> 00:00:02.800
+
+
+4
+00:00:02.800 --> 00:00:07.840
+We've already accomplished so much with our exploratory data analysis in the first chapter; it's
+
+5
+00:00:07.840 --> 00:00:13.640
+now time to get into finding insights in preparation for building our final deliverable for DataSearch.
+
+6
+00:00:13.640 --> 00:00:13.640
+
+
+7
+00:00:13.640 --> 00:00:13.640
+
+
+8
+00:00:13.640 --> 00:00:18.680
+Let's reflect back on some of the key findings that we will want to continue to investigate.
+
+9
+00:00:18.680 --> 00:00:18.680
+
+
+10
+00:00:18.680 --> 00:00:18.680
+
+
+11
+00:00:18.680 --> 00:00:22.800
+First, is that the number of job postings are trending upward over time.
+
+12
+00:00:22.800 --> 00:00:28.600
+With the exception of a couple of brief periods of decline in job postings in 2020; overall,
+
+13
+00:00:28.600 --> 00:00:34.800
+job postings for data science roles are rising in demand, which is a very good thing for DataSearch.
+
+14
+00:00:34.800 --> 00:00:34.840
+
+
+15
+00:00:34.840 --> 00:00:34.840
+
+
+16
+00:00:34.840 --> 00:00:38.320
+Next, is that of the 5 jobs to investigate, Data
+
+17
+00:00:38.320 --> 00:00:43.680
+Engineers, Scientists, and Analysts are some of the most needed jobs.
+
+18
+00:00:43.680 --> 00:00:49.000
+We will want to focus on these jobs in our upcoming analysis to maximize our efforts.
+
+19
+00:00:49.000 --> 00:00:49.000
+
+
+20
+00:00:49.000 --> 00:00:49.000
+
+
+21
+00:00:49.000 --> 00:00:53.200
+Finally, we noted that technology industries are requesting data science positions
+
+22
+00:00:53.200 --> 00:00:58.760
+the most and that these roles all have competitive salaries that are rising with demand.
+
+23
+00:00:58.760 --> 00:01:03.440
+We'll need to dive more into these industries and companies in the upcoming analysis.
+
+24
+00:01:03.440 --> 00:01:03.440
+
+
+25
+00:01:03.440 --> 00:01:03.520
+
+
+26
+00:01:03.520 --> 00:01:07.040
+Although we were able to perform some high level analysis of all of the data
+
+27
+00:01:07.040 --> 00:01:12.840
+previously, we will be diving deeper into some of the columns shown to uncover further insights.
+
+28
+00:01:12.840 --> 00:01:16.520
+We will focus on building these findings with enticing visualizations.
+
+29
+00:01:16.520 --> 00:01:16.520
+
+
+30
+00:01:16.520 --> 00:01:16.960
+
+
+31
+00:01:16.960 --> 00:01:22.760
+For this, we want to look into any correlation between skills and a specific job title.
+
+32
+00:01:22.760 --> 00:01:28.160
+Additionally, we'll investigate top industries and companies that are requesting these roles.
+
+33
+00:01:28.160 --> 00:01:32.840
+And finally, it's always good practice to give recommendations to your stakeholders on your
+
+34
+00:01:32.840 --> 00:01:37.240
+findings, so we'll need to keep an eye out for key insights we want to share with our client.
+
+35
+00:01:37.240 --> 00:01:37.240
+
+
+36
+00:01:37.240 --> 00:01:38.080
+
+
+37
+00:01:38.080 --> 00:01:43.360
+Recall, that we are in the third phase of our project of analyzing and building visualizations.
+
+38
+00:01:43.360 --> 00:01:48.840
+This is all in preparation for building our final deliverable of a dashboard for DataSearch.
+
+39
+00:01:48.840 --> 00:01:48.840
+
+
+40
+00:01:48.840 --> 00:01:49.480
+
+
+41
+00:01:49.480 --> 00:01:55.480
+Before we jump back in, it's always a good idea to have end goals in mind for what you want to accomplish.
+
+42
+00:01:55.480 --> 00:01:59.320
+Otherwise, you will wind up working aimlessly with no end in mind.
+
+43
+00:01:59.320 --> 00:01:59.880
+
+
+44
+00:01:59.880 --> 00:01:59.880
+
+
+45
+00:01:59.880 --> 00:02:03.520
+For these end-goals, it's important you take the time to think about:
+
+46
+00:02:03.520 --> 00:02:03.920
+- What key
+
+47
+00:02:03.920 --> 00:02:06.640
+findings you want to focus on and highlight
+
+48
+00:02:06.640 --> 00:02:08.560
+- What are the best visualizations to convey
+
+49
+00:02:08.560 --> 00:02:09.800
+these insights
+
+50
+00:02:09.800 --> 00:02:12.760
+- And finally, how can this all be best communicated
+
+51
+00:02:12.760 --> 00:02:12.760
+
+
+52
+00:02:12.760 --> 00:02:15.280
+It's time to get back to it.
+
+53
+00:02:15.280 --> 00:02:17.240
+Enjoy!
+

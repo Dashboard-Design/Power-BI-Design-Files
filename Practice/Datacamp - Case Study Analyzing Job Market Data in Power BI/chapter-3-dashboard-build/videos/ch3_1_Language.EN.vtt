@@ -1,0 +1,374 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.480
+Welcome to the third and final chapter of this case study!
+
+2
+00:00:04.480 --> 00:00:04.480
+
+
+3
+00:00:04.480 --> 00:00:04.480
+
+
+4
+00:00:04.480 --> 00:00:07.560
+We've uncovered many important insights during our exploratory
+
+5
+00:00:07.560 --> 00:00:12.560
+analysis and the deeper analysis of the job market for data science roles.
+
+6
+00:00:12.560 --> 00:00:17.560
+It is time to put all of these insights together into a cohesive story for DataSearch.
+
+7
+00:00:17.560 --> 00:00:23.040
+Specifically, we will be focusing this final chapter on building a dashboard for our client.
+
+8
+00:00:23.040 --> 00:00:23.040
+
+
+9
+00:00:23.040 --> 00:00:23.040
+
+
+10
+00:00:23.040 --> 00:00:24.880
+First; Who is the audience.
+
+11
+00:00:24.880 --> 00:00:30.680
+We need to understand who will be interacting with the dashboard and the user’s relative knowledge in this area.
+
+12
+00:00:30.680 --> 00:00:30.680
+
+
+13
+00:00:30.680 --> 00:00:30.680
+
+
+14
+00:00:30.680 --> 00:00:30.680
+
+
+15
+00:00:30.680 --> 00:00:32.800
+Second; What do they need?
+
+16
+00:00:32.800 --> 00:00:35.800
+For this, we need to understand the goal of those using our
+
+17
+00:00:35.800 --> 00:00:40.440
+dashboard or more importantly, what they will using the dashboard for.
+
+18
+00:00:40.440 --> 00:00:40.440
+
+
+19
+00:00:40.440 --> 00:00:40.440
+
+
+20
+00:00:40.440 --> 00:00:40.480
+
+
+21
+00:00:40.480 --> 00:00:42.920
+Finally; How can a dashboard help.
+
+22
+00:00:42.920 --> 00:00:46.960
+The dashboard needs to be more than just exciting visuals; it needs to provide
+
+23
+00:00:46.960 --> 00:00:51.640
+insights relevant to an audience member to help them act in a particular manner.
+
+24
+00:00:51.640 --> 00:00:51.640
+
+
+25
+00:00:51.640 --> 00:00:51.640
+
+
+26
+00:00:51.640 --> 00:00:55.160
+Let's dive into the who, what, and how for this dashboard.
+
+27
+00:00:55.160 --> 00:00:55.160
+
+
+28
+00:00:55.160 --> 00:00:55.160
+
+
+29
+00:00:55.160 --> 00:00:58.080
+The recruiters at DataSearch are the Who.
+
+30
+00:00:58.080 --> 00:01:01.160
+They are very familiar with this field, so it is okay to assume that they
+
+31
+00:01:01.160 --> 00:01:05.000
+will understand all of the previous metrics we have utilized and uncovered.
+
+32
+00:01:05.000 --> 00:01:05.600
+
+
+33
+00:01:05.600 --> 00:01:05.600
+
+
+34
+00:01:05.600 --> 00:01:11.800
+For the “What”, the recruiter’s goal is to connect those looking for roles with employers that match.
+
+35
+00:01:11.800 --> 00:01:15.760
+The easier we can identify potential opportune areas for qualified
+
+36
+00:01:15.760 --> 00:01:19.520
+candidates, the easier it will be for a recruiter to accomplish their job.
+
+37
+00:01:19.520 --> 00:01:19.520
+
+
+38
+00:01:19.520 --> 00:01:20.280
+
+
+39
+00:01:20.280 --> 00:01:21.600
+Finally, the “How”.
+
+40
+00:01:21.600 --> 00:01:26.000
+We need to transform the insights of this data into a useable form for the recruiters.
+
+41
+00:01:26.000 --> 00:01:30.800
+This will be the primary focus area as we build out this dashboard.
+
+42
+00:01:30.800 --> 00:01:30.800
+
+
+43
+00:01:30.800 --> 00:01:30.800
+
+
+44
+00:01:30.800 --> 00:01:32.520
+When designing our dashboard, it’s
+
+45
+00:01:32.520 --> 00:01:37.200
+essential to think of three major questions when creating the overall layout for a dashboard.
+
+46
+00:01:37.200 --> 00:01:38.000
+
+
+47
+00:01:38.000 --> 00:01:38.000
+
+
+48
+00:01:38.000 --> 00:01:42.960
+First, what significant visualizations do we want to include on this dashboard?
+
+49
+00:01:42.960 --> 00:01:48.320
+We don’t want to have too many as this would be distracting; instead, we only wish to use the most valuable visuals.
+
+50
+00:01:48.320 --> 00:01:48.320
+
+
+51
+00:01:48.320 --> 00:01:48.320
+
+
+52
+00:01:48.320 --> 00:01:49.040
+
+
+53
+00:01:49.040 --> 00:01:49.040
+
+
+54
+00:01:49.040 --> 00:01:53.400
+Next, we need to ensure the most intuitive visuals are used for these visuals.
+
+55
+00:01:53.400 --> 00:01:57.040
+If we are using a more complex visual, does our audience
+
+56
+00:01:57.040 --> 00:02:01.120
+understand this visual, or do we have to take the time to explain it to them.
+
+57
+00:02:01.120 --> 00:02:01.120
+
+
+58
+00:02:01.120 --> 00:02:01.120
+
+
+59
+00:02:01.120 --> 00:02:06.480
+Finally, we need to use sizing, positioning, & coloring to draw
+
+60
+00:02:06.480 --> 00:02:09.800
+our users attention to key insights that will help solve their problem.
+
+61
+00:02:09.800 --> 00:02:09.800
+
+
+62
+00:02:09.800 --> 00:02:10.640
+
+
+63
+00:02:10.640 --> 00:02:15.120
+When diving into the design of a dashboard, it’s essential to think of aspects
+
+64
+00:02:15.120 --> 00:02:15.920
+such as:
+
+65
+00:02:15.920 --> 00:02:15.920
+
+
+66
+00:02:15.920 --> 00:02:15.960
+
+
+67
+00:02:15.960 --> 00:02:19.600
+- Using the least amount of visuals to avoid overwhelming your audience.
+
+68
+00:02:19.600 --> 00:02:19.600
+
+
+69
+00:02:19.600 --> 00:02:24.480
+- Giving context behind whether a number is good or bad by providing reference values.
+
+70
+00:02:24.480 --> 00:02:25.040
+
+
+71
+00:02:25.040 --> 00:02:30.360
+- Using labels, via axes and titles, to avoid confusion about visuals provided.
+
+72
+00:02:30.360 --> 00:02:30.960
+
+
+73
+00:02:30.960 --> 00:02:35.320
+- Finally, making the dashboard interactive so users can explore the data.
+
+74
+00:02:35.320 --> 00:02:35.320
+
+
+75
+00:02:35.320 --> 00:02:35.320
+
+
+76
+00:02:35.320 --> 00:02:38.960
+Based on our previous research, it makes sense to break up
+
+77
+00:02:38.960 --> 00:02:44.080
+the dashboard into three separate areas: Job, Skills, and Company.
+
+78
+00:02:44.080 --> 00:02:47.920
+The dashboard will need to be designed in a way that recruiters at
+
+79
+00:02:47.920 --> 00:02:52.560
+DataSearch can dive deeper into one of these topic areas based on their needs.
+
+80
+00:02:52.560 --> 00:02:52.560
+
+
+81
+00:02:52.560 --> 00:02:52.560
+
+
+82
+00:02:52.560 --> 00:02:52.560
+
+
+83
+00:02:52.560 --> 00:02:57.200
+For all the dashboards we’ll be designing it in a consistent manner, placing
+
+84
+00:02:57.200 --> 00:03:02.120
+corresponding key metrics at the top of the dashboard, along with slicers on the left-hand side.
+
+85
+00:03:02.120 --> 00:03:05.040
+For the visuals in the center of the dashboards, we will be
+
+86
+00:03:05.040 --> 00:03:08.480
+taking use of the previously designed visuals that we have made.
+
+87
+00:03:08.480 --> 00:03:08.480
+
+
+88
+00:03:08.480 --> 00:03:08.480
+
+
+89
+00:03:08.480 --> 00:03:12.080
+When we are done, we’ll make a home page for the dashboard that has
+
+90
+00:03:12.080 --> 00:03:17.000
+click-able icons for users to navigate to the area they would like to investigate further.
+
+91
+00:03:17.000 --> 00:03:17.000
+
+
+92
+00:03:17.000 --> 00:03:17.000
+
+
+93
+00:03:17.000 --> 00:03:22.120
+Alright, let's dive in with building these dashboards!
+
