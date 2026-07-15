@@ -1,19 +1,28 @@
 # Practice
 
-This folder contains resources designed to help you practice and improve your Power BI skills.
+This folder contains resources designed to help you practice and improve your **Power BI** skills.
 
-## What's Included
+## 📁 What's Inside
 
-### Datasets
+- **Datasets** – Raw and prepared datasets used in the case studies
+- **Starter PBIX Files** – Pre-built starter files to begin each project quickly
+- **Datacamp - Case Studies 
 
-A curated collection of free and publicly available datasets covering a variety of industries and business scenarios.
+## Purpose
 
-### Starter PBIX Files
+These materials are perfect for:
+- Practicing real-world business scenarios
+- Building end-to-end dashboards
+- Strengthening DAX, data modeling, and visualization skills
+- Preparing for Power BI interviews or certifications
 
-Pre-modeled Power BI files with relationships, date tables, and basic data preparation already completed, allowing you to focus on dashboard design, DAX, storytelling, and user experience.
+## How to Use
 
-### Case Studies
+1. Open the relevant **Starter PBIX** file
+2. Follow along with the case study requirements
+3. Use the datasets provided in the `Datasets` folder
+4. Challenge yourself to improve the starter file with better design and insights
 
-Whether you're building your portfolio, participating in a dashboard challenge, or simply exploring new design ideas, these resources provide a solid starting point for your next Power BI project.
+---
 
-Happy building and happy visualizing! 🚀
+Happy practicing! 🚀
