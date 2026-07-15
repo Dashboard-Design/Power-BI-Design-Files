@@ -6,7 +6,7 @@ This folder contains resources designed to help you practice and improve your **
 
 - **Datasets** – Raw and prepared datasets used in the case studies
 - **Starter PBIX Files** – Pre-built starter files to begin each project quickly
-- **Datacamp - Case Studies 
+- **Datacamp** - Case Studies 
 
 ## Purpose
 
