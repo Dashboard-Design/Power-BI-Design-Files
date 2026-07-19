@@ -28,14 +28,16 @@ The goal is not to archive every custom visual available for Power BI. Instead, 
 
 ## How to Use
 
-#### Option 1 – Import the .pbiviz file
+### Option 1 – Import the .pbiviz file
 1. Open Power BI Desktop.
 2. In the Visualizations pane, select ... (More options).
 3. Choose Import a visual from a file.
 4. Select the desired .pbiviz file from this folder.
 5. The visual will be added to your report and can be reused like any other visual.
 
-#### Option 2 – Install from AppSource
+<img width="923" height="890" alt="Image" src="https://github.com/user-attachments/assets/483a1610-52a3-4296-b4e4-dc3b84f864c0" />
+
+### Option 2 – Install from AppSource
 
 Most visuals included here are also available through Microsoft AppSource.
 
