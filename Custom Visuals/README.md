@@ -15,12 +15,14 @@ The goal is not to archive every custom visual available for Power BI. Instead, 
 
 ## Included Visuals
 
-| Visual                                         | Purpose                                                                 |
-| ---------------------------------------------- | ----------------------------------------------------------------------- |
-| HTML Content                                   | Render HTML, CSS, SVG, and JavaScript inside Power BI reports.          |
-| Deneb                                          | Build fully customized visuals using Vega and Vega-Lite specifications. |
-| *(additional visuals will be added over time)* |                                                                         |
-
+| Visual                                         | Purpose                                                                           |
+| ---------------------------------------------- | -----------------------------------------------------------------------           |
+| HTML Content                                   | Render HTML, CSS, SVG, and JavaScript inside Power BI reports.                    |
+| Deneb                                          | Build fully customized visuals using Vega and Vega-Lite specifications.           |
+| Chord                                          | A graphical method of displaying the inter-relationships between data in a matrix |                                                                       |
+| Word Cloud                                     | Create a fun visual from frequent text in your data                               |
+| Violin Plot                                    | Use to visualise the distribution of your data.                                   |     
+| Gantt Chart                                    | A graphical method of displaying the inter-relationships between data in a matrix |     
 
 --- 
 
