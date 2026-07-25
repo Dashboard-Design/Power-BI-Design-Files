@@ -19,7 +19,7 @@ This directory contains a curated collection of **Power BI theme JSON files** so
 
 All files were obtained from publicly shared, free resources. Huge thanks to the creators:
 
-- **[BIBB](https://bibb.pro/apps/theme-generator/)** – Excellent free theme collection
+- **[BIBB](https://bibb.pro/apps/theme-generator/)** – Excellent free theme collection (Highly Recommended)
 - **[Kerry Kolosko](https://kerrykolosko.com/portfolio/)** – High-quality theme colors
 - **[ZebraBI](https://help.zebrabi.com/kb/power-bi/custom-themes/)** - IBSC style theme
 
