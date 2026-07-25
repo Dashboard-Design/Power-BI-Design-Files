@@ -14,6 +14,19 @@ This directory contains a curated collection of **Power BI theme JSON files** so
 | `kerrykolosko - Tableau Colours.json` | Kerry Kolosko | Tableau-inspired professional palette |
 | `kerrykolosko - Teals.json` | Kerry Kolosko | Teal-focused monochromatic theme |
 
+## 📚 Theme Features You May Not Know
+
+Power BI themes can do much more than define colors.
+
+<img width="4320" height="5400" alt="40-  5 things your theme can do that you probably missed" src="https://github.com/user-attachments/assets/ef9d9f81-4f38-4e27-bd43-0589ca5bf513" />
+
+Some advanced capabilities include:
+- 🏢 Organizational Themes
+- 🎨 Fluent 2 Visual Defaults
+- 🧩 Style Presets
+- ✅ Custom Icons for Conditional Formatting
+- ⚡ Reference Theme Colors and Icons by Name in DAX
+
 
 ## Sources & Credits
 
