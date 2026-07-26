@@ -1,0 +1,190 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:03.760
+Hello, and welcome to this case study.
+
+2
+00:00:03.760 --> 00:00:07.040
+My name is Iason, and I'll be your instructor.
+
+3
+00:00:07.040 --> 00:00:09.800
+So, what is a case study?
+
+4
+00:00:09.800 --> 00:00:12.960
+A case study allows you to apply your skills.
+
+5
+00:00:12.960 --> 00:00:20.000
+You won't learn any new concepts, but you'll have to combine the skills you've learned to solve a real-world problem.
+
+6
+00:00:20.000 --> 00:00:25.920
+We recommend you taking some of these prerequisite courses before completing this case study.
+
+7
+00:00:25.920 --> 00:00:33.240
+In this case study, you'll work with a fictitious dataset from an online pet supply company called Whiskique.
+
+8
+00:00:33.240 --> 00:00:37.160
+You have been hired as a new analyst to uncover insights into the
+
+9
+00:00:37.160 --> 00:00:42.120
+company's overall performance and possible improvement opportunities.
+
+10
+00:00:42.120 --> 00:00:46.800
+By the end of this course, you will successfully analyze an ecommerce dataset and
+
+11
+00:00:46.800 --> 00:00:53.840
+leverage your Power BI skills to create engaging dashboard-style pages full of insights.
+
+12
+00:00:53.840 --> 00:01:00.480
+Firstly, we will examine some important terms and operations involved in ecommerce businesses.
+
+13
+00:01:00.480 --> 00:01:04.040
+Let's look at an illustrative example of the total costs
+
+14
+00:01:04.040 --> 00:01:08.600
+for canned pet food through various stages in the supply chain.
+
+15
+00:01:08.600 --> 00:01:15.840
+In this example, for a $20 purchase of canned pet food, $4 goes to the manufacturer.
+
+16
+00:01:15.840 --> 00:01:19.560
+This is also called the cost of goods sold or COGS.
+
+17
+00:01:19.560 --> 00:01:24.960
+one dollar and 50 cents is spent on freight costs and fulfillment fees.
+
+18
+00:01:24.960 --> 00:01:32.400
+This includes the cost to ship a product from the manufacturer to the warehouse and the warehouse storage fees.
+
+19
+00:01:32.400 --> 00:01:36.520
+Last-mile delivery to customers costs $5.
+
+20
+00:01:36.520 --> 00:01:42.400
+This leaves a profit markup of $8 before administrative costs.
+
+21
+00:01:42.400 --> 00:01:46.520
+Whiskique pet supply has two primary business goals.
+
+22
+00:01:46.520 --> 00:01:51.440
+The first is to serve as many customers as possible and increase sales.
+
+23
+00:01:51.440 --> 00:01:55.680
+The second is to reduce its operating expenses.
+
+24
+00:01:55.680 --> 00:02:03.480
+Through the analysis work you will carry out for Whiskique, you will advise on increasing sales and reducing expenses.
+
+25
+00:02:03.480 --> 00:02:07.320
+Let us begin with the opportunities for sales growth.
+
+26
+00:02:07.320 --> 00:02:12.360
+For sales growth, you will focus on upsell and cross-sell opportunities.
+
+27
+00:02:12.360 --> 00:02:17.440
+In a cross-sell, you promote a relevant product at the point of purchase.
+
+28
+00:02:17.440 --> 00:02:23.480
+For example, when a customer is ready to buy a beach umbrella, present an offer on beach chairs.
+
+29
+00:02:23.480 --> 00:02:29.920
+In an upsell, you promote a higher-priced alternative or a higher quantity of a product.
+
+30
+00:02:29.920 --> 00:02:36.040
+For example, when a customer buys pet food regularly, present an offer on organic food.
+
+31
+00:02:36.040 --> 00:02:40.520
+For shipping cost reductions, we can explore some of the following alternatives.
+
+32
+00:02:40.520 --> 00:02:44.760
+Consolidating multiple shipments into a single one.
+
+33
+00:02:44.760 --> 00:02:48.000
+Reducing package size dimensions and weight.
+
+34
+00:02:48.000 --> 00:02:51.800
+And, finally, shipping a higher quantity of a product.
+
+35
+00:02:51.800 --> 00:02:58.360
+A market basket analysis aims to find products frequently bought together in a single checkout.
+
+36
+00:02:58.360 --> 00:03:05.160
+One way this is can be achieved is by determining the correlation coefficient between purchased quantities.
+
+37
+00:03:05.160 --> 00:03:10.120
+This course will not cover this for Power BI, as it requires more advanced DAX formulas.
+
+38
+00:03:10.120 --> 00:03:16.400
+However, you can identify which products are more regularly purchased with specific items.
+
+39
+00:03:16.400 --> 00:03:20.240
+We will be using a fictitious data source for product sales.
+
+40
+00:03:20.240 --> 00:03:23.840
+The data is located in four CSV files.
+
+41
+00:03:23.840 --> 00:03:27.200
+The sales table is the primary transaction table.
+
+42
+00:03:27.200 --> 00:03:31.200
+The product and customer tables contain additional attributes.
+
+43
+00:03:31.200 --> 00:03:35.800
+The state mapping has consistent values for locations.
+
+44
+00:03:35.800 --> 00:03:41.440
+You will be creating relationships between the tables during your data preparation steps.
+
+45
+00:03:41.440 --> 00:03:44.520
+With the basic information covered, you are now ready to
+
+46
+00:03:44.520 --> 00:03:49.240
+analyze the data and help optimize Whiskique's business operations.
+
+47
+00:03:49.240 --> 00:03:51.520
+Good luck!
+

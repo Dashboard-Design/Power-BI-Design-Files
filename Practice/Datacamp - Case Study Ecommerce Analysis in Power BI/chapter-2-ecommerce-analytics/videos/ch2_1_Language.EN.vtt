@@ -1,0 +1,126 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:02.280
+Welcome back.
+
+2
+00:00:02.280 --> 00:00:06.960
+In this video, we will discuss ecommerce analytics.
+
+3
+00:00:06.960 --> 00:00:11.840
+So far, you have built your data model in Power BI, created metrics for customers
+
+4
+00:00:11.840 --> 00:00:17.360
+and orders, and understood the business goals, such as cross-selling and upselling.
+
+5
+00:00:17.360 --> 00:00:23.000
+Whiskique's management wants you to dive deep into quantity upsell strategies.
+
+6
+00:00:23.000 --> 00:00:28.600
+This particular strategy increases sales and saves on shipping costs.
+
+7
+00:00:28.600 --> 00:00:35.120
+You aim to build dashboard-style pages to present shipping costs by region and product.
+
+8
+00:00:35.120 --> 00:00:39.880
+You will also build a what-if analysis dashboard-style page to present
+
+9
+00:00:39.880 --> 00:00:46.000
+the impact of shipping higher product quantities on sales and profitability.
+
+10
+00:00:46.000 --> 00:00:49.080
+Whiskique hasn't automated integration with shipping
+
+11
+00:00:49.080 --> 00:00:53.800
+providers and does not capture shipping costs at the transaction level.
+
+12
+00:00:53.800 --> 00:00:58.440
+Monitoring shipping costs remain a focus for the management.
+
+13
+00:00:58.440 --> 00:01:05.960
+Let us look at a fictitious example of shipping a glass jar of spices from California to Texas.
+
+14
+00:01:05.960 --> 00:01:10.240
+The cost of shipping an individual jar is $10.
+
+15
+00:01:10.240 --> 00:01:17.760
+Suppose you were to ship a crate with nine spices; the package dimensions and the total weight increase.
+
+16
+00:01:17.760 --> 00:01:24.800
+The shipment now costs $45 or $5 per jar for nine jars.
+
+17
+00:01:24.800 --> 00:01:29.080
+The per unit cost went down as the quantity increased.
+
+18
+00:01:29.080 --> 00:01:37.160
+These savings can be passed on to the business as extra profit or to the customers as extra savings.
+
+19
+00:01:37.160 --> 00:01:43.080
+Besides, this is great for the environment — a win-win solution for everyone.
+
+20
+00:01:43.080 --> 00:01:49.080
+Whiskique's management wants to implement a similar strategy for their pet food business.
+
+21
+00:01:49.080 --> 00:01:54.200
+In a what-if analysis, you empower users to visualize the impact
+
+22
+00:01:54.200 --> 00:01:59.840
+of changing parameter values—for example, average shipped quantity.
+
+23
+00:01:59.840 --> 00:02:06.240
+Users can see the impact on business operations when combined with interactive filters.
+
+24
+00:02:06.240 --> 00:02:11.280
+The management can view the shipping cost savings at the individual product level and
+
+25
+00:02:11.280 --> 00:02:18.480
+across the entire business using the what-if analysis dashboard-style page you will build.
+
+26
+00:02:18.480 --> 00:02:22.600
+As you build your dashboard-style pages, the following data visualization
+
+27
+00:02:22.600 --> 00:02:28.200
+guidelines will help you structure your pages and effectively communicate insights.
+
+28
+00:02:28.200 --> 00:02:35.360
+Add appropriate page and chart titles that answer the goal of a dashboard and that of each chart.
+
+29
+00:02:35.360 --> 00:02:41.600
+Display key KPIs, for example, sales and shipping cost savings, in large numbers.
+
+30
+00:02:41.600 --> 00:02:50.840
+And finally, Interactivity using parameters and filters improves user engagement and invokes follow-up questions.
+
+31
+00:02:50.840 --> 00:02:57.960
+Let us now start building our what-if analysis dashboard-style page.
+

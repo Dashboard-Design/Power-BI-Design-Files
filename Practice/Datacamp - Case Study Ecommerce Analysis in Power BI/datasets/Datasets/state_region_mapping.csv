@@ -1,0 +1,193 @@
+﻿Order State,State Abbreviations,Region,State
+AE,AE,Other,Armed Forces Europe
+ak,AK,Other,Alaska
+AK,AK,Other,Alaska
+AL,AL,East,Alabama
+ALABAMA,AL,East,Alabama
+Alaska,AK,Other,Alaska
+AR,AR,Central,Arkansas
+Arizona,AZ,West,Arizona
+ARIZONA,AZ,West,Arizona
+Arkansas,AK,Other,Alaska
+AZ,AZ,West,Arizona
+CA,CA,West,California
+ca,CA,West,California
+Ca,CA,West,California
+Ca.,CA,West,California
+California,CA,West,California
+CALIFORNIA,CA,West,California
+california,CA,West,California
+CO,CO,Central,Colorado
+co,CO,Central,Colorado
+Co,CO,Central,Colorado
+COLORADO,CO,Central,Colorado
+Colorado,CO,Central,Colorado
+CONNECTICUT,CT,East,Connecticut
+Connecticut,CT,East,Connecticut
+CT,CT,East,Connecticut
+ct,CT,East,Connecticut
+DC,DC,East,District of Columbia
+DE,DE,East,Delaware
+De,DE,East,Delaware
+Delaware,DE,East,Delaware
+District of Columbia,DC,East,District of Columbia
+FL,FL,East,Florida
+fl,FL,East,Florida
+Fl,FL,East,Florida
+FLORIDA,FL,East,Florida
+Florida,FL,East,Florida
+GA,GA,East,Georgia
+Georgia,GA,East,Georgia
+GEORGIA,GA,East,Georgia
+HAWAII,HI,Other,Hawaii
+Hawaii,HI,Other,Hawaii
+HI,HI,Other,Hawaii
+IA,IA,Central,Iowa
+ID,ID,West,Idaho
+IDAHO,ID,West,Idaho
+Idaho,ID,West,Idaho
+IL,IL,Central,Illinois
+il,IL,Central,Illinois
+Il,IL,Central,Illinois
+ILLINOIS,IL,Central,Illinois
+Illinois,IL,Central,Illinois
+illinois,IL,Central,Illinois
+IN,IN,Central,Indiana
+In,IN,Central,Indiana
+in,IN,Central,Indiana
+IN.,IN,Central,Indiana
+indiana,IN,Central,Indiana
+Indiana,IN,Central,Indiana
+INDIANA,IN,Central,Indiana
+IOWA,IA,Central,Iowa
+Iowa,IA,Central,Iowa
+KANSAS,KS,Central,Kansas
+KENTUCKY,KY,Central,Kentucky
+KS,KS,Central,Kansas
+KY,KY,Central,Kentucky
+Ky,KY,Central,Kentucky
+KY.,KY,Central,Kentucky
+LA,LA,Central,Louisiana
+La,LA,Central,Louisiana
+Louisiana,LA,Central,Louisiana
+LOUISIANA,LA,Central,Louisiana
+MA,MA,East,Massachusetts
+ma,MA,East,Massachusetts
+Ma,MA,East,Massachusetts
+MAINE,ME,East,Maine
+Maryland,MD,East,Maryland
+MARYLAND,MD,East,Maryland
+Massachusetts,MA,East,Massachusetts
+MASSACHUSETTS,MA,East,Massachusetts
+MD,MD,East,Maryland
+ME,ME,East,Maine
+MI,MI,Central,Michigan
+Mi,MI,Central,Michigan
+mi,MI,Central,Michigan
+Michigan,MI,Central,Michigan
+MICHIGAN,MI,Central,Michigan
+michigan,MI,Central,Michigan
+Minnesota,MN,Central,Minnesota
+MINNESOTA,MN,Central,Minnesota
+Missouri,MO,Central,Missouri
+MISSOURI,MO,Central,Missouri
+MN,MN,Central,Minnesota
+Mn,MN,Central,Minnesota
+MO,MO,Central,Missouri
+MONTANA,MT,West,Montana
+MS,MS,Central,Mississippi
+MT,MT,West,Montana
+n.c.,NC,East,North Carolina
+N.Y.,NY,East,New York
+NC,NC,East,North Carolina
+nc,NC,East,North Carolina
+ND,ND,Central,North Dakota
+NE,NE,Central,Nebraska
+Nebraska,NE,Central,Nebraska
+NEVADA,NV,West,Nevada
+New Hampshire,NH,East,New Hampshire
+NEW JERSEY,NJ,East,New Jersey
+New Jersey,NJ,East,New Jersey
+new jersey,NJ,East,New Jersey
+New Mexico,NM,West,New Mexico
+NEW MEXICO,NM,West,New Mexico
+NEW YORK,NY,East,New York
+New York,NY,East,New York
+new york,NY,East,New York
+NH,NH,East,New Hampshire
+nh,NH,East,New Hampshire
+NJ,NJ,East,New Jersey
+nj,NJ,East,New Jersey
+Nj,NJ,East,New Jersey
+NM,NM,West,New Mexico
+North Carolina,NC,East,North Carolina
+NORTH CAROLINA,NC,East,North Carolina
+NV,NV,West,Nevada
+NY,NY,East,New York
+ny,NY,East,New York
+Ny,NY,East,New York
+OH,OH,Central,Ohio
+oh,OH,Central,Ohio
+Ohio,OH,Central,Ohio
+OHIO,OH,Central,Ohio
+OK,OK,Central,Oklahoma
+ok,OK,Central,Oklahoma
+Ok,OK,Central,Oklahoma
+OKLAHOMA,OK,Central,Oklahoma
+Oklahoma,OK,Central,Oklahoma
+OR,OR,West,Oregon
+Or,OR,West,Oregon
+or,OR,West,Oregon
+Oregon,OR,West,Oregon
+OREGON,OR,West,Oregon
+PA,PA,East,Pennsylvania
+pa,PA,East,Pennsylvania
+Pa,PA,East,Pennsylvania
+Pa.,PA,East,Pennsylvania
+PENNSYLVANIA,PA,East,Pennsylvania
+Pennsylvania,PA,East,Pennsylvania
+PR,PR,Other,Puerto Rico
+Puerto  Rico,PR,Other,Puerto Rico
+puerto rico,PR,Other,Puerto Rico
+Puerto Rico,PR,Other,Puerto Rico
+RHODE ISLAND,RI,East,Rhode Island
+Rhode Island,RI,East,Rhode Island
+RI,RI,East,Rhode Island
+SC,SC,East,South Carolina
+sc,SC,East,South Carolina
+SD,SD,Central,South Dakota
+South Carolina,SC,East,South Carolina
+SOUTH CAROLINA,SC,East,South Carolina
+TENNESSEE,TN,East,Tennessee
+Tennessee,TN,East,Tennessee
+TEXAS,TX,Central,Texas
+Texas,TX,Central,Texas
+texas,TX,Central,Texas
+TN,TN,East,Tennessee
+tn,TN,East,Tennessee
+TX,TX,Central,Texas
+Tx,TX,Central,Texas
+tx,TX,Central,Texas
+USVI,VI,Other,Virgin Islands
+UT,UT,West,Utah
+UTAH,UT,West,Utah
+Utah,UT,West,Utah
+VA,VA,East,Virginia
+va,VA,East,Virginia
+Va,VA,East,Virginia
+Va.,VA,East,Virginia
+Virginia,VA,East,Virginia
+VIRGINIA,VA,East,Virginia
+VT,VT,East,Vermont
+wa,WA,West,Washington
+Wa,WA,West,Washington
+WA,WA,West,Washington
+WASHINGTON,WA,West,Washington
+Washington,WA,West,Washington
+WEST VIRGINIA,WV,East,West Virginia
+WI,WI,Central,Wisconsin
+Wi,WI,Central,Wisconsin
+wi,WI,Central,Wisconsin
+Wisconsin,WI,Central,Wisconsin
+WV,WV,East,West Virginia
+WY,WY,West,Wyoming

@@ -1,0 +1,122 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:02.400
+Hello there.
+
+2
+00:00:02.400 --> 00:00:04.960
+We will now focus on data storytelling.
+
+3
+00:00:04.960 --> 00:00:12.840
+Data storytelling is effectively communicating insights from a dataset using narratives and visualizations.
+
+4
+00:00:12.840 --> 00:00:16.000
+There are four aspects of great data storytelling.
+
+5
+00:00:16.000 --> 00:00:18.920
+The first is accurate and complete data.
+
+6
+00:00:18.920 --> 00:00:22.320
+This helps establish trust with your stakeholders.
+
+7
+00:00:22.320 --> 00:00:27.520
+The second is a good design that provides clarity and is consistent.
+
+8
+00:00:27.520 --> 00:00:29.600
+The third is context.
+
+9
+00:00:29.600 --> 00:00:34.920
+Context involves explaining goals and customizing the message based on the audience.
+
+10
+00:00:34.920 --> 00:00:37.800
+The final aspect is the narrative.
+
+11
+00:00:37.800 --> 00:00:43.800
+Any dashboard or report should explain the next steps or the call to action.
+
+12
+00:00:43.800 --> 00:00:49.640
+Let us look at the multiple hats you must wear to tell a great data story.
+
+13
+00:00:49.640 --> 00:00:51.960
+You have done an excellent job so far.
+
+14
+00:00:51.960 --> 00:00:55.840
+Now, it is time to put on a consultant's hat.
+
+15
+00:00:55.840 --> 00:01:01.160
+This involves communicating the insights you gleaned to Whiskique's management.
+
+16
+00:01:01.160 --> 00:01:07.920
+They are business users and immediately understand terms such as sales, profit, and expenses.
+
+17
+00:01:07.920 --> 00:01:15.120
+So, removing technical jargon such as table merges, data sources, or parameters will be best.
+
+18
+00:01:15.120 --> 00:01:19.080
+Your dashboard-style pages should attempt to answer questions such as:
+
+19
+00:01:19.080 --> 00:01:19.120
+
+
+20
+00:01:19.120 --> 00:01:22.200
+How will this grow my sales or profit?
+
+21
+00:01:22.200 --> 00:01:25.640
+How will this strategy improve customer satisfaction?
+
+22
+00:01:25.640 --> 00:01:29.640
+How can I save on shipping costs?
+
+23
+00:01:29.640 --> 00:01:34.400
+Your deliverable will consist of three dashboard-style pages.
+
+24
+00:01:34.400 --> 00:01:38.880
+You will reuse many of the charts built in the previous exercises.
+
+25
+00:01:38.880 --> 00:01:45.880
+In the executive summary dashboard-style page, you will provide key KPIs such as sales and profit.
+
+26
+00:01:45.880 --> 00:01:49.960
+This dashboard will provide a high-level pulse of the business.
+
+27
+00:01:49.960 --> 00:01:57.720
+The shipping costs dashboard-style page will suggest multiple strategies to reduce shipping costs.
+
+28
+00:01:57.720 --> 00:02:01.440
+The growth opportunities dashboard-style page will provide specific
+
+29
+00:02:01.440 --> 00:02:07.640
+recommendations on how Whiskique can grow sales using cross-sell promotions.
+
+30
+00:02:07.640 --> 00:02:11.760
+Let us now start building your data story.
+
