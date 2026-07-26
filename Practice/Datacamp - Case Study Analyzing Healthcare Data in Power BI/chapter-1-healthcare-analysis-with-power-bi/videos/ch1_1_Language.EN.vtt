@@ -1,0 +1,234 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:01.960
+Hello!
+
+2
+00:00:01.960 --> 00:00:05.720
+My name is Lyndsay, and I'll be your instructor for this case study.
+
+3
+00:00:05.720 --> 00:00:10.840
+A case study is an opportunity to put your Power BI skills into action.
+
+4
+00:00:10.840 --> 00:00:16.840
+You’ll apply the skills you learned in previous courses and practice them on a real-world problem.
+
+5
+00:00:16.840 --> 00:00:22.280
+Here are some of the prerequisite courses that we recommend before completing this case study.
+
+6
+00:00:22.280 --> 00:00:26.760
+In this case study, a fictitious consulting company called HealthStat has
+
+7
+00:00:26.760 --> 00:00:32.840
+hired you to uncover insights on potential hospital efficiency opportunities.
+
+8
+00:00:32.840 --> 00:00:37.160
+By the end of this course, you will successfully analyze a state-wide hospital
+
+9
+00:00:37.160 --> 00:00:44.080
+dataset and leverage your Power BI skills to create an engaging dashboard of insights.
+
+10
+00:00:44.080 --> 00:00:51.200
+In healthcare analytics, quality metrics are often classified across these six domains.
+
+11
+00:00:51.200 --> 00:00:57.040
+For this case study, we'll be focusing on efficiency, which is all about avoiding waste.
+
+12
+00:00:57.040 --> 00:01:02.760
+This includes minimizing waste of equipment, supplies, ideas and energy.
+
+13
+00:01:02.760 --> 00:01:09.760
+Length of stay (or LOS) is considered an important indicator of the efficiency of hospital management.
+
+14
+00:01:09.760 --> 00:01:14.840
+It's calculated as the total duration in days for a patient stay in hospital.
+
+15
+00:01:14.840 --> 00:01:18.880
+A shorter LOS is often desirable in hospital operations.
+
+16
+00:01:18.880 --> 00:01:21.760
+Primarily, shorter LOS means costs can be lowered.
+
+17
+00:01:21.760 --> 00:01:30.160
+Reducing LOS can also release capacity in the system and improve throughput, enabling hospitals to serve more patients.
+
+18
+00:01:30.160 --> 00:01:32.640
+Many factors can impact LOS.
+
+19
+00:01:32.640 --> 00:01:37.800
+Patient age, health status, the type of procedure (or surgery), whether or not
+
+20
+00:01:37.800 --> 00:01:43.320
+there were any complications, and the size of the hospital are some common factors.
+
+21
+00:01:43.320 --> 00:01:45.880
+Here are some terms you will encounter throughout this case
+
+22
+00:01:45.880 --> 00:01:46.200
+study:
+
+23
+00:01:46.200 --> 00:01:47.080
+
+
+24
+00:01:47.080 --> 00:01:51.640
+An inpatient is a person who has been admitted to a hospital bed.
+
+25
+00:01:51.640 --> 00:01:56.920
+A discharge, is defined as the release of a patient from hospital care by a medical worker.
+
+26
+00:01:56.920 --> 00:02:04.560
+Disposition, is the patient destination or status upon discharge, for instance to another facility or to home.
+
+27
+00:02:04.560 --> 00:02:12.280
+An elective surgery is a procedure that was planned in advance, in other words, it was not due to an emergency.
+
+28
+00:02:12.280 --> 00:02:18.320
+In this case study, the focus is on patients who received hip replacement surgery.
+
+29
+00:02:18.320 --> 00:02:21.320
+Here's a bit of a background on what this procedure is all about.
+
+30
+00:02:21.320 --> 00:02:29.120
+Patients with hip pain, typically arthritis, may require elective hip replacement surgery.
+
+31
+00:02:29.120 --> 00:02:36.760
+In this procedure, damaged bone and cartilage is surgically removed and replaced with prosthetic components.
+
+32
+00:02:36.760 --> 00:02:42.280
+Hospital stay can range from 0 to 2 or more days.
+
+33
+00:02:42.280 --> 00:02:45.720
+For this case study, we will be working with a dataset that
+
+34
+00:02:45.720 --> 00:02:51.000
+includes New York state-wide hospital discharge data for a year.
+
+35
+00:02:51.000 --> 00:02:55.440
+Elective hip replacement surgery was the main reason for their hospital stay.
+
+36
+00:02:55.440 --> 00:02:59.000
+The dataset is one single table with 30 columns
+
+37
+00:02:59.000 --> 00:02:59.640
+
+
+38
+00:02:59.640 --> 00:03:01.320
+Each row in the dataset
+
+39
+00:03:01.320 --> 00:03:07.160
+represents a single inpatient stay, from their admission to discharge date.
+
+40
+00:03:07.160 --> 00:03:11.800
+The health information in this dataset is not individually identifiable.
+
+41
+00:03:11.800 --> 00:03:16.400
+This means the file does not contain personal health information.
+
+42
+00:03:16.400 --> 00:03:20.760
+The dataset has some key attributes to analyze efficiency.
+
+43
+00:03:20.760 --> 00:03:23.440
+Length of stay measured in total days
+
+44
+00:03:23.440 --> 00:03:28.880
+Total costs attributed to each hospital stay.
+
+45
+00:03:28.880 --> 00:03:33.320
+Listed here are some of the key attributes of interest for the case study.
+
+46
+00:03:33.320 --> 00:03:38.480
+These include a unique identifier for facility, a grouping of patient age,
+
+47
+00:03:38.480 --> 00:03:45.480
+patient's disposition, the diagnosis description, severity of illness, and risk of mortality.
+
+48
+00:03:45.480 --> 00:03:49.200
+We will closely evaluate these (and others) in the case study as we
+
+49
+00:03:49.200 --> 00:03:54.920
+work to understand what factors impact length of stay and related costs.
+
+50
+00:03:54.920 --> 00:03:59.280
+Your final deliverable for this case study will be to create a dashboard that enables
+
+51
+00:03:59.280 --> 00:04:00.240
+your stakeholders to:
+
+52
+00:04:00.240 --> 00:04:00.240
+
+
+53
+00:04:00.240 --> 00:04:04.560
+Progress through key insights in a logical flow,
+
+54
+00:04:04.560 --> 00:04:04.960
+View
+
+55
+00:04:04.960 --> 00:04:07.160
+informative, concise visuals
+
+56
+00:04:07.160 --> 00:04:12.960
+Get data they need to make business decisions for improving efficiency.
+
+57
+00:04:12.960 --> 00:04:17.080
+It's time to check your understanding of terms introduced so far.
+
+58
+00:04:17.080 --> 00:04:19.840
+Let's start analyzing!
+

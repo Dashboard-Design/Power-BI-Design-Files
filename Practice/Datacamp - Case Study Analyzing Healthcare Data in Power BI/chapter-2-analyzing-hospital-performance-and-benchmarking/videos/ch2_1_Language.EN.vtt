@@ -1,0 +1,106 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:02.840
+Great work so far!
+
+2
+00:00:02.840 --> 00:00:06.520
+You have set up your dataset and done some data cleaning.
+
+3
+00:00:06.520 --> 00:00:12.960
+Now is your chance to scrub in and get operating on some in-depth analysis into our data.
+
+4
+00:00:12.960 --> 00:00:17.320
+So far, we have taken a broad assessment of the hospital dataset.
+
+5
+00:00:17.320 --> 00:00:22.000
+We learned there are 151 hospitals in New York state that did
+
+6
+00:00:22.000 --> 00:00:27.560
+our surgical procedure of interest, and over 26 thousand discharges.
+
+7
+00:00:27.560 --> 00:00:37.080
+Patients stayed an average of 2.65 days for the procedure, though there was significant variability between hospitals.
+
+8
+00:00:37.080 --> 00:00:42.120
+We looked at some demographics like age and gender, but we don’t yet have a clear
+
+9
+00:00:42.120 --> 00:00:48.840
+understanding of what is behind the variability in LOS, or what the most significant factors are.
+
+10
+00:00:48.840 --> 00:00:53.720
+There are many attributes in the dataset we will still need to analyze.
+
+11
+00:00:53.720 --> 00:01:00.680
+Our first task in this chapter will be to add costing to the equation by assessing the average cost per discharge.
+
+12
+00:01:00.680 --> 00:01:07.840
+This will be calculated by dividing sum of total costs over sum of total discharges.
+
+13
+00:01:07.840 --> 00:01:11.240
+Going forward, this metric will serve as a helpful benchmark to
+
+14
+00:01:11.240 --> 00:01:16.720
+compare between hospitals, and highlight areas for efficiency improvement.
+
+15
+00:01:16.720 --> 00:01:22.080
+There are multiple factors that can impact cost of a patient stay, such as patient severity of
+
+16
+00:01:22.080 --> 00:01:30.640
+condition, patient age, the size of the hospital, the procedure itself, types of equipment used, to name a few.
+
+17
+00:01:30.640 --> 00:01:34.400
+Throughout this chapter, we'll seek to answer the following business questions:
+
+18
+00:01:34.400 --> 00:01:34.400
+
+
+19
+00:01:34.400 --> 00:01:35.160
+Which
+
+20
+00:01:35.160 --> 00:01:41.880
+hospitals stand out with highest average cost and Length of Stay relative to the state averages.
+
+21
+00:01:41.880 --> 00:01:46.440
+Which hospitals stand out as biggest outliers overall?
+
+22
+00:01:46.440 --> 00:01:51.560
+Does larger surgical program size impact LOS and cost?
+
+23
+00:01:51.560 --> 00:01:58.920
+Lastly, for a root cause analysis: what factors influence LOS and cost the most?
+
+24
+00:01:58.920 --> 00:01:59.520
+Are you ready to get to it?
+
+25
+00:01:59.520 --> 00:02:00.080
+Let's go?
+
+26
+00:02:00.080 --> 00:02:02.560
+!
+

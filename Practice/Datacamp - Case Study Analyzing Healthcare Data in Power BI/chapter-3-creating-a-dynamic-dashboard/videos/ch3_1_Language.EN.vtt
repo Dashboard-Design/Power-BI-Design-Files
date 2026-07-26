@@ -1,0 +1,94 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:03.080
+Great job so far!
+
+2
+00:00:03.080 --> 00:00:06.120
+You've done a comprehensive analysis of the attributes in our
+
+3
+00:00:06.120 --> 00:00:11.280
+dataset and generated many interesting insights for the HealthStat team.
+
+4
+00:00:11.280 --> 00:00:18.400
+In this chapter, we will focus our efforts on putting the key elements together into a cohesive dashboard.
+
+5
+00:00:18.400 --> 00:00:24.480
+We will finish things off by optimizing the design and adding report navigation features.
+
+6
+00:00:24.480 --> 00:00:28.720
+Throughout this case study, our focus has been on measuring efficiency in hospitals,
+
+7
+00:00:28.720 --> 00:00:34.680
+which, as we discussed previously, is one of the six dimensions in healthcare quality.
+
+8
+00:00:34.680 --> 00:00:42.400
+We started with analyzing average LOS days and then added in the calculation of average cost per discharge.
+
+9
+00:00:42.400 --> 00:00:47.880
+Hospital management continually strives to reduce LOS and costs where possible
+
+10
+00:00:47.880 --> 00:00:54.240
+so as to maximize efficiency while not compromising the quality of patient care.
+
+11
+00:00:54.240 --> 00:00:59.440
+These are the insight themes we will be focusing on for the final dashboard product.
+
+12
+00:00:59.440 --> 00:01:06.320
+In our quest to analyze efficiency in hospitals across New York State, we found the average cost per discharge
+
+13
+00:01:06.320 --> 00:01:15.720
+for a hip replacement surgery was $21K, and that there was significant variability between hospital facilities.
+
+14
+00:01:15.720 --> 00:01:24.400
+Our root cause analysis found that some attributes stood out over others to influence both cost and average LOS.
+
+15
+00:01:24.400 --> 00:01:28.640
+Patients who had an extreme illness severity, and extreme or major
+
+16
+00:01:28.640 --> 00:01:35.040
+mortality risk stood out as having the most significant impact on reduced efficiency.
+
+17
+00:01:35.040 --> 00:01:40.280
+Also, hospitals located in New York City tended to have a higher cost and LOS
+
+18
+00:01:40.280 --> 00:01:48.000
+overall, and lastly, that LOS was influenced by patient disposition to a skilled nursing home.
+
+19
+00:01:48.000 --> 00:01:55.720
+These insights are very useful and will help HealthStat to inform improvement initiatives for their clients.
+
+20
+00:01:55.720 --> 00:02:03.520
+In this final chapter, we will work on building a report that provides concise insight to our stakeholders.
+
+21
+00:02:03.520 --> 00:02:10.360
+We will produce a clean, branded design that showcases the most important insights uncovered.
+
+22
+00:02:10.360 --> 00:02:15.120
+Here is a preview of some of the report components and contents.
+
+23
+00:02:15.120 --> 00:02:17.480
+Let's get back to it!
+
