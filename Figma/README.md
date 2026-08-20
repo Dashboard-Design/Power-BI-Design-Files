@@ -10,7 +10,7 @@ This folder includes a curated Figma file containing dashboard frames, layouts, 
 
 The Figma file is hosted as a GitHub Release because of its file size.
 
-**[Download the latest Power BI Dashboard Frames]([../../releases/latest](https://github.com/Dashboard-Design/Power-BI-Design-Files/releases/download/v1.0.0/Dashboard-Frames-v1.0.0.zip))**  
+**[Download the latest Power BI Dashboard Frames](sha256:f23485667563e1b7ea4e5c160c00345580dec6533681a0b2c91fcb33142fb280)**  
 
 After downloading the `.fig` file, import it into Figma and explore the available frames and design patterns.
 
