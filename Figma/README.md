@@ -10,7 +10,7 @@ This folder includes a curated Figma file containing dashboard frames, layouts, 
 
 The Figma file is hosted as a GitHub Release because of its file size.
 
-**[Download the latest Power BI Dashboard Frames](sha256:f23485667563e1b7ea4e5c160c00345580dec6533681a0b2c91fcb33142fb280)**  
+**[Download the latest Power BI Dashboard Frames]([sha256:f23485667563e1b7ea4e5c160c00345580dec6533681a0b2c91fcb33142fb280](https://release-assets.githubusercontent.com/github-production-release-asset/766828642/4e8e973b-6b34-4373-8e21-dbb980f40d70?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-20T19%3A41%3A23Z&rscd=attachment%3B+filename%3DDashboard-Frames-v1.0.0.zip&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-20T18%3A41%3A19Z&ske=2026-08-20T19%3A41%3A23Z&sks=b&skv=2018-11-09&sig=KNIzSjrKW9FYenh3A85Mc%2Bjdhim7YX0NcjhXpRAHK7I%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc4NzI1NjQ4NSwibmJmIjoxNzg3MjUyODg1LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.YLhKdc8Wv-rHzk14BABFbpyJU5tOT3PqXsS82U_MsGU&response-content-disposition=attachment%3B%20filename%3DDashboard-Frames-v1.0.0.zip&response-content-type=application%2Foctet-stream))**  
 
 After downloading the `.fig` file, import it into Figma and explore the available frames and design patterns.
 
