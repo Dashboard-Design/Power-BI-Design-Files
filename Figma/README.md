@@ -4,13 +4,13 @@ A collection of Figma resources for designing and exploring Power BI dashboards 
 
 This folder includes a curated Figma file containing dashboard frames, layouts, and design ideas that can be used for inspiration, prototyping, and AI-assisted dashboard design.
 
-![Power BI Dashboard Frames](./dashboard-frames-preview.png)
+<img width="1600" height="1040" alt="Figma Dashboard Design Resources" src="https://github.com/user-attachments/assets/c09cf580-1096-45a5-913b-086e0b656a2d" />
 
 ## Download
 
 The Figma file is hosted as a GitHub Release because of its file size.
 
-**[Download the latest Power BI Dashboard Frames](../../releases/latest)**
+**[⬇️ Download Power BI Dashboard Frames](https://github.com/Dashboard-Design/Power-BI-Design-Files/releases/latest)**
 
 After downloading the `.fig` file, import it into Figma and explore the available frames and design patterns.
 
