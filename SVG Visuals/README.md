@@ -25,7 +25,7 @@ Leveraging inline SVG images (via DAX measures) is the **best way to customize P
 
 I have mapped out all **7 entry points** where you can leverage SVG images inside Power BI:
 
-![7 Places Where You Can Use SVG Images in Power BI]<img width="3240" height="4050" alt="7-places-where-you-can-use-svg-images-in-power-bi" src="https://github.com/user-attachments/assets/525e8d5d-b181-473d-9a5a-0c95779f4514" />
+<img width="1080" height="1350" alt="7-places-where-you-can-use-svg-images-in-power-bi" src="https://github.com/user-attachments/assets/525e8d5d-b181-473d-9a5a-0c95779f4514" />
 
 
 1.  **Table Visual** – Mini bar charts, KPI traffic lights, and trend arrows right inside your rows.
