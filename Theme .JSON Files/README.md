@@ -18,7 +18,7 @@ This directory contains a curated collection of **Power BI theme JSON files** so
 
 Power BI themes can do much more than define colors.
 
-<img width="4320" height="5400" alt="40-  5 things your theme can do that you probably missed" src="https://github.com/user-attachments/assets/ef9d9f81-4f38-4e27-bd43-0589ca5bf513" />
+<img width="1080" height="1350" alt="40-  5 things your theme can do that you probably missed" src="https://github.com/user-attachments/assets/ef9d9f81-4f38-4e27-bd43-0589ca5bf513" />
 
 Some advanced capabilities include:
 - 🏢 Organizational Themes
