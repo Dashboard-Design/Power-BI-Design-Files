@@ -4,7 +4,7 @@
 
 This folder contains the definitive, best practices and an AI‑ready prompt template to help you build scalable, responsive, and high‑performance SVG visuals directly inside Power BI.
 
----
+***
 
 ##  Visual Gallery
 
@@ -13,7 +13,7 @@ This folder contains the definitive, best practices and an AI‑ready prompt tem
 <img width="700" alt="Dynamic Bullet Points" src="https://github.com/user-attachments/assets/f001cc26-356f-4f51-974f-cff5d8171848" />
 </p>
 
----
+***
 
 ### 2. Matrix Bubble Chart
 <p align="center">
