@@ -20,49 +20,49 @@ This folder contains the definitive, best practices and an AI‑ready prompt tem
 <img width="700" alt="Matrix Bubble Chart" src="https://github.com/user-attachments/assets/9f47f0dc-0c4c-406c-9e33-6d410d7ea803" />
 </p>
 
----
+***
 
 ### 3. Pill Slicer
 <p align="center">
 <img width="700" alt="pill-slicer-SVG" src="https://github.com/user-attachments/assets/9ae0bb73-c952-4849-a4b7-ed57995c454b" />
 </p>
 
----
+***
 
 ### 4. Pill Status Visual
 <p align="center">
 <img width="700" alt="text-highlight-SVG" src="https://github.com/user-attachments/assets/bdca86dc-8c93-4f32-908f-1354416634aa" />
 </p>
 
----
+***
 
 ### 5. Radar Chart
 <p align="center">
 <img width="700" alt="Radar Chart" src="https://github.com/user-attachments/assets/2de73903-26b5-4271-a09e-108cf61e20fe" />
 </p>
 
----
+***
 
 ### 6. Ranking Styles
 <p align="center">
 <img width="700" alt="Dynamic Ranking + Pareto Analysis" src="https://github.com/user-attachments/assets/35323fbe-be80-43e4-999f-cf80759b294a" />
 </p>
 
----
+***
 
 ### 7. Scatter Plot with Images
 <p align="center">
 <img width="700" alt="Cars Sales" src="https://github.com/user-attachments/assets/c4a546ad-8611-46f5-aaff-f025e9f733e3" />
 </p>
 
----
+***
 
 ### 8. Target Line Bar Chart
 <p align="center">
 <img width="700" alt="Target Line Bar Chart SVG" src="https://github.com/user-attachments/assets/f8528282-72f9-40e3-b87c-f1cda6eb6fca" />
 </p>
 
----
+***
 
 ## 🚀 Why Use SVG in Power BI?
 
@@ -77,7 +77,7 @@ Leveraging inline SVG images (via DAX measures) is the **best way to customize P
 - **Resolution‑Independent**  
   SVGs scale to any screen size or zoom level.
 
----
+***
 
 ## 📍 Where Can You Use SVGs in Power BI?
 
@@ -94,7 +94,7 @@ I have mapped out all **7 entry points** where you can leverage SVG images insid
 6.  **Image Visual** – Standalone vector illustrations that scale infinitely (PDF exports love this).
 7.  **SVG Icon Theme.json Injection** – The hidden gem: manage global icon libraries directly in your Theme file for enterprise‑wide branding.
 
----
+***
 
 ## 📂 Repository Contents
 
@@ -106,7 +106,7 @@ This document is ordered by severity—**Critical**, **Important**, and **Best P
 An **AI prompt template** (compatible with ChatGPT, Claude, etc.).  
 Paste this into your preferred LLM, describe the visual you want at the end, and the AI will generate a DAX measure that adheres strictly to all the rules in the Best Practices guide—saving you hours of debugging.
 
----
+***
 
 ## ⚡ Quick Start (How to Use This Repository)
 
@@ -126,7 +126,7 @@ Paste this into your preferred LLM, describe the visual you want at the end, and
 
 4.  **Drop it into your report** – Add the measure to a Table, Matrix, Card, or any of the 7 places listed above.
 
----
+***
 
 ## 🛠️ Troubleshooting (Quick Wins)
 
