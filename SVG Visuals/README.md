@@ -26,6 +26,7 @@ This folder contains the definitive, best practices and an AI‑ready prompt tem
 <p align="center">
 <img width="700" alt="pill-slicer-SVG" src="https://github.com/user-attachments/assets/9ae0bb73-c952-4849-a4b7-ed57995c454b" />
 </p>
+
 ---
 
 ### 4. Pill Status Visual
@@ -39,24 +40,28 @@ This folder contains the definitive, best practices and an AI‑ready prompt tem
 <p align="center">
 <img width="700" alt="Radar Chart" src="https://github.com/user-attachments/assets/2de73903-26b5-4271-a09e-108cf61e20fe" />
 </p>
+
 ---
 
 ### 6. Ranking Styles
 <p align="center">
 <img width="700" alt="Dynamic Ranking + Pareto Analysis" src="https://github.com/user-attachments/assets/35323fbe-be80-43e4-999f-cf80759b294a" />
 </p>
+
 ---
 
 ### 7. Scatter Plot with Images
 <p align="center">
 <img width="700" alt="Cars Sales" src="https://github.com/user-attachments/assets/c4a546ad-8611-46f5-aaff-f025e9f733e3" />
 </p>
+
 ---
 
 ### 8. Target Line Bar Chart
 <p align="center">
 <img width="700" alt="Target Line Bar Chart SVG" src="https://github.com/user-attachments/assets/f8528282-72f9-40e3-b87c-f1cda6eb6fca" />
 </p>
+
 ---
 
 ## 🚀 Why Use SVG in Power BI?
