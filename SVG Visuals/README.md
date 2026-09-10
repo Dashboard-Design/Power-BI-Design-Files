@@ -1,4 +1,4 @@
-<img width="1118" height="663" alt="2026-09-10 11_25_34-Dynamic Bullet Points" src="https://github.com/user-attachments/assets/ae31f80e-685f-487d-a515-33c988b365f8" /># 🎨 Power BI SVG Toolkit
+# 🎨 Power BI SVG Toolkit
 
 **Write bulletproof, dynamic, and pixel‑perfect SVG measures in Power BI DAX.**
 
@@ -9,44 +9,54 @@ This folder contains the definitive, best practices and an AI‑ready prompt tem
 ##  Visual Gallery
 
 ### 1. Dynamic Bullet Points
-<img width="500" alt="Dynamic Bullet Points" src="https://github.com/user-attachments/assets/f001cc26-356f-4f51-974f-cff5d8171848" />
+<p align="center">
+<img width="700" alt="Dynamic Bullet Points" src="https://github.com/user-attachments/assets/f001cc26-356f-4f51-974f-cff5d8171848" />
+</p>
 
 ---
 
 ### 2. Matrix Bubble Chart
-<img width="500" alt="Matrix Bubble Chart" src="https://github.com/user-attachments/assets/9f47f0dc-0c4c-406c-9e33-6d410d7ea803" />
+<p align="center">
+<img width="700" alt="Matrix Bubble Chart" src="https://github.com/user-attachments/assets/9f47f0dc-0c4c-406c-9e33-6d410d7ea803" />
+</p>
 
 ---
 
 ### 3. Pill Slicer
-<img width="500" alt="pill-slicer-SVG" src="https://github.com/user-attachments/assets/9ae0bb73-c952-4849-a4b7-ed57995c454b" />
-
+<p align="center">
+<img width="700" alt="pill-slicer-SVG" src="https://github.com/user-attachments/assets/9ae0bb73-c952-4849-a4b7-ed57995c454b" />
+</p>
 ---
 
 ### 4. Pill Status Visual
-<img width="500" alt="text-highlight-SVG" src="https://github.com/user-attachments/assets/bdca86dc-8c93-4f32-908f-1354416634aa" />
-
+<p align="center">
+<img width="700" alt="text-highlight-SVG" src="https://github.com/user-attachments/assets/bdca86dc-8c93-4f32-908f-1354416634aa" />
+</p>
 
 ---
 
 ### 5. Radar Chart
-<img width="500" alt="Radar Chart" src="https://github.com/user-attachments/assets/2de73903-26b5-4271-a09e-108cf61e20fe" />
-
+<p align="center">
+<img width="700" alt="Radar Chart" src="https://github.com/user-attachments/assets/2de73903-26b5-4271-a09e-108cf61e20fe" />
+</p>
 ---
 
 ### 6. Ranking Styles
-<img width="500" alt="Dynamic Ranking + Pareto Analysis" src="https://github.com/user-attachments/assets/35323fbe-be80-43e4-999f-cf80759b294a" />
-
+<p align="center">
+<img width="700" alt="Dynamic Ranking + Pareto Analysis" src="https://github.com/user-attachments/assets/35323fbe-be80-43e4-999f-cf80759b294a" />
+</p>
 ---
 
 ### 7. Scatter Plot with Images
-<img width="500" alt="Cars Sales" src="https://github.com/user-attachments/assets/c4a546ad-8611-46f5-aaff-f025e9f733e3" />
-
+<p align="center">
+<img width="700" alt="Cars Sales" src="https://github.com/user-attachments/assets/c4a546ad-8611-46f5-aaff-f025e9f733e3" />
+</p>
 ---
 
 ### 8. Target Line Bar Chart
-<img width="500" alt="Target Line Bar Chart SVG" src="https://github.com/user-attachments/assets/f8528282-72f9-40e3-b87c-f1cda6eb6fca" />
-
+<p align="center">
+<img width="700" alt="Target Line Bar Chart SVG" src="https://github.com/user-attachments/assets/f8528282-72f9-40e3-b87c-f1cda6eb6fca" />
+</p>
 ---
 
 ## 🚀 Why Use SVG in Power BI?
