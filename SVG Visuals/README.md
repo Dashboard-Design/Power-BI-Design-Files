@@ -6,6 +6,117 @@ This folder contains the definitive, best practices and an AI‑ready prompt tem
 
 ---
 
+##  Visual Gallery
+
+### 1. Dynamic Bullet Points
+<img src="./Dynamic Bullet Points/Dynamic Bullet Points.png" alt="Dynamic Bullet Points" width="400"/>
+
+**What it does:** Creates interactive, conditional bullet point lists that adapt based on your data values. Perfect for executive summaries and automated insights.
+
+**Use cases:**
+- Automated commentary generation
+- Dynamic KPI summaries
+- Conditional text formatting with icons
+
+---
+
+### 2. Matrix Bubble Chart
+<img src="./Matrix Bubble Chart/Matrix Bubble Chart.png" alt="Matrix Bubble Chart" width="400"/>
+
+**What it does:** Transforms matrix visuals into interactive bubble charts where size and color represent different metrics simultaneously.
+
+**Use cases:**
+- Portfolio analysis
+- Market segmentation
+- Multi-dimensional performance tracking
+
+---
+
+### 3. Pill Slicer
+<img src="./Pill Slicer/Pill Slicer.png" alt="Pill Slicer" width="400"/>
+
+**What it does:** Modern, pill-shaped slicer buttons that provide a sleek alternative to standard Power BI slicers with custom styling and states.
+
+**Use cases:**
+- Category filtering
+- Time period selection
+- Multi-select options with visual feedback
+
+---
+
+### 4. Pill Status Visual
+<img src="./Pill Status Visual/Pill Status Visual.png" alt="Pill Status Visual" width="400"/>
+
+**What it does:** Status indicators in pill/badge format showing real-time metrics with conditional coloring and dynamic text.
+
+**Use cases:**
+- Status badges (Active/Inactive/Pending)
+- Performance indicators
+- Workflow stage visualization
+
+---
+
+### 5. Radar Chart
+<img src="./Radar Chart/Radar Chart.png" alt="Radar Chart" width="400"/>
+
+**What it does:** Multi-dimensional radar/spider charts built entirely with SVG in DAX, perfect for competency assessments and comparative analysis.
+
+**Use cases:**
+- Skills assessment
+- Product comparison
+- Performance profiling across multiple dimensions
+
+---
+
+### 6. Ranking Styles
+<img src="./Ranking Styles/Ranking Styles.png" alt="Ranking Styles" width="400"/>
+
+**What it does:** Creative ranking visualizations with custom icons, medals, and positional indicators that go beyond simple numbers.
+
+**Use cases:**
+- Leaderboards
+- Top N analysis
+- Competitive positioning
+
+---
+
+### 7. Scatter Plot with Images
+<img src="./Scatter Plot with Images/Scatter Plot with Images.png" alt="Scatter Plot with Images" width="400"/>
+
+**What it does:** Enhanced scatter plots using SVG images as data points, allowing for rich visual encoding and brand integration.
+
+**Use cases:**
+- Quadrant analysis (BCG matrix, risk vs reward)
+- Correlation studies with visual context
+- Custom marker designs
+
+---
+
+### 8. Target Line Bar Chart
+<img src="./Target Line Bar Chart/Target Line Bar Chart.png" alt="Target Line Bar Chart" width="400"/>
+
+**What it does:** Bar charts with integrated target/goal lines and variance indicators, all rendered in SVG for maximum customization.
+
+**Use cases:**
+- Budget vs actual comparisons
+- KPI tracking against targets
+- Performance gap analysis
+
+---
+
+### 9. Variance Chart, IBCS Style
+<img src="./Variance Chart, IBCS Style/Variance Chart, IBCS Style.png" alt="Variance Chart, IBCS Style" width="400"/>
+
+**What it does:** Professional variance charts following IBCS (International Business Communication Standards) for clear, standardized business reporting.
+
+**Use cases:**
+- Financial variance analysis
+- Month-over-month comparisons
+- Executive reporting with IBCS compliance
+
+---
+
+
 ## 🚀 Why Use SVG in Power BI?
 
 Leveraging inline SVG images (via DAX measures) is the **best way to customize Power BI visuals** without sacrificing performance or maintainability.
