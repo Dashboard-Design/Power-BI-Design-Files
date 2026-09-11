@@ -4,118 +4,65 @@
 
 This folder contains the definitive, best practices and an AI‑ready prompt template to help you build scalable, responsive, and high‑performance SVG visuals directly inside Power BI.
 
----
+***
 
 ##  Visual Gallery
 
 ### 1. Dynamic Bullet Points
-<img src="./Dynamic Bullet Points/Dynamic Bullet Points.png" alt="Dynamic Bullet Points" width="400"/>
+<p align="center">
+<img width="700" alt="Dynamic Bullet Points" src="https://github.com/user-attachments/assets/f001cc26-356f-4f51-974f-cff5d8171848" />
+</p>
 
-**What it does:** Creates interactive, conditional bullet point lists that adapt based on your data values. Perfect for executive summaries and automated insights.
-
-**Use cases:**
-- Automated commentary generation
-- Dynamic KPI summaries
-- Conditional text formatting with icons
-
----
+***
 
 ### 2. Matrix Bubble Chart
-<img src="./Matrix Bubble Chart/Matrix Bubble Chart.png" alt="Matrix Bubble Chart" width="400"/>
+<p align="center">
+<img width="700" alt="Matrix Bubble Chart" src="https://github.com/user-attachments/assets/9f47f0dc-0c4c-406c-9e33-6d410d7ea803" />
+</p>
 
-**What it does:** Transforms matrix visuals into interactive bubble charts where size and color represent different metrics simultaneously.
-
-**Use cases:**
-- Portfolio analysis
-- Market segmentation
-- Multi-dimensional performance tracking
-
----
+***
 
 ### 3. Pill Slicer
-<img src="./Pill Slicer/Pill Slicer.png" alt="Pill Slicer" width="400"/>
+<p align="center">
+<img width="700" alt="pill-slicer-SVG" src="https://github.com/user-attachments/assets/9ae0bb73-c952-4849-a4b7-ed57995c454b" />
+</p>
 
-**What it does:** Modern, pill-shaped slicer buttons that provide a sleek alternative to standard Power BI slicers with custom styling and states.
-
-**Use cases:**
-- Category filtering
-- Time period selection
-- Multi-select options with visual feedback
-
----
+***
 
 ### 4. Pill Status Visual
-<img src="./Pill Status Visual/Pill Status Visual.png" alt="Pill Status Visual" width="400"/>
+<p align="center">
+<img width="700" alt="text-highlight-SVG" src="https://github.com/user-attachments/assets/bdca86dc-8c93-4f32-908f-1354416634aa" />
+</p>
 
-**What it does:** Status indicators in pill/badge format showing real-time metrics with conditional coloring and dynamic text.
-
-**Use cases:**
-- Status badges (Active/Inactive/Pending)
-- Performance indicators
-- Workflow stage visualization
-
----
+***
 
 ### 5. Radar Chart
-<img src="./Radar Chart/Radar Chart.png" alt="Radar Chart" width="400"/>
+<p align="center">
+<img width="700" alt="Radar Chart" src="https://github.com/user-attachments/assets/2de73903-26b5-4271-a09e-108cf61e20fe" />
+</p>
 
-**What it does:** Multi-dimensional radar/spider charts built entirely with SVG in DAX, perfect for competency assessments and comparative analysis.
-
-**Use cases:**
-- Skills assessment
-- Product comparison
-- Performance profiling across multiple dimensions
-
----
+***
 
 ### 6. Ranking Styles
-<img src="./Ranking Styles/Ranking Styles.png" alt="Ranking Styles" width="400"/>
+<p align="center">
+<img width="700" alt="Dynamic Ranking + Pareto Analysis" src="https://github.com/user-attachments/assets/35323fbe-be80-43e4-999f-cf80759b294a" />
+</p>
 
-**What it does:** Creative ranking visualizations with custom icons, medals, and positional indicators that go beyond simple numbers.
-
-**Use cases:**
-- Leaderboards
-- Top N analysis
-- Competitive positioning
-
----
+***
 
 ### 7. Scatter Plot with Images
-<img src="./Scatter Plot with Images/Scatter Plot with Images.png" alt="Scatter Plot with Images" width="400"/>
+<p align="center">
+<img width="700" alt="Cars Sales" src="https://github.com/user-attachments/assets/c4a546ad-8611-46f5-aaff-f025e9f733e3" />
+</p>
 
-**What it does:** Enhanced scatter plots using SVG images as data points, allowing for rich visual encoding and brand integration.
-
-**Use cases:**
-- Quadrant analysis (BCG matrix, risk vs reward)
-- Correlation studies with visual context
-- Custom marker designs
-
----
+***
 
 ### 8. Target Line Bar Chart
-<img src="./Target Line Bar Chart/Target Line Bar Chart.png" alt="Target Line Bar Chart" width="400"/>
+<p align="center">
+<img width="700" alt="Target Line Bar Chart SVG" src="https://github.com/user-attachments/assets/f8528282-72f9-40e3-b87c-f1cda6eb6fca" />
+</p>
 
-**What it does:** Bar charts with integrated target/goal lines and variance indicators, all rendered in SVG for maximum customization.
-
-**Use cases:**
-- Budget vs actual comparisons
-- KPI tracking against targets
-- Performance gap analysis
-
----
-
-### 9. Variance Chart, IBCS Style
-<img src="./Variance Chart, IBCS Style/Variance Chart, IBCS Style.png" alt="Variance Chart, IBCS Style" width="400"/>
-
-**What it does:** Professional variance charts following IBCS (International Business Communication Standards) for clear, standardized business reporting.
-
-**Use cases:**
-- Financial variance analysis
-- Month-over-month comparisons
-- Executive reporting with IBCS compliance
-
----
-
+***
 
 ## 🚀 Why Use SVG in Power BI?
 
@@ -130,7 +77,7 @@ Leveraging inline SVG images (via DAX measures) is the **best way to customize P
 - **Resolution‑Independent**  
   SVGs scale to any screen size or zoom level.
 
----
+***
 
 ## 📍 Where Can You Use SVGs in Power BI?
 
@@ -147,7 +94,7 @@ I have mapped out all **7 entry points** where you can leverage SVG images insid
 6.  **Image Visual** – Standalone vector illustrations that scale infinitely (PDF exports love this).
 7.  **SVG Icon Theme.json Injection** – The hidden gem: manage global icon libraries directly in your Theme file for enterprise‑wide branding.
 
----
+***
 
 ## 📂 Repository Contents
 
@@ -159,7 +106,7 @@ This document is ordered by severity—**Critical**, **Important**, and **Best P
 An **AI prompt template** (compatible with ChatGPT, Claude, etc.).  
 Paste this into your preferred LLM, describe the visual you want at the end, and the AI will generate a DAX measure that adheres strictly to all the rules in the Best Practices guide—saving you hours of debugging.
 
----
+***
 
 ## ⚡ Quick Start (How to Use This Repository)
 
@@ -179,7 +126,7 @@ Paste this into your preferred LLM, describe the visual you want at the end, and
 
 4.  **Drop it into your report** – Add the measure to a Table, Matrix, Card, or any of the 7 places listed above.
 
----
+***
 
 ## 🛠️ Troubleshooting (Quick Wins)
 
