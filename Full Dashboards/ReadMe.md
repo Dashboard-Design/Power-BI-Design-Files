@@ -18,7 +18,7 @@ This folder contains complete dashboard and reporting projects built across Powe
 
 A decomposition tree, fishbone diagram, jitter plot, and impact-ranking visual give users four ways to investigate the same business problem.
 
-![Root Cause Analysis Dashboard](./Root%20Cause%20Analysis%20Dashboard/root-cause-dashboard.png)
+<img width="1475" height="968" alt="Root Cause Analysis Dashboard" src="https://github.com/user-attachments/assets/6ff1bb44-573c-421c-beb4-cb59e0bf9969" />
 
 [**Try it live →**](https://sajjadahmadi.lovable.app/playground?d=root-cause)  
 [**View on GitHub →**](./Root%20Cause%20Analysis%20Dashboard)
@@ -31,7 +31,7 @@ A decomposition tree, fishbone diagram, jitter plot, and impact-ranking visual g
 
 Dashboards, themes, backgrounds, DAX patterns, and custom visual techniques—documented so developers worldwide can study and reuse them.
 
-![Ecommerce Conversion Dashboard](./Ecommerce%20Conversion%20Dashboard/ecommerce-conversion-dashboard.png)
+<img width="1385" height="1008" alt="Power BI eCommerce Conversion Dashboard" src="https://github.com/user-attachments/assets/3d1272ff-460a-425d-b695-b4b141213b60" />
 
 [**Try it live →**](https://sajjadahmadi.lovable.app/playground?d=ecommerce-conversion)  
 [**Explore the library →**](..)
@@ -43,8 +43,7 @@ Dashboards, themes, backgrounds, DAX patterns, and custom visual techniques—do
 **Regional sales read as geography, not as a table of place names.**
 
 Azure Maps and the HTML Content custom visual are pushed well past their defaults—cluster bubbles, 3D column layers, and detailed styling make territory performance readable at a glance.
-
-![Geo-Sales Dashboard](./GeoSales%20Dashboard%20-%20Azure%20Map/geo-sales-dashboard.png)
+<img width="1533" height="861" alt="GeoSales Dashboard" src="https://github.com/user-attachments/assets/484d2b4a-0a77-48e5-9eb7-c3e7660dd63b" />
 
 [**View on GitHub →**](./GeoSales%20Dashboard%20-%20Azure%20Map)
 
@@ -56,7 +55,7 @@ Azure Maps and the HTML Content custom visual are pushed well past their default
 
 The analysis moves through ticket volume and classification, efficiency and resolution, then optimization opportunities—giving support leaders one structured view of operations.
 
-![IT Support Performance Dashboard](./IT%20Support%20Performance%20Dashboard/it-support-performance.png)
+<img width="4006" height="2253" alt="IT_Support_Ticket_Desk-cropped-1" src="https://github.com/user-attachments/assets/c64894dd-0479-46ff-8752-270eec50056e" />
 
 [**View on GitHub →**](./IT%20Support%20Performance%20Dashboard)
 
@@ -68,26 +67,26 @@ The analysis moves through ticket volume and classification, efficiency and reso
 
 Top and bottom performers appear in the same visual, making it faster to compare conversion, revenue, satisfaction, and activity without switching views.
 
-![Agents Performance Dashboard](./Agents%20Performance%20-%20Dashboard/agents-performance.png)
+<img width="4100" height="2600" alt="Agents Performance - Dashboard-1" src="https://github.com/user-attachments/assets/947d9a8b-3206-4dbd-bca3-8f956f177d2e" />
 
 [**View on GitHub →**](./Agents%20Performance%20-%20Dashboard)
 
 ---
 
-### 07. Exceutive Sales Performance Dashboard
+### 06. Exceutive Sales Performance Dashboard
 
 **Gives the CEO a direct view of sales, profit, shipments, and salesperson performance.**
 
 Weekly trends, product and team sales, low-box shipments, and salesperson results are brought together so leadership can spot underperformance and act quickly.
 
-![Sales Performance Dashboard](./Performance%20Dashboard%20%28Using%20Calculation%20Groups%29%20-%20Awesome%20Chocolates%20Chandoo.org/sales-performance-dashboard.png)
+<img width="4006" height="2253" alt="Awesome Chocolates - Performance Dashboard" src="https://github.com/user-attachments/assets/2cb7878a-1843-4119-926a-c3588a9937a7" />
 
 [**Try it live →**](https://sajjadahmadi.lovable.app/playground?d=sales-performance)  
 [**View on GitHub →**](https://github.com/Dashboard-Design)
 
 ---
 
-### 08. THE MOVIE SUCCESS MATRIX
+### 07. THE MOVIE SUCCESS MATRIX
 
 **Explores what really makes a movie successful—from blockbuster revenue to return on investment.**
 
@@ -95,25 +94,23 @@ The report compares movie budget, revenue, ROI, ratings, vote counts, and popula
 
 Recognition: DataViz World Championship — recognized by the judges as a creative solution.
 
-![THE MOVIE SUCCESS MATRIX](./Performance%20Dashboard%20%28Using%20Calculation%20Groups%29%20-%20Awesome%20Chocolates%20Chandoo.org/sales-performance-dashboard.png)
-
 [**View on GitHub →**](https://github.com/Dashboard-Design/Full Dashboards/THE MOVIE SUCCESS MATRIX)
 
 ---
 
-### 09. Sales Teams Quarterly Performance Dashboard
+### 08. Sales Teams Quarterly Performance Dashboard
 
 **Turns quarterly sales performance into a clear view of team and agent performance.**
 
 The dashboard focuses on comparing sales teams and individual agents across key performance metrics, helping identify strong performers, gaps, and areas that need attention.
 
-![Sales Teams Quarterly Performance Dashboard](./Performance%20Dashboard%20%28Using%20Calculation%20Groups%29%20-%20Awesome%20Chocolates%20Chandoo.org/sales-performance-dashboard.png)
+<img width="4006" height="2253" alt="Sales Teams Quarterly Performance - Final-cropped-1" src="https://github.com/user-attachments/assets/00c51e76-65ad-40af-ba26-0d05a076b09d" />
 
 [**View on GitHub →**](https://github.com/Full Dashboards/Sales Teams Quarterly Performance Dashboard)
 
 ---
 
-### 10. Inventory Analysis Dashboard
+### 9. Inventory Analysis Dashboard
 
 **Explores supply chain data through inventory performance and operational analysis.**
 
