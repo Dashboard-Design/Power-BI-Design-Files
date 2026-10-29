@@ -1,0 +1,210 @@
+SIMPLE BI User Acquisition Tour = 
+VAR _cssBase =
+"<style>
+html,body{margin:0;padding:0;overflow:hidden;background:transparent}
+:root{--sbi-blue:#0057CE;--sbi-ink:#041225;--sbi-muted:#64778F;--sbi-surface:#FFFFFF;--sbi-positive:#EAF2FF;--sbi-magenta:#D51A9F;--sbi-negative:#FCEAF5;--sbi-line:#D9E2F2;--sbi-veil:rgba(255,255,255,1);--sbi-glow:rgba(0,87,206,.38)}
+.sbi-tour{position:fixed;left:0;top:0;width:1920px;height:1080px;overflow:hidden;background:transparent;font-family:'Segoe UI',Arial,sans-serif;color:var(--sbi-ink);pointer-events:none;isolation:isolate}
+.sbi-tour *{box-sizing:border-box}
+.sbi-tour .tour-root{display:block;position:static;margin:0;padding:0}
+.sbi-tour .tour-blocker{position:absolute;inset:0;z-index:10;background:transparent;pointer-events:none}
+.sbi-tour .tour-root[open]+.tour-blocker{pointer-events:auto}
+.sbi-tour summary{list-style:none;cursor:pointer}
+.sbi-tour summary::marker{content:''}
+.sbi-tour summary::-webkit-details-marker{display:none}
+.sbi-tour summary:focus-visible{outline:3px solid var(--sbi-magenta);outline-offset:3px}
+.sbi-tour .tour-exit{position:absolute;left:1650px;top:24px;z-index:999;display:inline-flex;align-items:center;justify-content:center;gap:8px;min-width:164px;padding:11px 16px;border:1px solid #D9E2F2;border-radius:999px;background:#FFFFFF;color:var(--sbi-blue);font-size:14px;font-weight:700;box-shadow:0 3px 14px rgba(4,18,37,.08);white-space:nowrap;pointer-events:auto;transition:all .18s ease}
+.sbi-tour .tour-root:not([open])>.tour-exit{display:none}
+.sbi-tour .tour-exit:hover{border-color:var(--sbi-magenta);background:var(--sbi-negative);color:var(--sbi-magenta);transform:translateY(-1px)}
+.sbi-tour .spot{position:absolute;border-radius:12px;background:transparent;box-shadow:0 0 26px 6px var(--sbi-glow),0 0 0 2400px var(--sbi-veil);outline:2px solid var(--sbi-blue);outline-offset:5px;pointer-events:none;animation:spot-show .45s ease-out both}
+.sbi-tour .spot::after{content:'';position:absolute;inset:-5px;border:2px solid var(--sbi-blue);border-radius:14px;animation:spot-ring 1.9s ease-out infinite;pointer-events:none}
+.sbi-tour .spot::before{content:'';position:absolute;inset:-12px;pointer-events:none;background:
+linear-gradient(var(--sbi-magenta),var(--sbi-magenta)) left top/24px 4px no-repeat,
+linear-gradient(var(--sbi-magenta),var(--sbi-magenta)) left top/4px 24px no-repeat,
+linear-gradient(var(--sbi-magenta),var(--sbi-magenta)) right top/24px 4px no-repeat,
+linear-gradient(var(--sbi-magenta),var(--sbi-magenta)) right top/4px 24px no-repeat,
+linear-gradient(var(--sbi-magenta),var(--sbi-magenta)) left bottom/24px 4px no-repeat,
+linear-gradient(var(--sbi-magenta),var(--sbi-magenta)) left bottom/4px 24px no-repeat,
+linear-gradient(var(--sbi-magenta),var(--sbi-magenta)) right bottom/24px 4px no-repeat,
+linear-gradient(var(--sbi-magenta),var(--sbi-magenta)) right bottom/4px 24px no-repeat;animation:reticle 2.2s ease-in-out infinite}
+.sbi-tour .spot-1{left:294px;top:141px;width:1574px;height:134px;z-index:100}
+.sbi-tour .spot-2{left:294px;top:285px;width:1082px;height:359px;z-index:200}
+.sbi-tour .spot-3{left:301px;top:674px;width:1082px;height:367px;z-index:300}
+.sbi-tour .spot-4{left:1417px;top:285px;width:462px;height:756px;z-index:400}
+@keyframes spot-show{from{opacity:.25}to{opacity:1}}
+@keyframes spot-ring{0%{inset:-5px;opacity:.55}100%{inset:-20px;opacity:0}}
+@keyframes reticle{0%,100%{inset:-12px}50%{inset:-18px}}
+</style>"
+VAR _cssCards =
+"<style>
+.sbi-tour .tip{position:absolute;width:500px;padding:25px 28px 65px;background:var(--sbi-surface);border:1px solid var(--sbi-line);border-radius:14px;box-shadow:0 18px 44px rgba(4,18,37,.16);overflow:hidden;animation:tip-enter .5s .12s cubic-bezier(.2,1.25,.35,1) both}
+.sbi-tour .tip::before{content:'';position:absolute;left:0;right:0;top:0;height:5px;background:linear-gradient(90deg,var(--sbi-blue),var(--sbi-magenta))}
+.sbi-tour .tip-1{left:630px;top:445px;width:520px;z-index:101}
+.sbi-tour .tip-2{left:1417px;top:455px;width:462px;z-index:201}
+.sbi-tour .tip-3{left:650px;top:280px;width:520px;z-index:301}
+.sbi-tour .tip-4{left:865px;top:430px;width:515px;z-index:401}
+@keyframes tip-enter{from{opacity:0;transform:translateY(18px) scale(.97)}to{opacity:1;transform:none}}
+.sbi-tour .tag{display:flex;align-items:center;gap:12px;margin:0 0 10px;height:22px;white-space:nowrap}
+.sbi-tour .tag .num{display:inline-flex;align-items:center;justify-content:center;height:22px;min-width:34px;padding:0 11px;border-radius:999px;background:linear-gradient(135deg,var(--sbi-magenta),var(--sbi-blue));color:#FFFFFF;font-size:12px;font-weight:800;letter-spacing:.06em;box-shadow:0 3px 10px rgba(213,26,159,.3)}
+.sbi-tour .tag .label{font-size:14px;font-weight:800;color:var(--sbi-blue);letter-spacing:.09em;text-transform:uppercase}
+.sbi-tour .tip h2{margin:0 0 18px;color:var(--sbi-ink);font-size:29px;line-height:1.16;font-weight:750;letter-spacing:-.45px}
+.sbi-tour .tip p{margin:0 0 15px;color:#26384D;font-size:16px;line-height:1.52}
+.sbi-tour .tip p b{color:var(--sbi-ink);font-weight:700}
+.sbi-tour .chip{display:inline-block;border-radius:5px;padding:1px 8px;font-size:13px;font-weight:700;white-space:nowrap}
+.sbi-tour .chip.up{background:var(--sbi-positive);color:var(--sbi-blue)}
+.sbi-tour .chip.down{background:var(--sbi-negative);color:var(--sbi-magenta)}
+.sbi-tour .foot{display:flex;align-items:center;justify-content:space-between;margin-top:22px;min-height:17px}
+.sbi-tour .progress{display:flex;align-items:center;gap:7px}
+.sbi-tour .pip{width:9px;height:9px;border-radius:6px;background:#E1E8F4;display:inline-block}
+.sbi-tour .pip.done{background:#8FB4F0}
+.sbi-tour .pip.on{width:30px;background:linear-gradient(90deg,var(--sbi-blue),var(--sbi-magenta));box-shadow:0 0 10px rgba(0,87,206,.45)}
+.sbi-tour .count{margin-left:7px;color:var(--sbi-muted);font-size:12px;font-weight:700;white-space:nowrap}
+</style>"
+VAR _cssButtons =
+"<style>
+.sbi-tour .step-toggle{position:absolute;display:inline-flex;align-items:center;justify-content:center;min-width:112px;height:42px;padding:0 20px;border:0;border-radius:10px;background:linear-gradient(135deg,#0A63E0,var(--sbi-blue));color:#FFFFFF;font-size:15px;font-weight:700;white-space:nowrap;pointer-events:auto;box-shadow:0 6px 18px rgba(0,87,206,.35);animation:btn-pulse 1.8s ease-in-out infinite;transition:transform .15s ease}
+.sbi-tour .step-toggle:hover{transform:translateY(-2px)}
+.sbi-tour .step-toggle .next i{display:inline-block;font-style:normal;margin-left:7px;animation:nudge 1.1s ease-in-out infinite}
+.sbi-tour .step-toggle .back{display:none}
+.sbi-tour .step[open]>.step-toggle{background:#FFFFFF;color:var(--sbi-blue);border:1px solid var(--sbi-line);box-shadow:0 4px 14px rgba(4,18,37,.08);animation:none}
+.sbi-tour .step[open]>.step-toggle:hover{border-color:var(--sbi-blue)}
+.sbi-tour .step[open]>.step-toggle .next{display:none}
+.sbi-tour .step[open]>.step-toggle .back{display:inline}
+@keyframes nudge{0%,100%{transform:translateX(0)}50%{transform:translateX(5px)}}
+@keyframes btn-pulse{0%,100%{box-shadow:0 6px 18px rgba(0,87,206,.35),0 0 0 0 rgba(0,87,206,.45)}60%{box-shadow:0 6px 18px rgba(0,87,206,.35),0 0 0 12px rgba(0,87,206,0)}}
+
+/* --- FIXED BUTTON POSITIONS (Moved down by 10px) --- */
+.sbi-tour .step-2:not([open])>.step-toggle{left:1010px;top:685px;z-index:102}
+.sbi-tour .step-2[open]>.step-toggle{left:1620px;top:705px;z-index:202}
+.sbi-tour .step-3:not([open])>.step-toggle{left:1740px;top:705px;z-index:302}
+.sbi-tour .step-3[open]>.step-toggle{left:870px;top:530px;z-index:302}
+.sbi-tour .step-4:not([open])>.step-toggle{left:990px;top:530px;z-index:402}
+.sbi-tour .step-4[open]>.step-toggle{left:1250px;top:680px;z-index:402}
+
+.sbi-tour .step-2[open]:has(.step-3[open])>.step-toggle{display:none}
+.sbi-tour .step-3[open]:has(.step-4[open])>.step-toggle{display:none}
+.sbi-tour .step-2[open]~.spot-1,.sbi-tour .step-2[open]~.tip-1,.sbi-tour .step-2[open]~.arrow-1{display:none}
+.sbi-tour .step-3[open]~.spot-2,.sbi-tour .step-3[open]~.tip-2,.sbi-tour .step-3[open]~.arrow-2{display:none}
+.sbi-tour .step-4[open]~.spot-3,.sbi-tour .step-4[open]~.tip-3,.sbi-tour .step-4[open]~.arrow-3{display:none}
+.sbi-tour .arrow{position:absolute;overflow:visible;fill:none;pointer-events:none;filter:drop-shadow(0 4px 6px rgba(0,87,206,.22))}
+.sbi-tour .arrow-glow{fill:none;stroke:var(--sbi-blue);stroke-width:10;stroke-linecap:round;opacity:.14}
+.sbi-tour .arrow-base{fill:none;stroke-width:2.5;stroke-linecap:round;opacity:.55}
+.sbi-tour .arrow-flow{fill:none;stroke-width:3.5;stroke-linecap:round;stroke-dasharray:6 14;animation:flow .9s linear infinite}
+.sbi-tour .arrow-head{fill:var(--sbi-magenta);stroke:#FFFFFF;stroke-width:1;stroke-linejoin:round}
+.sbi-tour .arrow .origin{fill:var(--sbi-blue);opacity:.8}
+.sbi-tour .arrow .tgt{fill:var(--sbi-magenta)}
+.sbi-tour .arrow .ping{fill:var(--sbi-magenta)}
+@keyframes flow{from{stroke-dashoffset:20}to{stroke-dashoffset:0}}
+.sbi-tour .arrow-1{left:920px;top:230px;width:220px;height:220px;z-index:103}
+.sbi-tour .arrow-2{left:1220px;top:350px;width:205px;height:170px;z-index:203}
+.sbi-tour .arrow-3{left:1130px;top:420px;width:205px;height:300px;z-index:303}
+.sbi-tour .arrow-4{left:1245px;top:365px;width:245px;height:150px;z-index:403}
+@media (prefers-reduced-motion:reduce){.sbi-tour .spot,.sbi-tour .spot::after,.sbi-tour .spot::before,.sbi-tour .tip,.sbi-tour .step-toggle,.sbi-tour .step-toggle .next i,.sbi-tour .arrow-flow{animation:none}}
+</style>"
+VAR _html =
+"<div class='sbi-tour' role='group' aria-label='SIMPLE BI interactive dashboard tour'>
+<details class='tour-root' open>
+<summary class='tour-exit' aria-label='End dashboard tour'><span>End tour &times;</span></summary>
+<div class='tour-body'>
+
+<!-- STEP 1 toggle -> opens step 2 -->
+<details class='step step-2'>
+<summary class='step-toggle'><span class='next'>Next<i>&rarr;</i></span><span class='back'>&larr; Back</span></summary>
+<div class='step-body'>
+
+<!-- STEP 2 toggle -> opens step 3 -->
+<details class='step step-3'>
+<summary class='step-toggle'><span class='next'>Next<i>&rarr;</i></span><span class='back'>&larr; Back</span></summary>
+<div class='step-body'>
+
+<!-- STEP 3 toggle -> opens step 4 -->
+<details class='step step-4'>
+<summary class='step-toggle'><span class='next'>Next<i>&rarr;</i></span><span class='back'>&larr; Back</span></summary>
+<div class='step-body'>
+<div class='spot spot-4'></div>
+<article class='tip tip-4'>
+<div class='tag'><span class='num'>03</span><span class='label'>Engagement / Conversion</span></div>
+<h2>What is the quality of those users?</h2>
+<p>This section helps compare traffic sources beyond volume. Use engagement and conversion signals to distinguish sources that bring many visits from those that bring visitors who interact or purchase.</p>
+<div class='foot'><div class='progress'><span class='pip done'></span><span class='pip done'></span><span class='pip done'></span><span class='pip on'></span><span class='count'>4 / 4</span></div></div>
+</article>
+<svg class='arrow arrow-4' viewBox='0 0 245 150' aria-hidden='true'>
+<defs><linearGradient id='ag4' gradientUnits='userSpaceOnUse' x1='130' y1='100' x2='235' y2='25'><stop offset='0' stop-color='#0057CE'/><stop offset='1' stop-color='#D51A9F'/></linearGradient></defs>
+<path class='arrow-glow' d='M130 100 C160 85 200 55 235 25'/>
+<path class='arrow-base' stroke='url(#ag4)' d='M130 100 C160 85 200 55 235 25'/>
+<path class='arrow-flow' stroke='url(#ag4)' d='M130 100 C160 85 200 55 235 25'/>
+<circle class='origin' cx='130' cy='100' r='4'/>
+<circle class='tgt' cx='235' cy='25' r='5'/>
+<circle class='ping' cx='235' cy='25' r='5'><animate attributeName='r' values='5;20' dur='1.6s' repeatCount='indefinite'/><animate attributeName='opacity' values='.55;0' dur='1.6s' repeatCount='indefinite'/></circle>
+<path class='arrow-head' d='M-12 -8 L3 0 L-12 8 Z'><animateMotion dur='1.8s' repeatCount='indefinite' rotate='auto' path='M130 100 C160 85 200 55 235 25'/></path>
+<path class='arrow-head' d='M-12 -8 L3 0 L-12 8 Z'><animateMotion dur='1.8s' begin='-0.9s' repeatCount='indefinite' rotate='auto' path='M130 100 C160 85 200 55 235 25'/></path>
+</svg>
+</div>
+</details>
+
+<div class='spot spot-3'></div>
+<article class='tip tip-3'>
+<div class='tag'><span class='num'>02</span><span class='label'>Volume</span></div>
+<h2>Where are my users coming from?</h2>
+<p>The table breaks results down by traffic source. Compare current and previous-period values to spot the sources contributing most to your volume and where performance is improving or declining.</p>
+<div class='foot'><div class='progress'><span class='pip done'></span><span class='pip done'></span><span class='pip on'></span><span class='pip'></span><span class='count'>3 / 4</span></div></div>
+</article>
+<svg class='arrow arrow-3' viewBox='0 0 205 300' aria-hidden='true'>
+<defs><linearGradient id='ag3' gradientUnits='userSpaceOnUse' x1='45' y1='20' x2='155' y2='270'><stop offset='0' stop-color='#0057CE'/><stop offset='1' stop-color='#D51A9F'/></linearGradient></defs>
+<path class='arrow-glow' d='M45 20 C75 90 125 190 155 270'/>
+<path class='arrow-base' stroke='url(#ag3)' d='M45 20 C75 90 125 190 155 270'/>
+<path class='arrow-flow' stroke='url(#ag3)' d='M45 20 C75 90 125 190 155 270'/>
+<circle class='origin' cx='45' cy='20' r='4'/>
+<circle class='tgt' cx='155' cy='270' r='5'/>
+<circle class='ping' cx='155' cy='270' r='5'><animate attributeName='r' values='5;20' dur='1.6s' repeatCount='indefinite'/><animate attributeName='opacity' values='.55;0' dur='1.6s' repeatCount='indefinite'/></circle>
+<path class='arrow-head' d='M-12 -8 L3 0 L-12 8 Z'><animateMotion dur='1.8s' repeatCount='indefinite' rotate='auto' path='M45 20 C75 90 125 190 155 270'/></path>
+<path class='arrow-head' d='M-12 -8 L3 0 L-12 8 Z'><animateMotion dur='1.8s' begin='-0.9s' repeatCount='indefinite' rotate='auto' path='M45 20 C75 90 125 190 155 270'/></path>
+</svg>
+</div>
+</details>
+
+<div class='spot spot-2'></div>
+<article class='tip tip-2'>
+<div class='tag'><span class='num'>01</span><span class='label'>Momentum / Growth</span></div>
+<h2>How is the trend changing?</h2>
+<p>The line chart shows how your selected KPI moves over time. Look for <b>spikes, dips and turning points</b> to understand momentum, then use the source table to investigate where the change may be coming from.</p>
+<div class='foot'><div class='progress'><span class='pip done'></span><span class='pip on'></span><span class='pip'></span><span class='pip'></span><span class='count'>2 / 4</span></div></div>
+</article>
+<svg class='arrow arrow-2' viewBox='0 0 205 170' aria-hidden='true'>
+<defs><linearGradient id='ag2' gradientUnits='userSpaceOnUse' x1='180' y1='80' x2='50' y2='20'><stop offset='0' stop-color='#0057CE'/><stop offset='1' stop-color='#D51A9F'/></linearGradient></defs>
+<path class='arrow-glow' d='M180 80 C150 70 110 50 50 20'/>
+<path class='arrow-base' stroke='url(#ag2)' d='M180 80 C150 70 110 50 50 20'/>
+<path class='arrow-flow' stroke='url(#ag2)' d='M180 80 C150 70 110 50 50 20'/>
+<circle class='origin' cx='180' cy='80' r='4'/>
+<circle class='tgt' cx='50' cy='20' r='5'/>
+<circle class='ping' cx='50' cy='20' r='5'><animate attributeName='r' values='5;20' dur='1.6s' repeatCount='indefinite'/><animate attributeName='opacity' values='.55;0' dur='1.6s' repeatCount='indefinite'/></circle>
+<path class='arrow-head' d='M-12 -8 L3 0 L-12 8 Z'><animateMotion dur='1.8s' repeatCount='indefinite' rotate='auto' path='M180 80 C150 70 110 50 50 20'/></path>
+<path class='arrow-head' d='M-12 -8 L3 0 L-12 8 Z'><animateMotion dur='1.8s' begin='-0.9s' repeatCount='indefinite' rotate='auto' path='M180 80 C150 70 110 50 50 20'/></path>
+</svg>
+</div>
+</details>
+
+<div class='spot spot-1'></div>
+<article class='tip tip-1'>
+<div class='tag'><span class='num'>START</span><span class='label'>KPI cards</span></div>
+<h2>Click a KPI to filter the page</h2>
+<p>Each card shows a key metric and its change versus the previous period. Use this section to choose the metric you want to explore. The line chart, source table and channel-quality view are designed to follow that selection.</p>
+<div class='foot'><div class='progress'><span class='pip on'></span><span class='pip'></span><span class='pip'></span><span class='pip'></span><span class='count'>1 / 4</span></div></div>
+</article>
+<svg class='arrow arrow-1' viewBox='0 0 220 220' aria-hidden='true'>
+<defs><linearGradient id='ag1' gradientUnits='userSpaceOnUse' x1='210' y1='210' x2='120' y2='30'><stop offset='0' stop-color='#0057CE'/><stop offset='1' stop-color='#D51A9F'/></linearGradient></defs>
+<path class='arrow-glow' d='M210 210 C210 150 160 80 120 30'/>
+<path class='arrow-base' stroke='url(#ag1)' d='M210 210 C210 150 160 80 120 30'/>
+<path class='arrow-flow' stroke='url(#ag1)' d='M210 210 C210 150 160 80 120 30'/>
+<circle class='origin' cx='210' cy='210' r='4'/>
+<circle class='tgt' cx='120' cy='30' r='5'/>
+<circle class='ping' cx='120' cy='30' r='5'><animate attributeName='r' values='5;20' dur='1.6s' repeatCount='indefinite'/><animate attributeName='opacity' values='.55;0' dur='1.6s' repeatCount='indefinite'/></circle>
+<path class='arrow-head' d='M-12 -8 L3 0 L-12 8 Z'><animateMotion dur='1.8s' repeatCount='indefinite' rotate='auto' path='M210 210 C210 150 160 80 120 30'/></path>
+<path class='arrow-head' d='M-12 -8 L3 0 L-12 8 Z'><animateMotion dur='1.8s' begin='-0.9s' repeatCount='indefinite' rotate='auto' path='M210 210 C210 150 160 80 120 30'/></path>
+</svg>
+
+</div>
+</details>
+<div class='tour-blocker' aria-hidden='true'></div>
+</div>"
+RETURN
+    _cssBase & _cssCards & _cssButtons & _html
