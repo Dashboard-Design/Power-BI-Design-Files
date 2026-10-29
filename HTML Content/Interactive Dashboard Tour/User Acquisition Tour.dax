@@ -2,7 +2,7 @@ SIMPLE BI User Acquisition Tour =
 VAR _cssBase =
 "<style>
 html,body{margin:0;padding:0;overflow:hidden;background:transparent}
-:root{--sbi-blue:#0057CE;--sbi-ink:#041225;--sbi-muted:#64778F;--sbi-surface:#FFFFFF;--sbi-positive:#EAF2FF;--sbi-magenta:#D51A9F;--sbi-negative:#FCEAF5;--sbi-line:#D9E2F2;--sbi-veil:rgba(255,255,255,1);--sbi-glow:rgba(0,87,206,.38)}
+:root{--sbi-blue:#0057CE;--sbi-ink:#041225;--sbi-muted:#64778F;--sbi-surface:#FFFFFF;--sbi-positive:#EAF2FF;--sbi-magenta:#D51A9F;--sbi-negative:#FCEAF5;--sbi-line:#D9E2F2;--sbi-veil:rgba(255,255,255,.90);--sbi-glow:rgba(0,87,206,.38)}
 .sbi-tour{position:fixed;left:0;top:0;width:1920px;height:1080px;overflow:hidden;background:transparent;font-family:'Segoe UI',Arial,sans-serif;color:var(--sbi-ink);pointer-events:none;isolation:isolate}
 .sbi-tour *{box-sizing:border-box}
 .sbi-tour .tour-root{display:block;position:static;margin:0;padding:0}
@@ -15,6 +15,18 @@ html,body{margin:0;padding:0;overflow:hidden;background:transparent}
 .sbi-tour .tour-exit{position:absolute;left:1650px;top:24px;z-index:999;display:inline-flex;align-items:center;justify-content:center;gap:8px;min-width:164px;padding:11px 16px;border:1px solid #D9E2F2;border-radius:999px;background:#FFFFFF;color:var(--sbi-blue);font-size:14px;font-weight:700;box-shadow:0 3px 14px rgba(4,18,37,.08);white-space:nowrap;pointer-events:auto;transition:all .18s ease}
 .sbi-tour .tour-root:not([open])>.tour-exit{display:none}
 .sbi-tour .tour-exit:hover{border-color:var(--sbi-magenta);background:var(--sbi-negative);color:var(--sbi-magenta);transform:translateY(-1px)}
+.sbi-tour .tour-root-summary{position:absolute;left:0;top:0;width:0;height:0;overflow:hidden;opacity:0;pointer-events:none}
+.sbi-tour .exit-card{position:absolute;left:1384px;top:80px;z-index:998;width:430px;padding:24px 26px 20px;background:#FFFFFF;border:1px solid var(--sbi-line);border-radius:14px;box-shadow:0 18px 44px rgba(4,18,37,.16);overflow:hidden;color:var(--sbi-ink);pointer-events:auto;animation:exit-card-in .35s cubic-bezier(.2,1.25,.35,1) both}
+.sbi-tour .exit-card::before{content:'';position:absolute;left:0;right:0;top:0;height:5px;background:linear-gradient(90deg,var(--sbi-blue),var(--sbi-magenta))}
+.sbi-tour .exit-tag{margin:0 0 8px;color:var(--sbi-magenta);font-size:12px;font-weight:800;letter-spacing:.09em;text-transform:uppercase}
+.sbi-tour .exit-card h3{margin:0 0 8px;color:var(--sbi-ink);font-size:20px;line-height:1.2;font-weight:700;letter-spacing:-.2px}
+.sbi-tour .exit-card p{margin:0 0 14px;color:#26384D;font-size:14px;line-height:1.5}
+.sbi-tour .exit-card b{color:var(--sbi-ink);font-weight:700}
+.sbi-tour .exit-opt{display:flex;align-items:flex-start;gap:12px;padding:11px 14px;border:1px solid var(--sbi-line);border-radius:10px;background:#FFFFFF;font-size:15px;line-height:1.4;color:var(--sbi-ink)}
+.sbi-tour .exit-opt i{flex:0 0 24px;width:24px;height:24px;border-radius:50%;background:var(--sbi-positive);color:var(--sbi-blue);font-style:normal;font-size:13px;font-weight:800;display:inline-flex;align-items:center;justify-content:center}
+.sbi-tour .exit-or{margin:7px 0;text-align:center;color:var(--sbi-muted);font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
+.sbi-tour .exit-hint{margin:14px 0 0;color:var(--sbi-muted);font-size:12px}
+@keyframes exit-card-in{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:none}}
 .sbi-tour .spot{position:absolute;border-radius:12px;background:transparent;box-shadow:0 0 26px 6px var(--sbi-glow),0 0 0 2400px var(--sbi-veil);outline:2px solid var(--sbi-blue);outline-offset:5px;pointer-events:none;animation:spot-show .45s ease-out both}
 .sbi-tour .spot::after{content:'';position:absolute;inset:-5px;border:2px solid var(--sbi-blue);border-radius:14px;animation:spot-ring 1.9s ease-out infinite;pointer-events:none}
 .sbi-tour .spot::before{content:'';position:absolute;inset:-12px;pointer-events:none;background:
@@ -103,7 +115,19 @@ VAR _cssButtons =
 VAR _html =
 "<div class='sbi-tour' role='group' aria-label='SIMPLE BI interactive dashboard tour'>
 <details class='tour-root' open>
-<summary class='tour-exit' aria-label='End dashboard tour'><span>End tour &times;</span></summary>
+<summary class='tour-root-summary' aria-hidden='true'></summary>
+<details class='exit-help'>
+<summary class='tour-exit' aria-label='How to end the dashboard tour'><span>End tour &times;</span></summary>
+<div class='exit-card' role='alert'>
+<div class='exit-tag'>How to end the tour</div>
+<h3>Close it from the report</h3>
+<p>Once you click this tour, Power BI selects it and hides the <b>End Tour</b> button behind it. Do one of these:</p>
+<div class='exit-opt'><i>A</i><span>Click on outside of the report and then click on <b>End Tour</b></span></div>
+<div class='exit-or'>or</div>
+<div class='exit-opt'><i>B</i><span>Click on <b>Reset to Defaults</b></span></div>
+<p class='exit-hint'>Click <b>End tour</b> again to hide this message.</p>
+</div>
+</details>
 <div class='tour-body'>
 
 <!-- STEP 1 toggle -> opens step 2 -->
