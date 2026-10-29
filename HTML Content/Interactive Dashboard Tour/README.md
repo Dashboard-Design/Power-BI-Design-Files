@@ -2,6 +2,8 @@
 
 Create a guided, game-like walkthrough for your Power BI report using **HTML Content Secure (the certified HTML Content custom visual)**.
 
+<img width="1920" height="1080" alt="Walkthrough Project" src="https://github.com/user-attachments/assets/0aee2401-b131-418c-b889-86ce5ca3b676" />
+
 ## How to Use
 
 1. Install the **HTML Content Secure** certified custom visual in Power BI.
